@@ -10,16 +10,24 @@
 		<p>Hi, John</p>
 		<img src="img/john.jpg" alt="john photo">
 		<nav>
-			/* search */
+			
 			<input type="search" placeholder="Search">
 			<ul>
-				<li><a href="#">Browse Courses</a></li>
+				<li><a href="#">Browse Courses &or;</a></li>
 				<li><a href="#">Community</a></li>
 				<li><a href="#">My Courses</a></li>
 				<li><a href="#">My Projects</a></li>
 			</ul>
 		</nav>
 	</header>
+	<!-- Green Post Successful Bar -->
+	<div  class="greebar">
+		<h1>Illustrator CC Essentiials Training</h1>
+		<span>Post Successful</span>
+		<img src="img/greencheck.png" alt="">
+	</div>
+
+	<!--End bar-->
 	<main>
 		<h1>Illustrator CC Essentials Training</h1>
 		<ul>
@@ -31,8 +39,8 @@
 	<nav>
 			<img src="img/search.png" alt="">
 			<input type="search" placeholder="Search">
-			<div id="crslist"></div><a href="#" class="active">Course List</a></div>
-			<div id="prjlist"></div><a href="#">Projects</a></div>
+			<div id="crslist"><a href="#" class="active">Course List</a></div>
+			<div id="prjlist"><a href="#">Projects</a></div>
 		<div class="courseList">
 			<a href="#">Expand All</a>
 			<a href="#">Collapse All</a>
@@ -149,7 +157,7 @@
 						<img src="img/bluearrow.png" alt="arrow">
 						<h5>Logo Redesign</h5>
 						<div>
-							<img src="img/bookmark.png">
+							<img src="img/bookmark.png" alt="">
 							<p>How to send feedback</p>
 						</div>
 				</li>
@@ -169,33 +177,29 @@
 	</nav>
 		<section class="video-player">			
 			<div class="video-top-bar">
-				<button id="previousbtn"><img src="img/previousvid.png">Previous</button>
-				<button id="nextbtn"><img src="img/nextvid.png">Next</button>
+				<button id="previousbtn"><img src="img/previousvid.png" alt="">Previous</button>
+				<button id="nextbtn"><img src="img/nextvid.png" alt="">Next</button>
 				<span>Welcome</span>
 				<span>Auto-Play</span>
 				<button id="autoplaybtn">On</button>
 			</div>
-			<video id="video"></video>
-				<source src="#" type="video/mp4">
-				<source src="#" type="video/ogv">
-				<source src="#" type="video/webm">
-
+			<video src="" id="video"></video>
 			</div>
 			<div class="video-bottom-bar">
-				<button id="play"><img src="img/play.png"></button>
-				<button id="rewind"><img src="img/rewind.png"></button>
-				<button id="timestamp"><img src="img/timestamp.png"></button>
-				<button id="bookmark"><img src="img/bookmark.png"></button>
+				<button id="play"><img src="img/play.png" alt=""></button>
+				<button id="rewind"><img src="img/rewind.png" alt=""></button>
+				<button id="timestamp"><img src="img/timestamp.png" alt=""></button>
+				<button id="bookmark"><img src="img/bookmark.png" alt=""></button>
 				<div><span id="current-time">10:07</span></div>
-				<section>/</section>
+				<span>/</span>
 				<div><span id="total-time">32.54</span></div>
-				<button id="volume"><img src="img/volume.png"></button>
+				<button id="volume"><img src="img/volume.png" alt=""></button>
 				<button id="speed">1x</button>
-				<button id="cc"><img src="img/cc.png"></button>
-				<button id="settings"><img src="img/settings.png"></button>
-				<button id="expand"><img src="img/expand.png"></button>
-				<button id="popout"><img src="img/popout.png"></button>
-				<button id="fullscreen"><img src="img/fullscreen.png"></button>
+				<button id="cc"><img src="img/cc.png" alt=""></button>
+				<button id="settings"><img src="img/settings.png" alt=""></button>
+				<button id="expand"><img src="img/expand.png" alt=""></button>
+				<button id="popout"><img src="img/popout.png" alt=""></button>
+				<button id="fullscreen"><img src="img/fullscreen.png" alt=""></button>
 
 
 			</div>
@@ -301,9 +305,9 @@ with Illustrator.</p>
 	<div id="upload1">
 		<div class="uploadblack">
 			<h3>Upload your Project</h3>
-			<img src="img/progress1.png">
+			<img src="img/progress1.png" alt="">
 		</div>
-		<img src="img/dragdrop.png">
+		<img src="img/dragdrop.png" alt="">
 		<p>You can drag and drop files into this window or browse your computer</p>
 		<b>.jpg .pdf .gif .png</b>
 		<button id="browse">Browse Computer</button>
@@ -316,13 +320,45 @@ with Illustrator.</p>
 			<h3>Confirm your Upload</h3>
 			<img src="img/progress2.png">
 		</div>
-		<img src="img/dragdrop.png">
-		<p>You can drag and drop files into this window or browse your computer</p>
-		<b>.jpg .pdf .gif .png</b>
-		<button id="browse">Browse Computer</button>
-		<button id="cancel">Cancel</button>
-		<button id="next">Next</button>
+		<img src="img/check.png" alt="">
+		<img src="img/goldenlife.png" alt="">
+		<p>Name.jpg</p>
+		<button class="cancel">Cancel</button>
+		<button class="next">Next</button>
 	</div>
+
+	<div id="upload3">
+		<div class="uploadblack">
+			<h3>Add a Title and Description</h3>
+			<img src="img/progress3.png" alt="">
+		</div>
+		<img src="img/goldenlife.png" alt="">
+		<form>
+			Title: <input type="text">
+			Description: <textarea name="textarea" rows="5" cols="20"></textarea>
+		</form>
+		<button class="cancel">Cancel</button>
+		<button class="next">Previous</button>
+		<button class="next">Next</button>
+	</div>
+
+	<div id="upload4">
+		<div class="uploadblack">
+			<h3>Preview and Submit your Post</h3>
+			<img src="img/progress4.png" alt="">
+		</div>
+		<div>
+			<img src="img/goldenlife.png" alt="">
+			<h3></h3>
+			<h4></h4>John Wright | Product Manager at Salesforce
+			<p></p>
+			<button class="cancel">Cancel</button>
+			<button class="next">Previous</button>
+			<button class="next">Submit</button>
+		</div>
+	</div>
+
+	<!-- End Upload Your Project -->
 
 
 	</body>
