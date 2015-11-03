@@ -28,11 +28,11 @@
 			<li><a href="#">Course Projects</a></li>
 		</ul>
 		<a href="#">What's Projects</a>
-	<section>
+	<nav>
 			<img src="img/search.png" alt="">
 			<input type="search" placeholder="Search">
-			<a href="#" class="active">Course List</a>
-			<a href="#">Projects</a>
+			<div id="crslist"></div><a href="#" class="active">Course List</a></div>
+			<div id="prjlist"></div><a href="#">Projects</a></div>
 		<div class="courseList">
 			<a href="#">Expand All</a>
 			<a href="#">Collapse All</a>
@@ -166,8 +166,39 @@
 			</ul>
 			<a href="#">Upload Project</a>		
 		</div>
-		<section>
-		<!-- video -->
+	</nav>
+		<section class="video-player">			
+			<div class="video-top-bar">
+				<button id="previousbtn"><img src="img/previousvid.png">Previous</button>
+				<button id="nextbtn"><img src="img/nextvid.png">Next</button>
+				<span>Welcome</span>
+				<span>Auto-Play</span>
+				<button id="autoplaybtn">On</button>
+			</div>
+			<video id="video"></video>
+				<source src="#" type="video/mp4">
+				<source src="#" type="video/ogv">
+				<source src="#" type="video/webm">
+
+			</div>
+			<div class="video-bottom-bar">
+				<button id="play"><img src="img/play.png"></button>
+				<button id="rewind"><img src="img/rewind.png"></button>
+				<button id="timestamp"><img src="img/timestamp.png"></button>
+				<button id="bookmark"><img src="img/bookmark.png"></button>
+				<div><span id="current-time">10:07</span></div>
+				<section>/</section>
+				<div><span id="total-time">32.54</span></div>
+				<button id="volume"><img src="img/volume.png"></button>
+				<button id="speed">1x</button>
+				<button id="cc"><img src="img/cc.png"></button>
+				<button id="settings"><img src="img/settings.png"></button>
+				<button id="expand"><img src="img/expand.png"></button>
+				<button id="popout"><img src="img/popout.png"></button>
+				<button id="fullscreen"><img src="img/fullscreen.png"></button>
+
+
+			</div>
 		</section>
 		<section>
 			<nav>
@@ -179,13 +210,13 @@
 				</ul>
 			</nav>
 			<h2>Welcome</h2>
-				<ul>
+				<ul class="boxes">
 					<li></li>
 					<li></li>
 					<li></li>
 					<li></li>
 				</ul>
-				<p>Beginner</p>
+				<span>Beginner</span>
 				<p>Video Duration: <small>1m 12s</small></p>
 				<p>Viewers: <b>25,430</b> in <b>129</b> countries Watching Now: <b>64</b></p>
 			<h3>Course Description</h3>
