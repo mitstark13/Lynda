@@ -33,8 +33,8 @@ header ul li {
 	float: left;
 	margin-left: 20px;
 	margin-top: 30px;
-	font-family: "Freight Sans Pro", sans-serif;
 	font-size: 20px;
+	font-family: "Open Sans", sans-serif;
 }
 header ul li:last-child {
 	font-size: 24px;
@@ -47,10 +47,11 @@ header nav input{
 	display: none;
 }
 main {
-	text-align: center;
 	font-size: 62.5%;
+	background-color: #2A3137;
 }
 main .aboveFold {
+	text-align: center;
 	height: 812px;
 	width: 100%;
 	background: url('../img/hero.png') no-repeat center center;
@@ -87,7 +88,7 @@ main h1 b {
 	height: 131px;
 	font-size: 2.3em;
 	font-weight: 300;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	float: left;
 	white-space: nowrap;
 	text-transform: uppercase;
@@ -97,11 +98,35 @@ main h1 b {
 }
 .aboveFold ul li img {
 	display: block;
-	height: 85px;
+	height: 80px;
 	object-fit: cover;
 	margin: 0 auto 20px auto;
 }
-.aboveFold 
+.aboveFold p {
+	position: absolute;
+	left: 46%;
+	top: 900px;
+	font-size: 2em;
+}
+.aboveFold .carrot {
+	position: absolute;
+	left: 48%;
+	top: 940px;
+	height: 30px;
+	font-size: 6em;
+	font-weight: 700;
+	color: #F9BD3C;
+}
+.learnMore {
+	margin: 0 5.83%;
+	height: 460px;
+	background-color: white;
+}
+.learnMore h2 {
+	font-size: 2.5em;
+	font-weight: 700;
+	margin-left: 10%;
 
+}
 
 
