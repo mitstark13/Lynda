@@ -1,0 +1,106 @@
+* {
+	box-sizing: border-box;
+	font-family: "Freight Sans Pro", sans-serif;
+	font-size: 16px;
+}
+
+header {
+	height: 160px;
+	width: 100%;
+	background-color: #111111;
+}
+
+header img {
+	height: 60px;
+	margin:10px 0 10px 5.83%;
+}
+header nav {
+	float: left;
+	display: block;
+	width: 100%;
+	background-color: #2A3137;
+}
+header nav img {
+	height: 50px;
+	margin:15px 0 15px 5.83%;
+}
+header ul{
+	float: right;
+	margin-right: 5.83%;
+	color: white;
+}
+header ul li {
+	float: left;
+	margin-left: 20px;
+	margin-top: 30px;
+	font-family: "Freight Sans Pro", sans-serif;
+	font-size: 20px;
+}
+header ul li:last-child {
+	font-size: 24px;
+	margin-top: 26px;
+}
+header ul li b{
+	color: #F9BD3C;
+}
+header nav input{
+	display: none;
+}
+main {
+	text-align: center;
+	font-size: 62.5%;
+}
+main .aboveFold {
+	height: 812px;
+	width: 100%;
+	background: url('../img/hero.png') no-repeat center center;
+	background-size: 100% 100%;
+	color: white;
+}
+main h1 {
+	font-size: 4.8em;
+	padding-top: 30px;
+}
+main h1 b {
+	color: #4A90E2;
+}
+.aboveFold a {
+	display: inline-block;
+	font-size: 2.2em;
+	text-decoration: none;
+	color: #2A3137;
+	height: 30px;
+	width: 150px;
+	margin-top: 25px;
+	margin-bottom: 60px;
+	padding: 2px 25px;
+	background-color: #F9BD3C;
+}
+.aboveFold ul {
+	margin: 0 auto;
+	width: 550px;
+	height: 450px;
+}
+.aboveFold ul li {
+	display: block;
+	width: 160px;
+	height: 131px;
+	font-size: 2.3em;
+	margin-bottom: 20px;
+	float: left;
+	white-space: nowrap;
+	text-transform: uppercase;
+}
+.aboveFold ul li:nth-child(3n-1) {
+	margin: 0 35px;
+}
+.aboveFold ul li img {
+	display: block;
+	height: 78px;
+	object-fit: cover;
+	margin: 0 auto 20px auto;
+}
+.aboveFold 
+
+
+
