@@ -6,16 +6,21 @@
 
 a {
 	text-decoration: none;
+	color: black;
+
 
 }
 
 body {
 	font-size: 62.5%;
 	font-family: "Open Sans", sans-serif;
+	background-color: #f2f2f2;
 }
 
+
+
 /******************************************************
-Main Header
+Header
 *******************************************************/
 
 header {
@@ -115,10 +120,120 @@ header nav img {
 	display: none;
 
 }
+/******************************************************
+Green Bar
+*******************************************************/
+.greenbar {
+	display: none;
+}
+/******************************************************
+Main Top Section
+*******************************************************/
+main {
+	margin:0px 5.83% 0px 5.83%;
+	background-color: white;
 
+	
+
+}
+
+h1 {
+	font-size: 30px;
+	display: inline-block;
+	margin-top: 37px;
+	margin-bottom: 39px;
+	
+}
+
+.boxlinks {
+	
+	
+}
+
+.boxlinks li a{
+	display: inline-block;
+	width: 140px;
+	height: 40px;
+	background-color: white;
+	border: 2px solid black;
+	float: left;
+	margin-left: 20px;
+	text-align: center;
+	margin-bottom: 30px;
+	padding-top: 10px;
+	font-weight: 400;
+
+
+
+}
+
+.whats {
+	color: #59a2e7;
+	font-size: 1.2em;
+	margin-left: 15px;
+	margin-top: 10px;
+	display: inline-block;
+}
 
 /******************************************************
-Main FOOTER
+PROJECTS AND COURSES LEFT NAVE
+*******************************************************/
+.leftnav {
+	width: 31%;
+	background-color: pink;
+	height: 918px;
+	clear: both;
+}
+
+.searchsmall {
+	height: 55px;
+	width: 100%;
+	background-color: #2a3137;
+	border: 3px solid #c4c4c4;
+
+}
+
+.searchsmall img {
+	height: 22px;
+	margin: 16px 5px 16px 10px;
+}
+
+.searchsmall input {
+	width: 70%;
+	padding: 5px;
+	float: right;	
+	margin-top: 10px;
+	margin-right: 20px;
+	display: none;
+}
+
+.crslist a, .prjlist a 	{
+	display: inline-block;
+	height: 45px;
+	width: 50%;
+	float: left;
+	background-color: #f2f2f2;
+	border-bottom: 3px solid #c4c4c4;
+	border-right: 3px solid #c4c4c4;
+	color: black;
+	font-size: 1.2em;
+	text-align: center;
+	padding-top: 10px;
+
+}
+
+
+.leftnav div .active {
+	background-color: #2a3137;
+	color: #fdba2b;
+}
+
+.crslist a{
+	border-left: 3px solid #c4c4c4;
+}
+
+/******************************************************
+FOOTER
 *******************************************************/
 
 
@@ -152,7 +267,6 @@ footer a {
 
 .about {
 	margin-left: 11.8%;
-	
 	height: 300px;
 	position: relative;	
 }
@@ -169,7 +283,7 @@ footer a {
 	font-size: 2.4em;
 	display: inline-block;
 	margin: 10px;
-	
+
 	float: left;
 }
 
