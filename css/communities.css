@@ -90,7 +90,7 @@ header nav img {
 
 main {
 	position: relative;
-	height: 1170px;
+	height: 1180px;
 	background-color: white;
 	margin: 0 5.83%;
 	padding: 25px;
@@ -134,6 +134,16 @@ main section img:last-of-type {
 	top: 80%;
 	height: 20px;
 	width: 26px;
+	margin-left: 35px;
+}
+main small {
+	position: absolute;
+	bottom: 25px;
+	left: 70px;
+	font-size: 1.2em;
+}
+main small b {
+	font-weight: 800;
 }
 main section {
 	position: relative;
@@ -146,15 +156,35 @@ main section {
 }
 main section:nth-of-type(even) {
 	margin-right: 0;
+	vertical-align: top
 }
-main button, main button img {
+main button {
 	display: inline-block;
 	height: 40px;
+	width: 71px;
+	vertical-align: top;
+	margin-top: 5px;
+	background-color: #2A3137;
+	border: none;
+}
+main button img {
+	height: 21.75px;
+	width: 21.75px;
+
 }
 main input {
 	-webkit-appearance:none;
-	width: 470px;
+	padding: 5px 0 0 0;
+	width: 50%;
 	height: 40px;
+	vertical-align: top;
+	margin-bottom: 20px;
+	margin-top: 5px;
+}
+main .nsearch {
+	display: inline-block;
+	margin: 10px 5.83% 5px 0px;
+	margin-bottom: -20px;
 }
 
 
