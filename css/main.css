@@ -1,7 +1,6 @@
 * {
 	box-sizing: border-box;
-	font-family: "Open Sans", sans-serif;
-	font-size: 16px;
+	
 }
 
 a {
@@ -11,8 +10,13 @@ a {
 
 }
 
-body {
+html {
+	font-family: "Open Sans", sans-serif;
 	font-size: 62.5%;
+}
+
+body {
+	
 	font-family: "Open Sans", sans-serif;
 	background-color: #f2f2f2;
 }
@@ -138,7 +142,7 @@ main {
 }
 
 h1 {
-	font-size: 30px;
+	font-size: 3em;
 	display: inline-block;
 	margin-top: 37px;
 	margin-bottom: 39px;
@@ -160,8 +164,9 @@ h1 {
 	margin-left: 20px;
 	text-align: center;
 	margin-bottom: 30px;
-	padding-top: 10px;
+	padding-top: 12px;
 	font-weight: 400;
+	font-size: 1.2em;
 
 
 
@@ -169,7 +174,7 @@ h1 {
 
 .whats {
 	color: #59a2e7;
-	font-size: 1.2em;
+	font-size: 1.6em;
 	margin-left: 15px;
 	margin-top: 10px;
 	display: inline-block;
@@ -180,9 +185,9 @@ PROJECTS AND COURSES LEFT NAVE
 *******************************************************/
 .leftnav {
 	width: 31%;
-	background-color: pink;
 	height: 918px;
 	clear: both;
+	position: relative;
 }
 
 .searchsmall {
@@ -213,12 +218,12 @@ PROJECTS AND COURSES LEFT NAVE
 	width: 50%;
 	float: left;
 	background-color: #f2f2f2;
-	border-bottom: 3px solid #c4c4c4;
 	border-right: 3px solid #c4c4c4;
 	color: black;
-	font-size: 1.2em;
+	font-size: 1.6em;
 	text-align: center;
-	padding-top: 10px;
+	padding-top: 14px;
+	
 
 }
 
@@ -228,8 +233,75 @@ PROJECTS AND COURSES LEFT NAVE
 	color: #fdba2b;
 }
 
+.expand, .collapse {
+	margin-bottom: 14px;
+}
+
 .crslist a{
 	border-left: 3px solid #c4c4c4;
+}
+
+.courselist {
+	border: 3px solid #c4c4c4;
+	padding-top: 29px;
+	padding-left: 5%;
+	padding-right: 1%;
+	display: inline-block;
+	width: 100%;
+	font-size: 1.4em;
+
+
+}
+
+.courselist ul li {
+	margin-bottom: 24px;
+}
+
+.listcontain {
+	margin-top: 20px;
+	position: relative
+}
+
+h6 {
+	display: inline-block;
+}
+
+h5 {
+	display: inline-block;
+}
+
+.courselist small {
+	
+	font-size: .8em;
+	display: inline-block;
+	float: right;
+	color: #b6b6b6;
+}
+
+.courselist li img	 {
+	width: 3.5%;
+	display: inline-block;
+	margin-bottom: -3px;
+	margin-right: 24px;
+}
+
+.submenu {
+	margin-top: 24px;
+	display: none;
+}
+
+#eye {
+	width: 7%;
+	display: inline-block;
+	float: right;
+	margin-right: 20px;	
+}
+
+.projectlist {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
 }
 
 /******************************************************
