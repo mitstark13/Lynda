@@ -389,6 +389,72 @@ aside ul li b {
 	padding: 7px 44px;
 }
 
+/* FOOTER */
+
+.footergray {
+	height: 300px;
+	background-color: #2a3137;
+	width: 100%;
+	position: absolute;
+
+}
+
+footer div {
+	width: 15%;
+	float: left;
+	position: relative;
+	line-height: 2.5em;	
+}
+
+footer h4 {
+	color: #F5F5F5;
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+
+footer a {
+	color: #6D6D6D;
+	font-size: 1.4em;
+	text-decoration: none;
+}
+
+.about {
+	margin-left: 15.83%;
+	height: 300px;
+	position: relative;	
+}
+
+.about, .products, .support, .apps, .connect {
+	padding-top: 80px;
+	display: inline-block;
+}
+
+.connect {
+	width: 158px;
+	margin-left: -2%;
+}
+.connect li a{
+	font-size: 2.4em;
+	display: inline-block;
+	margin: 12px 15px;
+	float: left;
+}
+
+.connect h4 {
+	text-align: center;
+}
+
+.bottomblack {
+	height: 80px;
+	background-color: #111111;
+	width: 100%;
+}
+
+.bottomblack img {
+	height: 60px;
+	float: right;
+	margin:10px 5.83% 10px 5.83%;
+}
 
 
 
