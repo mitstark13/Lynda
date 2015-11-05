@@ -2,81 +2,93 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/communities.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<title>Communities</title>
 </head>
 <body>
 	<header>
-		<img src="img/logo.png" alt="">
-		<p>Hi, John</p>
-		<img src="img/john.jpg" alt="john photo">
+		<div class="topbar">
+			<img class="logo" src="img/logo.png" alt="">
+			<div class="profile">
+				<span>Hi, John</span>
+				<img class="profilepic"src="img/john.jpg" alt="john photo">
+			</div>
+		</div>
+		<div class="navbar">
 		<nav>
+			<div class="search">
 			<img src="img/search.png" alt="">
 			<input type="search" placeholder="Search">
+			</div>
 			<ul>
-				<li><a href="#">Browse Courses</a></li>
-				<li><a href="#">Community</a></li>
-				<li><a href="#">My Courses</a></li>
 				<li><a href="#">My Projects</a></li>
+				<li><a href="#">My Courses</a></li>
+				<li><a href="#">Community</a></li>
+				<li><a href="#">Browse Courses <b>&or;</b></a></li>
 			</ul>
 		</nav>
+		</div>
 	</header>
 	<main>
 		<h1>Your Communities</h1>
-		<br>
+		<div class='line'> </div>
 		<section class="illustrator">
-			<h1>Illustrator</h1>
+			<h2>Illustrator</h2>
 			<img src="img/ai.png" alt="">
 			<p>Review Illustrations, charts, graphs, logos, diagrams, cartoons, or post your own to receive feedback.</p>
 			<img src="img/members.png" alt="">
 			<small><b>872</b> Members</small>
 		</section>
 		<section class="github">
-			<h1>GitHub</h1>
+			<h2>GitHub</h2>
 			<img src="img/github.png" alt="">
 			<p>Review code, repositories, and learn which projects everyone is currently contributing to.</p>
 			<img src="img/members.png" alt="">
 			<small><b>237</b> Members</small>
 		</section>
 		<h1>Communities Recommended for You</h1>
+		<div class='line'> </div>
 		<section class="photoshop">
-			<h1>Photoshop</h1>
+			<h2>Photoshop</h2>
 			<img src="img/ps.png" alt="">
 			<p>Review edited photos, digital artwork, illustrations, or post your own to receive feedback.</p>
 			<img src="img/members.png" alt="">
 			<small><b>983</b> Members</small>
 		</section>
-		<section>
-			<h1>Bootstrap</h1>
+		<section class="bootstrap">
+			<h2>Bootstrap</h2>
 			<img src="img/bootstrap.png" alt="">
 			<p>Review the most popular HTML, CSS and JS frameworks.</p>
 			<img src="img/members.png" alt="">
 			<small><b>538</b> Members</small>
 		</section>
-		<h1>Search all Communities</h1>
+		<h1 class="search">Search all Communities</h1>
 		<input type="search" placeholder="Search all Communities"> <button><img src="img/search.png" alt=""></button>
 		<section class="Access">
-			<h1>Access</h1>
+			<h2>Access</h2>
 			<img src="img/access.png" alt="">
 			<p>Review Access database structures, or post your own to receive feedback.</p>
 			<img src="img/members.png" alt="">
 			<small><b>528</b> Members</small>
 		</section>
 		<section class="Acrobat">
-			<h1>Acrobat</h1>
+			<h2>Acrobat</h2>
 			<img src="img/acrobat.png" alt="">
 			<p>Learn shortcuts and how to integrate acrobat into your daily workflow</p>
 			<img src="img/members.png" alt="">
 			<small><b>502</b> Members</small>
 		</section>
 		<section class="After Effects">
-			<h1>After Effects</h1>
+			<h2>After Effects</h2>
 			<img src="img/ae.png" alt="">
 			<p>Show others animation effects you have created and get feedback.</p>
 			<img src="img/members.png" alt="">
 			<small><b>582</b> Members</small>
 		</section>
 		<section class="Android">
-			<h1>Android</h1>
+			<h2>Android</h2>
 			<img src="img/android.png" alt="">
 			<p>Review illustrations, charts, graphs, logos, diagrams, cartoons, or post your own to receive feedback.</p>
 			<img src="img/members.png" alt="">
@@ -84,7 +96,8 @@
 		</section>
 	</main>
 	<footer>
-		<div>
+		<div class="footergray"></div>
+		<div class="about">
 		<h4>About Us</h4>
 			<ul>
 				<li><a href="#">About Us</a></li>
@@ -94,7 +107,7 @@
 				<li><a href="#">Video2Brain</a></li>
 			</ul>
 		</div>
-		<div>
+		<div class="products">
 			<h4>Products</h4>
 			<ul>
 				<li><a href="#">Our Plans</a></li>
@@ -104,7 +117,7 @@
 				<li><a href="#">Government Solutions</a></li>
 			</ul>
 		</div>
-		<div>
+		<div class="support">
 			<h4>Support</h4>
 			<ul>
 				<li><a href="#">Support</a></li>
@@ -114,7 +127,7 @@
 				<li><a href="#">Site Feedback</a></li>
 			</ul>
 		</div>
-		<div>
+		<div class="apps">
 			<h4>Apps</h4>
 			<ul>
 				<li><a href="#">iPhone & iPad</a></li>
@@ -123,18 +136,21 @@
 				<li><a href="#">Desktop App</a></li>
 			</ul>
 		</div>
-		<div>
+		<div class="connect">
 			<h4>Connect</h4>
 			<ul>
-				<li><a href="#">F</a></li>
-				<li><a href="#">T</a></li>
-				<li><a href="#">LI</a></li>
-				<li><a href="#">G+</a></li>
-				<li><a href="#">RSS</a></li>
-				<li><a href="#">MAIL</a></li>
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				<li><a href="#"><i class="fa fa-rss"></i></a></li>
+				<li><a href="#"><i class="fa fa-envelope-o"></i></a></li>
 			</ul>
 		</div>
+		</div>
+		<div class="bottomblack">
 		<img src="img/logo.png" alt="">
+		</div>
 	</footer>
 </body>
 </html>
