@@ -88,17 +88,86 @@ header nav img {
 
 /*Main*/
 main {
+	position: relative;
 	background-color: white;
 	margin: 0 5.83%;
 	height: 1093px;
+	color: #2A3137;
 }
 main h1 {
+	display: inline-block;
 	font-size: 2.7em;
 	color: #2A3137;
-	padding-top: 20px;
-	padding-left: 10px;
+	padding: 20px 10px;
 }
-
+main strong {
+	float: right;
+	font-size: 1.4em;
+	padding-top: 25px;
+	padding-right: 10px;
+	color: #979797;
+}
+main strong b {
+	color: black;
+}
+main ul {
+	display: table;
+	height: 248px;
+	width: 100%;
+}
+main ul li{
+	display: table-cell;
+ 	width: auto;
+  	text-align: center;
+	position: relative;
+	padding: 1%;
+	vertical-align: top;
+}
+main ul li:nth-child(3n-2){
+	padding-left: 0px;
+}
+main ul li:nth-child(3n) {
+	padding-right: 0px;
+}
+main .cell {
+	padding: 7%;
+	height: 248px;
+	border: 1px solid black;
+}
+main .cell h3 {
+	float: left;
+	font-size: 1.4em;
+	margin-bottom: 17px;
+}
+main li img:first-of-type {
+	width: 100%;
+	height: 94px;
+	border: 1px solid black;
+	margin-bottom: 60px;
+}
+main li img:last-of-type {
+	width: 24px;
+	height: 20px;
+	margin-right: 2%;
+	float: left;
+}
+main li span {
+	float: left;
+	font-size: 1.2em;
+	padding-top: 6px;
+}
+main li span b {
+	font-weight: 600;
+}
+main li small {
+	float: right;
+	font-size: 1.2em;
+	padding-top: 6px;
+	color: #979797;
+}
+main li:last-of-type small {
+	color: #EF9C9C
+}
 
 
 
