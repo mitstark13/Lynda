@@ -66,6 +66,9 @@ header ul li {
 	list-style: none;
 	margin-right: 3.4em;	
 }
+header ul li a:hover {
+	color: #FDBB2B;
+}
 header ul .active a{
 	color: #FDBB2B;
 }

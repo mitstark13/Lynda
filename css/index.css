@@ -43,6 +43,9 @@ header a {
 	color: white;
 	text-decoration: none;
 }
+header a:hover {
+	color: #F9BD3C;
+}
 header ul li {
 	float: left;
 	margin-left: 20px;

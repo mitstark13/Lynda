@@ -69,6 +69,9 @@ header ul li {
 header ul .active a {
 	color: #fdba2b;
 }
+header ul a:hover {
+	color: #fdba2b;
+}
 .navbar b {
 	color: #fdba2b;
 }
