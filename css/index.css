@@ -10,7 +10,6 @@
 .clearfix:after {
     clear: both;
 }
-
 html{
 	font-family: "Open Sans", sans-serif;
 	font-size: 62.5%;
@@ -39,6 +38,10 @@ header ul{
 	float: right;
 	margin-right: 5.83%;
 	color: white;
+}
+header a {
+	color: white;
+	text-decoration: none;
 }
 header ul li {
 	float: left;
