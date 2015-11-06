@@ -2,23 +2,34 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/logoproject.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<title>Logo Design</title>
 </head>
 <body>
 	<header>
-		<img src="img/logo.png" alt="">
-		<p>Hi, John</p>
-		<img src="img/john.jpg" alt="john photo">
+		<div class="topbar">
+			<img class="logo" src="img/logo.png" alt="">
+			<div class="profile">
+				<span>Hi, John</span>
+				<img class="profilepic"src="img/john.jpg" alt="john photo">
+			</div>
+		</div>
+		<div class="navbar">
 		<nav>
+			<div class="search">
 			<img src="img/search.png" alt="">
 			<input type="search" placeholder="Search">
+			</div>
 			<ul>
-				<li><a href="#">Browse Courses <b>&or;</b></a></li>
-				<li><a href="#">Community</a></li>
-				<li><a href="#">My Courses</a></li>
 				<li><a href="#">My Projects</a></li>
+				<li><a href="#">My Courses</a></li>
+				<li><a href="#">Community</a></li>
+				<li><a href="#">Browse Courses <b>&or;</b></a></li>
 			</ul>
 		</nav>
+		</div>
 	</header>
 	<main>
 		<nav>
@@ -28,77 +39,81 @@
 			<span>First time using Illustrator</span>
 		</nav>
 		<div class="projectInfo">
+			<strong><img src="img/edit.png" alt=""> Edit</strong>
 			<div class="figure">
 				<figure><img src="img/goldenlife.png" alt=""></figure>
-			</div>
 			<figcaption>Illustrator CC Essentials | Logo Design Project</figcaption>
+			</div>
 			<div class="logoInfo">
 				<h3>First time using Illustrator</h3>
-				<strong>John Wright | Product Manager at Salesforce</strong>
-				<br>
+				<b>John Wright | Product Manager at Salesforce</b>
+				<div class='line'> </div>
 				<p>Hey everyone, here is my stab at the logo design project for Illustrator CC Essential Training. Any feedback is appreciated. This was my first time using illustrator so I'm sure I have plenty of room for improvement.</p>
 			</div>
 			<small>Submitted an hour ago</small>
 		</div>
 		<h2>Comments</h2>
-		<ul>
-			<li>
-				<div class="vote">
-					<small>Up Vote</small>
-					<img src="img/upvote.png" alt="">
-					<p>26</p>
-					<img src="img/downvote.png" alt="">
-					<small>Down Vote</small>
-				</div>
-				<div class="comment">
-					<h3>Ravi Mohan | Consultant at Deloitte</h3>
-					<img src="img/ravi.png" alt="">
-					<p>You have two clashing styles. Your type is clean and elegant, but the sun is more like a childish
-					drawing which doesn’t work with the type.
-					The “blends” type, even though I don’t like it, it constrasts with the type above it well, but the 
-					sun doesn’t work with either one style. I would work on that.</p>
-					<small>Posted 20 minutes ago</small>
-					<button>Reply</button>
-				</div>
-			</li>
-			<li>
-				<div class="vote">
-					<small>Up Vote</small>
-					<img src="img/upvote.png" alt="">
-					<p>12</p>
-					<img src="img/downvote.png" alt="">
-					<small>Down Vote</small>
-				</div>
-				<div class="comment">
-					<h3>Sherri Barnes | Designer at Fuzzy Math</h3>
-					<img src="img/ashlee.png" alt="">
-					<p>I suggest thinking outside the box more. Maybe explore some alternative concepts. What are
-					some other symbols that evoke the brand that Golden Blends is trying to portray? Overall, I 
-					think this is a good effort, but you should continue to iterate.</p>
-					<small>Posted 30 minutes ago</small>
-					<button>Reply</button>
-				</div>
-			</li>
-			<li>
-				<div class="vote">
-					<small>Up Vote</small>
-					<img src="img/upvote.png" alt="">
-					<p>10</p>
-					<img src="img/downvote.png" alt="">
-					<small>Down Vote</small>
-				</div>
-				<div class="comment">
-					<h3>Cody Cooper | Student at Otterbein University</h3>
-					<img src="img/cody.png" alt="">
-					<p>Awesome job dude! I’m going through the course now and I’m excited to start this project.</p>
-					<small>Posted 50 minutes ago</small>
-					<button>Reply</button>
-				</div>
-			</li>
-		</ul>
+		<div class='comments'>
+			<ul>
+				<li>
+					<div class="vote">
+						<small>Up Vote</small>
+						<img src="img/upvote.png" alt="">
+						<p>26</p>
+						<img src="img/downvote.png" alt="">
+						<small>Down Vote</small>
+					</div>
+					<div class="comment">
+						<h3>Ravi Mohan | Consultant at Deloitte</h3>
+						<img src="img/ravi.png" alt="">
+						<p>You have two clashing styles. Your type is clean and elegant, but the sun is more like a childish
+						drawing which doesn’t work with the type.
+						The “blends” type, even though I don’t like it, it constrasts with the type above it well, but the 
+						sun doesn’t work with either one style. I would work on that.</p>
+						<small>Posted 20 minutes ago</small>
+						<button>Reply</button>
+					</div>
+				</li>
+				<li>
+					<div class="vote">
+						<small>Up Vote</small>
+						<img src="img/upvote.png" alt="">
+						<p>12</p>
+						<img src="img/downvote.png" alt="">
+						<small>Down Vote</small>
+					</div>
+					<div class="comment">
+						<h3>Sherri Barnes | Designer at Fuzzy Math</h3>
+						<img src="img/ashlee.png" alt="">
+						<p>I suggest thinking outside the box more. Maybe explore some alternative concepts. What are
+						some other symbols that evoke the brand that Golden Blends is trying to portray? Overall, I 
+						think this is a good effort, but you should continue to iterate.</p>
+						<small>Posted 30 minutes ago</small>
+						<button>Reply</button>
+					</div>
+				</li>
+				<li>
+					<div class="vote">
+						<small>Up Vote</small>
+						<img src="img/upvote.png" alt="">
+						<p>10</p>
+						<img src="img/downvote.png" alt="">
+						<small>Down Vote</small>
+					</div>
+					<div class="comment">
+						<h3>Cody Cooper | Student at Otterbein University</h3>
+						<img src="img/cody.png" alt="">
+						<p>Awesome job dude! I’m going through the course now and I’m excited to start this project.</p>
+						<small>Posted 50 minutes ago</small>
+						<button>Reply</button>
+					</div>
+				</li>
+			</ul>
+		</div>
 	</main>
 	<footer>
-		<div>
+		<div class="footergray"></div>
+		<div class="about">
 		<h4>About Us</h4>
 			<ul>
 				<li><a href="#">About Us</a></li>
@@ -108,7 +123,7 @@
 				<li><a href="#">Video2Brain</a></li>
 			</ul>
 		</div>
-		<div>
+		<div class="products">
 			<h4>Products</h4>
 			<ul>
 				<li><a href="#">Our Plans</a></li>
@@ -118,7 +133,7 @@
 				<li><a href="#">Government Solutions</a></li>
 			</ul>
 		</div>
-		<div>
+		<div class="support">
 			<h4>Support</h4>
 			<ul>
 				<li><a href="#">Support</a></li>
@@ -128,7 +143,7 @@
 				<li><a href="#">Site Feedback</a></li>
 			</ul>
 		</div>
-		<div>
+		<div class="apps">
 			<h4>Apps</h4>
 			<ul>
 				<li><a href="#">iPhone & iPad</a></li>
@@ -137,18 +152,21 @@
 				<li><a href="#">Desktop App</a></li>
 			</ul>
 		</div>
-		<div>
+		<div class="connect">
 			<h4>Connect</h4>
 			<ul>
-				<li><a href="#">F</a></li>
-				<li><a href="#">T</a></li>
-				<li><a href="#">LI</a></li>
-				<li><a href="#">G+</a></li>
-				<li><a href="#">RSS</a></li>
-				<li><a href="#">MAIL</a></li>
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				<li><a href="#"><i class="fa fa-rss"></i></a></li>
+				<li><a href="#"><i class="fa fa-envelope-o"></i></a></li>
 			</ul>
 		</div>
+		</div>
+		<div class="bottomblack">
 		<img src="img/logo.png" alt="">
+		</div>
 	</footer>
 	<div class="reply">
 		<ul>

@@ -1,0 +1,309 @@
+* {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+html {
+	font-family: "Open Sans", sans-serif;
+	font-size: 62.5%;
+}
+body {	
+	font-family: "Open Sans", sans-serif;
+	background-color: #f2f2f2;
+}
+
+/*Header*/
+
+header {
+	width: 100%;
+	background-color: #111111;	
+}
+.topbar {
+	height: 80px;
+}
+.logo {
+	height: 60px;
+	float: left;
+	margin:10px 5.83% 10px 5.83%;
+}
+.profile {
+	float: right;
+	margin:0px 5.83% 0px 5.83%;
+}
+header span {
+	color: white;
+	font-size: 2em;
+	display: inline-block;
+	line-height: 80px;
+	margin-right: 12px;	
+}
+.profilepic {
+	float: right;
+	height: 60px;
+	border-radius: 50%;
+	margin-top: 10px;	
+}
+.navbar {
+	background-color: #2a3137;
+	height: 80px;
+	width: 100%;
+	margin: 0 auto;
+	display: inline-block;	
+}
+header ul {
+	display: inline-block;
+	float: right;
+	list-style: none;
+	font-size: 2em;
+	height: 80px;	
+}
+header ul li {
+	display: inline-block;
+	float: right;
+	margin-top: 32px;
+	list-style: none;
+	margin-right: 3.4em;	
+}
+.navbar b {
+	color: #fdba2b;
+}
+header a {
+	color: white;
+}
+header nav img {
+	height: 33px;
+	margin-top: 25px;
+	display: inline-block;
+}
+.search {
+	margin: 0px 5.83% 0px 5.83%;
+	height: 80px;
+	display: inline-block;	
+}
+.search input {
+	display: none;
+}
+
+/*MAIN*/
+
+main {
+	position: relative;
+	background-color: white;
+	margin: 0 5.83%;
+	padding: 20px;
+	height: 1093px;
+	color: #2A3137;
+}
+main span {
+	font-size: 1.4em;
+	letter-spacing: 1px;
+}
+main nav {
+	margin-bottom: 50px;
+}
+main .projectInfo {
+	position: relative;
+	height: 292px;
+	width: 100%;
+	padding: 18px;
+	background-color: #2a3137;
+	color: #F2F2F2;
+}
+main .projectInfo strong{
+	float: right;
+	font-size: 1.4em;
+	color: #979797;
+}
+main .projectInfo strong img{
+	height: 20px;
+}
+.projectInfo figure img {
+	display: inline-block;
+	margin-top: 20px;
+	width: 100%;
+	margin-bottom: 5px;
+}
+.projectInfo figcaption {
+	font-size: 1.4em;
+	color: #F9BD3C;
+}
+.projectInfo .figure {
+	float: left;
+	width: 46%;
+}
+.logoInfo {
+	width: 45%;
+	float: right;
+	color: #F2F2F2;
+	line-height: 23px;
+	margin-left: 5%;
+}
+.logoInfo h3 {
+	font-size: 2em;
+	margin-top: 20px;
+}
+.logoInfo b {
+	font-size: 1.6em;
+	line-height: 23px;
+	margin-bottom: 15px;
+}
+.logoInfo p {
+	font-size: 1.6em;
+	line-height: 18px;
+	margin-top: 15px;
+}
+.line {
+	display: inline-block;
+    text-align: center;
+    height: 1px;
+    width: 100%;
+    background-color: #979797;
+}
+.projectInfo small {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	font-size: 1.2em;
+	color: #979797;
+}
+h2 {
+	font-size: 2em;
+	color: #2A3137;
+	margin-top: 33px;
+	margin-bottom: 20px;
+}
+.comments ul li {
+	display: inline-block;
+	position: relative;
+	height: 188px;
+	width: 100%;
+	border: 1px solid black;
+	padding: 10px 20px;
+	font-size: 1.6em;
+	margin-bottom: 16px;
+}
+.comments .vote {
+	text-align: center;
+	float: left;
+	width: 10%;
+	margin-top: 30px;
+}
+.vote small, .vote p{
+	display: block;
+	font-size: 12px;
+	color: #C2C2C2;
+	margin-bottom: 3px;
+}
+.vote img {
+	width: 17px;
+	height: 17px;
+	margin-bottom: 3px;
+}
+.comment {
+	position: relative;
+	height: 100%;
+}
+.comment h3 {
+	margin-bottom: 18px;
+}
+.comment img {
+	float: left;
+	width: 75px;
+	height: 75px;
+	margin-right: 55px;
+}
+.comment p {
+	width: 90%;
+	line-height: 18px;
+}
+.comment small {
+	position: absolute;
+	bottom: 15px;
+	left: 88px;
+	font-size: 12px;
+	color: #979797;
+}
+.comment button {
+	position: absolute;
+	right: 65px;
+	bottom: 10px;
+	width: 139px;
+	height: 40px;
+	background-color: #F9BD3C;
+	border: 1px solid black;
+}
+
+
+
+
+
+
+/* FOOTER */
+
+.footergray {
+	height: 300px;
+	background-color: #2a3137;
+	width: 100%;
+	position: absolute;
+
+}
+
+footer div {
+	width: 15%;
+	float: left;
+	position: relative;
+	line-height: 2.5em;
+}
+
+footer h4 {
+	color: #F5F5F5;
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+
+footer a {
+	color: #6D6D6D;
+	font-size: 1.4em;
+	list-style-type: none;
+}
+
+.about {
+	margin-left: 15.83%;
+	height: 300px;
+	position: relative;	
+}
+
+.about, .products, .support, .apps, .connect {
+	padding-top: 80px;
+	display: inline-block;
+}
+
+.connect {
+	width: 158px;
+	margin-left: -2%;
+}
+.connect li a{
+	font-size: 2.4em;
+	display: inline-block;
+	margin: 12px 15px;
+	float: left;
+	text-decoration: none;
+}
+
+.connect h4 {
+	text-align: center;
+}
+
+.bottomblack {
+	height: 80px;
+	background-color: #111111;
+	width: 100%;
+}
+
+.bottomblack img {
+	height: 60px;
+	float: right;
+	margin:10px 5.83% 10px 5.83%;
+}
