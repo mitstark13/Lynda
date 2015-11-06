@@ -168,7 +168,7 @@ main .projectInfo strong img{
 	font-size: 1.2em;
 	color: #979797;
 }
-h2 {
+.comhead {
 	font-size: 2em;
 	color: #2A3137;
 	margin-top: 33px;
@@ -234,11 +234,6 @@ h2 {
 	background-color: #F9BD3C;
 	border: 1px solid black;
 }
-
-
-
-
-
 
 /* FOOTER */
 
@@ -307,3 +302,95 @@ footer a {
 	float: right;
 	margin:10px 5.83% 10px 5.83%;
 }
+
+/*REPLY*/
+
+.reply {
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 10%;
+	height: 574px;
+	width: 80%;
+	background-color: #2A3137;
+	padding: 10px;
+	border: 1px solid white;
+}
+.com h2 {
+	font-size: 2em;
+	color: #FDBB2B;
+	margin: 5px 0 15px 0px;
+}
+.judge {
+	height: 188px;
+	width: 100%;
+	background-color: #F5F5F5;
+	margin-bottom: 15px;
+}
+.judge .comment h3 {
+	padding-top: 10px;
+}
+.judge .comment h3, .judge .comment p {
+	font-size: 1.6em;
+	color: #2A3137;
+	line-height: 18px;
+	width: 94%;
+}
+.judge .vote {
+	text-align: center;
+	float: left;
+	width: 10%;
+	margin-top: 40px;
+}
+.writeReply {
+	height: 292px;
+	width: 100%;
+	background-color: #F5F5F5;
+}
+.writeReply h3{
+	font-size: 1.6em;
+	color: #2A3137;
+	margin-left: 16px;
+	padding: 10px 0;
+	margin-bottom: 5px;
+}
+.writeReply .text textarea {
+	width: 96%;
+	height: 141px;
+}
+.writeReply .text img {
+	width: 20px;
+	height: 20px;
+	margin: 0 5px 5px 0;
+}
+.writeReply .text img:nth-child(3) {
+	margin-right: 30px;
+}
+.writeReply .text img:nth-child(5) {
+	margin-right: 20px;
+}
+.text {
+	float: right;
+	width: 88%;
+}
+.text button {
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px;
+	width: 139px;
+	height: 43px;
+	border: 1px solid black;
+}
+.text button:first-of-type {
+	background-color: #FDBB2B;
+}
+.text button:last-child {
+	background-color: #F2F2F2;
+}
+
+
+
+
+
+
+
