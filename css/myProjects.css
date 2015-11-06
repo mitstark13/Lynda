@@ -66,6 +66,9 @@ header ul li {
 	list-style: none;
 	margin-right: 3.4em;	
 }
+header ul .active a {
+	color: #fdba2b;
+}
 .navbar b {
 	color: #fdba2b;
 }

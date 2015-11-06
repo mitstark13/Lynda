@@ -66,6 +66,9 @@ header ul li {
 	list-style: none;
 	margin-right: 3.4em;	
 }
+header ul .active a{
+	color: #FDBB2B;
+}
 .navbar b {
 	color: #fdba2b;
 }
@@ -306,7 +309,6 @@ footer a {
 /*REPLY*/
 
 .reply {
-	display: none;
 	position: absolute;
 	top: 25%;
 	left: 10%;
