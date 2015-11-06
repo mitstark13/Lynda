@@ -52,6 +52,7 @@
 		</ul>
 		<a class="whats" href="#">What's Projects</a>
 		</div>
+	<div class="maincontain">
 	<nav class="leftnav">
 			<div class="searchsmall">
 				<img src="img/search.png" alt="">
@@ -197,22 +198,23 @@
 	</nav>
 		<section class="video-player">			
 			<div class="video-top-bar">
-				<button id="previousbtn"><img src="img/previousvid.png" alt="">Previous</button>
-				<button id="nextbtn"><img src="img/nextvid.png" alt="">Next</button>
+				<button id="previousbtn"><img src="img/previousvid.png" alt="">  Previous</button>
+				<button id="nextbtn">Next   <img src="img/nextvid.png" alt=""></button>
 				<span>Welcome</span>
-				<span>Auto-Play</span>
-				<button id="autoplaybtn">On</button>
+				<button id="autoplaybtn">ON</button>
+				<span id="autoplay">Auto-Play</span>
+				
 			</div>
-			<video src="" id="video"></video>
-			</div>
+			<video src="" id="video" width="620px" height="350px"></video>
+			
 			<div class="video-bottom-bar">
 				<button id="play"><img src="img/play.png" alt=""></button>
 				<button id="rewind"><img src="img/rewind.png" alt=""></button>
 				<button id="timestamp"><img src="img/timestamp.png" alt=""></button>
 				<button id="bookmark"><img src="img/bookmark.png" alt=""></button>
-				<div><span id="current-time">10:07</span></div>
+				<span id="current-time">10:07</span>
 				<span>/</span>
-				<div><span id="total-time">32.54</span></div>
+				<span id="total-time">32.54</span>
 				<button id="volume"><img src="img/volume.png" alt=""></button>
 				<button id="speed">1x</button>
 				<button id="cc"><img src="img/cc.png" alt=""></button>
@@ -220,12 +222,13 @@
 				<button id="expand"><img src="img/expand.png" alt=""></button>
 				<button id="popout"><img src="img/popout.png" alt=""></button>
 				<button id="fullscreen"><img src="img/fullscreen.png" alt=""></button>
+			
 
 
 			</div>
-		</section>
-		<section>
-			<nav>
+		
+		<div class="detailheader-container">
+			<nav class="detailheader">
 				<ul>
 					<li><a href="#" class="active">Video Details</a></li>
 					<li><a href="#">Transcript</a></li>
@@ -233,18 +236,23 @@
 					<li><a href="#">FAQ</a></li>
 				</ul>
 			</nav>
+			<article>
 			<h2>Welcome</h2>
-				<ul class="boxes">
+				<div class="boxes">
+				<ul>
 					<li></li>
 					<li></li>
 					<li></li>
 					<li></li>
 				</ul>
 				<span>Beginner</span>
+				</div>
+				<div class="viewers">
 				<p>Video Duration: <small>1m 12s</small></p>
-				<p>Viewers: <b>25,430</b> in <b>129</b> countries Watching Now: <b>64</b></p>
+				<p>Viewers: <b>25,430</b> in <b>129s</b> countries Watching Now: <b>64</b></p>
+				</div>
 			<h3>Course Description</h3>
-			<p>Illustrator is an unparalleled tool for digital artists, and Adobe
+			<p id="paragraph">Illustrator is an unparalleled tool for digital artists, and Adobe
 takes it to new heights with Creative Cloud 2015. This course
 helps put Illustrator's power and flexibility at your disposal,
 offering a tip-to-tail overview of the program, from installation to
@@ -257,7 +265,12 @@ designs. At the end of the course, he'll show you how to print
 and export artwork, so you can share it with the world. Start here
 for everything you need to know to design, draw, and illustrate
 with Illustrator.</p>
-		</section>
+		</article>
+		</div>
+	</section>
+		</div>	
+		</div>
+
 	</main>
 	<footer>
 		<div class="footergray"></div>

@@ -21,6 +21,12 @@ body {
 	background-color: #f2f2f2;
 }
 
+button {
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	color: #f2f2f2;
+}
 
 
 /******************************************************
@@ -129,13 +135,15 @@ Green Bar
 *******************************************************/
 .greenbar {
 	display: none;
+	background-color: yellow;
 }
 /******************************************************
 Main Top Section
 *******************************************************/
 main {
 	margin:0px 5.83% 0px 5.83%;
-	background-color: white;
+	background-color: white;	
+	position: relative;
 
 	
 
@@ -183,9 +191,16 @@ h1 {
 /******************************************************
 PROJECTS AND COURSES LEFT NAVE
 *******************************************************/
+
+.maincontain {
+	position: relative;
+	height: 1048px;
+	clear: both;
+	background-color: #f2f2f2;
+}
 .leftnav {
 	width: 31%;
-	height: 918px;
+	height: 938px;
 	clear: both;
 	position: relative;
 }
@@ -249,6 +264,8 @@ PROJECTS AND COURSES LEFT NAVE
 	display: inline-block;
 	width: 100%;
 	font-size: 1.4em;
+	background-color: white;
+	height: 870px;
 
 
 }
@@ -302,6 +319,229 @@ h5 {
 	top: 0;
 	left: 0;
 	display: none;
+}
+
+.projectlist ul li img {
+	width: 4.5%;
+}
+.projectlist ul li h5 {
+	display: inline-block;
+}
+
+
+
+/******************************************************
+VIDEO PLAYER
+*******************************************************/
+.video-player {
+	
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: red;
+	height: 430px;
+	width: 67%;
+
+}
+
+.video-top-bar {
+	height: 41px;
+	background-color: #2a3137;
+	border-bottom: 1px solid #72726e;
+	padding: 1.5% 2%;
+
+}
+
+#previousbtn, #nextbtn {
+	display: 	inline-block;
+	float: left;
+	position: relative;
+	font-weight: 300;
+	font-size: 1.2em;
+	margin-right: 1.2%;
+}
+
+#previousbtn img, #nextbtn img{
+	height: 11px;
+	display: inline-block;
+
+}
+
+.video-player span{
+	color: #ffc537;
+	font-size: 1.4em;
+}
+
+#autoplay  {
+	color: white;
+	float: right;
+}
+
+#autoplaybtn {
+	color:  #ffc537;
+	display: inline-block;
+	float: right;
+	border: 1px solid #f2f2f2;
+	margin-left: 1%;
+	font-size: 1.2em;
+}
+
+.video-bottom-bar {
+	height: 41px;
+	background-color: #2a3137;
+	border-bottom: 1px solid #72726e;
+	padding: 1.5% 2%;
+	float: right;
+	width: 100%;
+
+}
+
+.video-bottom-bar button img {
+	height: 15px;
+	display: inline-block;
+	
+}
+
+
+.video-bottom-bar button{
+	display: inline-block;
+	margin-right: .8%;
+}
+
+#bookmark {
+	background color: white;
+
+}
+
+.video-bottom-bar span{
+	display: inline-block;
+	font-size: 1.2em;	
+}
+
+#total-time {
+	color: white;
+}
+
+#volume, #speed, #cc, #settings, #expand, #popout, #fullscreen {
+	float: right;
+}
+
+/******************************************************
+Video Details
+*******************************************************/
+.detailheader-container {
+	background-color: white;
+	height: 580px;
+	border-right: 3px solid #c4c4c4;
+	border-left: 3px solid #c4c4c4;
+	border-bottom: 3px solid #c4c4c4;
+}
+
+.detailheader ul li a{
+	display: inline-block;
+	height: 52px;
+	width: 25%;	
+	float: left;
+	background-color: #f2f2f2;
+	border-right: 3px solid #c4c4c4;
+	border-bottom: 3px solid #c4c4c4;
+	border-top		: 3px solid #c4c4c4;
+	color: black;
+	font-size: 1.6em;
+	text-align: center;
+	padding-top: 17px;
+	font-weight: 400;
+}
+
+.detailheader .active {
+	background-color: #2a3137;
+	color: #fdba2b;
+	border-left: 3px solid #c4c4c4;
+}
+
+h2 {
+	font-size: 2.7em;
+	display: inline-block;	
+}
+
+article {
+	height: 435px;
+	width: 80%;
+	margin-left: 7%;
+	margin-top: 24px;
+	clear: both;
+	display: inline-block;
+
+}
+
+.boxes {
+	float: right;
+	display: inline-block;
+	width: 42%;
+	margin-top: 10px;
+	
+
+}
+.boxes span {
+	display: inline-block;
+	color: black;
+
+}
+
+.boxes ul {
+	display: inline-block;
+}
+
+.boxes  li{
+	display: inline-block;
+	height: 1.4em;
+	width: 1.4em;
+	background-color: #d7d7d7;
+	margin-right: .7em;
+	border: 1px solid #969696;
+}
+
+article  {
+	font-size: 1.4em;
+	color: black;
+}
+
+article p {
+	font-size: 1.4em;
+}
+
+article b {
+	font-size: 1.2em;
+}
+
+.video-player .viewers p {
+	
+	clear: both;
+	font-size: 1em;
+}
+
+.video-player .viewers b {
+	font-weight: bold;
+	font-size: 1em;
+
+}
+
+.viewers {
+	margin-top: 32px;
+	margin-bottom: 32px;
+}
+
+h3 {
+	font-size: 1.4em;
+	color: #65a9ea;
+	line-height: 2.2em;
+
+}
+
+#paragraph {
+	font-size: 1.2em;
+	line-height: 1.5em;
 }
 
 /******************************************************
@@ -373,4 +613,8 @@ footer a {
 	height: 60px;
 	float: right;
 	margin:10px 5.83% 10px 5.83%;
+}
+
+#congratulations {
+	clear: both;
 }
