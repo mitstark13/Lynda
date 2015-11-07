@@ -272,6 +272,10 @@ PROJECTS AND COURSES LEFT NAVE
 
 }
 
+.prjlist a:hover {
+	background-color: #B8B8B8;
+}
+
 
 .leftnav div .active {
 	background-color: #2a3137;
@@ -504,6 +508,13 @@ Video Details
 	padding-top: 17px;
 	font-weight: 400;
 }
+
+
+
+.detailheader a:not(.active):hover {
+	background-color: #B8B8B8
+}
+
 
 .detailheader .active {
 	background-color: #2a3137;
@@ -841,11 +852,11 @@ Upload1
 	margin-left: 113px;
 	margin-bottom: 26px;
 }
-/*
+
 #upload2 {
 	display: none;
 }
-*/
+
 
 #upload3 .goldenlogo {
 	margin-top: 10px;
@@ -859,6 +870,8 @@ Upload1
 	position: absolute;
 	top: 0;
 	right: 0;
+	font-size: 14px;
+	color: black;
 }
 
 #upload3 textarea {
@@ -866,6 +879,11 @@ Upload1
 	top: 41px;
 	right: 0;
 	font-size: 14px;
+	color: black;
+}
+
+#upload3 .previous, #upload4 .previous {
+	margin-right: 11px;
 }
 
 #upload3 p {
@@ -903,11 +921,11 @@ Upload1
 	background-color: white;
 }
 
-/*
+
 #upload3 {
 	display: none;
 }
-*/
+
 
 .blackbox {
 	width: 600px;
@@ -938,6 +956,7 @@ Upload1
 
 #upload4 .blackbox h4 {
 	color: white;
+	font-size: 1.6em;
 }
 
 .uploadline {
@@ -951,9 +970,9 @@ Upload1
 
 .blackbox p  {
 	color: white;
-	font-size: 1.4em;
+	font-size: 1.6em;
 	padding-top: 22px;
-	line-height: 1.5em;
+	line-height: 1.4em;
 }
 
 #upload4 .bottomline {
@@ -976,6 +995,7 @@ Upload1
 	z-index: 5;
 	border-radius: 15px;
 	border: 1px solid #2a3137;
+	display: none;
 	
 }
 
