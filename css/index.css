@@ -44,7 +44,7 @@ header a {
 	text-decoration: none;
 }
 header a:hover {
-	color: #F9BD3C;
+	color: #B8B8B8;
 }
 header ul li {
 	float: left;
@@ -96,6 +96,10 @@ main h1 b {
 	margin-bottom: 60px;
 	padding: 5px 25px;
 	background-color: #F9BD3C;
+}
+.aboveFold a:hover {
+	color: #F9BD3C;
+	background-color: #2A3137;
 }
 .aboveFold ul {
 	margin: 0 auto;
