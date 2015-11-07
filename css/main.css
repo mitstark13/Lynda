@@ -79,7 +79,8 @@ header span {
 	height: 80px;
 	width: 100%;
 	margin: 0 auto;
-	display: inline-block;	
+	display: inline-block;
+
 
 }
 
@@ -89,6 +90,7 @@ header ul {
 	list-style: none;
 	font-size: 2em;
 	height: 80px;
+	margin-right: 1.8%
 	
 }
 
@@ -142,8 +144,27 @@ header nav img {
 Green Bar
 *******************************************************/
 .greenbar {
-	display: none;
-	background-color: yellow;
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 85px;
+    padding-top: 25px;
+    background-color: rgba(102, 204, 0, .5);
+}
+.greenbar strong {
+    text-align: center;
+    margin: 20px 0 2px 46%;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+.greenbar img {
+    display: block;
+    margin: 0 auto;
+    height: 15px;
+    width: 15px;
+    margin-top: 4px;
+
 }
 /******************************************************
 Main Top Section
@@ -171,7 +192,7 @@ h1 {
 
 .boxlinks li a{
 	display: inline-block;
-	width: 140px;
+	width: 160px;
 	height: 40px;
 	background-color: white;
 	border: 1px solid black;
@@ -274,7 +295,7 @@ PROJECTS AND COURSES LEFT NAVE
 	width: 100%;
 	font-size: 1.4em;
 	background-color: white;
-	height: 870px;
+	height: 902px;
 
 
 }
@@ -285,7 +306,8 @@ PROJECTS AND COURSES LEFT NAVE
 
 .listcontain {
 	margin-top: 20px;
-	position: relative
+	position: relative;
+	margin-right: 5px;
 }
 
 h6 {
@@ -294,6 +316,8 @@ h6 {
 
 h5 {
 	display: inline-block;
+	max-width: 185px;
+	line-height: 1.4em;
 }
 
 .courselist small {
@@ -358,7 +382,7 @@ VIDEO PLAYER
 	height: 41px;
 	background-color: #2a3137;
 	border-bottom: 1px solid #72726e;
-	padding: 1.5% 2%;
+	padding: 13px
 
 }
 
@@ -367,7 +391,7 @@ VIDEO PLAYER
 	float: left;
 	position: relative;
 	font-weight: 300;
-	font-size: 1.2em;
+	font-size: 1.3em;
 	margin-right: 1.2%;
 }
 
@@ -381,7 +405,7 @@ VIDEO PLAYER
 	color: white;
 }
 
-#previous {
+#previousbtn	 img {
 	color: white;
 }
 
@@ -404,6 +428,7 @@ VIDEO PLAYER
 	border: 1px solid #f2f2f2;
 	margin-left: 1%;
 	font-size: 1.2em;
+	margin-right: -.5%;
 }
 
 .video-bottom-bar {
@@ -458,7 +483,7 @@ Video Details
 *******************************************************/
 .detailheader-container {
 	background-color: white;
-	height: 580px;
+	height: 610px;
 	border-right: 1px solid #c4c4c4;
 	border-left: 1px solid #c4c4c4;
 	border-bottom: 1px solid #c4c4c4;
@@ -506,6 +531,7 @@ article {
 	display: inline-block;
 	width: 42%;
 	margin-top: 10px;
+	margin-right: -15%;
 	
 
 }
@@ -524,7 +550,7 @@ article {
 	height: 1.2em;
 	width: 1.2em;
 	background-color: #d7d7d7;
-	margin-right: .7em;
+	margin-right: .4em;
 	border: 1px solid #969696;
 }
 
@@ -714,7 +740,7 @@ Upload1
 	width: 50%;
 	display: inline-block;
 	margin: 0 25% 0 25%;
-	line-height: 1.5em;
+	line-height: 1.4em;
 	font-weight: 400;	
 }
 
@@ -733,6 +759,7 @@ Upload1
 	text-align: center;
 	margin-left: 248px;
 	margin-top: 20px;
+	font-size: 1.4em;
 }
 
 
@@ -785,7 +812,7 @@ Upload1
 
 #upload2 b {
 	font-size: 1.6em;
-	margin-top: 49px;	
+	margin-top: 53px;	
 	margin-left: 15px;
 	text-align: center;
 	display: inline-block;
@@ -795,16 +822,30 @@ Upload1
 
 }
 
+#upload2 span {
+	position: absolute;
+	top: 240px;
+	right: 120px;
+	font-size: 1.8em;
+	font-weight: 600;
+	color: #2a3137;
+}
+
+#upload2 p {
+	margin-top: -8px;
+}
+
 .goldenlogo {
 	border: 1px solid #373d43;
 	height: 158px;
 	margin-left: 113px;
 	margin-bottom: 26px;
 }
-
+/*
 #upload2 {
 	display: none;
 }
+*/
 
 #upload3 .goldenlogo {
 	margin-top: 10px;
@@ -861,9 +902,11 @@ Upload1
 	background-color: white;
 }
 
+/*
 #upload3 {
 	display: none;
 }
+*/
 
 .blackbox {
 	width: 600px;
