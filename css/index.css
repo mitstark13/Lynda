@@ -63,6 +63,9 @@ header ul li b{
 header nav input{
 	display: none;
 }
+
+
+/*MAIN*/
 main {
 	background-color: #2A3137;
 }
@@ -83,14 +86,15 @@ main h1 b {
 }
 .aboveFold a {
 	display: inline-block;
-	font-size: 2.2em;
+	font-size: 1.6em;
+	font-weight: 600;
 	text-decoration: none;
 	color: #2A3137;
 	height: 30px;
-	width: 150px;
+	width: 160px;
 	margin-top: 25px;
 	margin-bottom: 60px;
-	padding: 2px 25px;
+	padding: 5px 25px;
 	background-color: #F9BD3C;
 }
 .aboveFold ul {
@@ -106,7 +110,7 @@ main h1 b {
 	height: 131px;
 	float: left;
 	font-size: 2.3em;
-	font-weight: 300;
+	font-weight: 400;
 	margin-bottom: 30px;
 	white-space: nowrap;
 	text-transform: uppercase;
@@ -199,7 +203,7 @@ main h1 b {
 }
 .projects h4 {
 	font-size: 2.4em;
-	margin-top: 55px;
+	margin-top: 27px;
 }
 .projects h4 b {
 	color: #F9BD3C;
@@ -207,7 +211,7 @@ main h1 b {
 .projects p {
 	font-size: 1.4em;
 	font-weight: 300;
-	margin: 30px auto;
+	margin: 15px auto 30px auto;
 	max-width: 390px;
 	line-height: 21px;
 }
@@ -239,11 +243,11 @@ main h1 b {
 	color: #2A3137;
 	padding: 25px;
 	background: white;
-	margin:25px 5.83% 0;
+	margin: 15px 5.83% 0;
 }
 .watch div {
 	display: inline-block;
-	margin-left: 100px;
+	margin-left: 9%;
 	width: 390px;
 }
 .watch h4 {
@@ -288,9 +292,9 @@ main h1 b {
 }
 .watch .lyndashot {
 	position: absolute;
-	left: 47%;
-	top: 77px;
-	width: 39.5%;
+	right: 16%;
+	top: 15%;
+	width: 36.5%;
 	float: right;
 }
 
@@ -315,8 +319,8 @@ main h1 b {
 }
 .heads .sRow {
 	position: relative;
-	left: -100px;
-	top: -10px;
+    left: -9%;
+    top: -5px;
 }
 .learn {
 	position: relative;
@@ -373,10 +377,9 @@ aside ul li b {
 .ready {
 	position: relative;
 	height: 190px;
-	width: 88.2%;
-	margin-left: 5.83%;
+	margin: 0 5.83%;
 	background: url('../img/iconPic.png') center center no-repeat;
-	background-size: contain;
+	background-size: 100%;
 }
 .ready h2 {
 	padding-top: 20px;
@@ -394,6 +397,8 @@ aside ul li b {
 	text-decoration: none;
 	padding: 7px 44px;
 }
+
+
 
 /* FOOTER */
 
