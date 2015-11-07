@@ -104,7 +104,6 @@ main {
 }
 main span {
 	font-size: 1.4em;
-	letter-spacing: 1px;
 }
 main nav {
 	margin-bottom: 50px;
@@ -312,6 +311,7 @@ footer a {
 /*REPLY*/
 
 .reply {
+	display: none;
 	position: absolute;
 	top: 25%;
 	left: 10%;
