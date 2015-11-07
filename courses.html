@@ -212,9 +212,11 @@
 				<button id="rewind"><img src="img/rewind.png" alt=""></button>
 				<button id="timestamp"><img src="img/timestamp.png" alt=""></button>
 				<button id="bookmark"><img src="img/bookmark.png" alt=""></button>
+				<div class="timer">
 				<span id="current-time">10:07</span>
 				<span>/</span>
 				<span id="total-time">32.54</span>
+				</div>
 				<button id="volume"><img src="img/volume.png" alt=""></button>
 				<button id="speed">1x</button>
 				<button id="cc"><img src="img/cc.png" alt=""></button>
@@ -331,10 +333,12 @@ with Illustrator.</p>
 	</footer>
 	<!-- Congratulations Popup -->
 	<div id="congratulations">
+		<div class="toprounded">
 		<h3>Projects</h3>
-		<a href="#">x</a>
+		<a href="#" class="x">x</a>
+		</div>
 		<p><strong>Congratulations</strong> you completed teh course!  You can apply everything you've learned by trying one of the projects.  Once finished you can upload it to the community for feedback.</p>
-		<a href="#">Watch Prompt</a>
+		<a href="#" class="watchprompt">Watch Prompt</a>
 	</div>
 	<!-- Congratulations Popup -->
 
@@ -344,12 +348,14 @@ with Illustrator.</p>
 			<h3>Upload your Project</h3>
 			<img src="img/progress1.png" alt="">
 		</div>
-		<img src="img/dragdrop.png" alt="">
+		<img class="dragdrop" src="img/dragdrop.png" alt="">
 		<p>You can drag and drop files into this window or browse your computer</p>
 		<b>.jpg .pdf .gif .png</b>
-		<button id="browse">Browse Computer</button>
-		<button id="cancel">Cancel</button>
-		<button id="next">Next</button>
+		<button class="browse">Browse Computer</button>
+		<div class="bottomline">
+			<button class="cancel">Cancel</button>
+			<button class="next">Next</button>
+		</div>
 	</div>
 
 	<div id="upload2">
@@ -357,11 +363,15 @@ with Illustrator.</p>
 			<h3>Confirm your Upload</h3>
 			<img src="img/progress2.png">
 		</div>
-		<img src="img/check.png" alt="">
-		<img src="img/goldenlife.png" alt="">
+		
+		<img class="greencheck" src="img/check.png" alt="">
+		<b>Successfully Uploaded</b>
+		<img class="goldenlogo" src="img/goldenlife.png" alt="">
 		<p>Name.jpg</p>
-		<button class="cancel">Cancel</button>
-		<button class="next">Next</button>
+		<div class="bottomline">
+			<button class="cancel">Cancel</button>
+			<button class="next">Next</button>
+		</div>
 	</div>
 
 	<div id="upload3">
@@ -369,14 +379,18 @@ with Illustrator.</p>
 			<h3>Add a Title and Description</h3>
 			<img src="img/progress3.png" alt="">
 		</div>
-		<img src="img/goldenlife.png" alt="">
-		<form>
-			Title: <input type="text">
-			Description: <textarea name="textarea" rows="5" cols="20"></textarea>
-		</form>
-		<button class="cancel">Cancel</button>
-		<button class="next">Previous</button>
-		<button class="next">Next</button>
+		<img class="goldenlogo" src="img/goldenlife.png" alt="">
+		<div class="textfields">
+		<p>Title:</p>
+		 <input  type="text">
+		 <p>Description:</p>
+		<textarea name="textarea" rows="8" cols="34"></textarea>
+		</div>
+		<div class="bottomline">
+				<button class="cancel">Cancel</button>
+				<button class="next">Next</button>
+				<button class="previous">Previous</button>
+		</div>
 	</div>
 
 	<div id="upload4">
@@ -384,14 +398,19 @@ with Illustrator.</p>
 			<h3>Preview and Submit your Post</h3>
 			<img src="img/progress4.png" alt="">
 		</div>
-		<div>
+		<div class="blackbox">
 			<img src="img/goldenlife.png" alt="">
-			<h3></h3>
-			<h4></h4>John Wright | Product Manager at Salesforce
-			<p></p>
-			<button class="cancel">Cancel</button>
-			<button class="next">Previous</button>
-			<button class="next">Submit</button>
+			<h3>First time using Illustrator</h3>
+			<h4>John Wright | Product Manager at Salesforce</h4>
+			<div class="uploadline">	
+			<p>Hey everyone, here is my stab at the logo design project for Illustrator CC Essential Training.  Any feedback is appreciated.  This is my first time using Illustrator, so I'm sure I havae plenty of room for improvement.</p>
+			</div>
+			<div class="bottomline">
+					<button class="cancel">Cancel</button>
+					<button class="submit">Submit</button>
+					<button class="previous">Previous</button>
+					
+			</div>
 		</div>
 	</div>
 
