@@ -18,78 +18,110 @@ body {
 
 header {
 	width: 100%;
-	background-color: #111111;	
+	background-color: #111111;
+	
 }
+
 .topbar {
+
 	height: 80px;
+	
 }
 .logo {
 	height: 60px;
 	float: left;
 	margin:10px 5.83% 10px 5.83%;
 }
+
 .profile {
 	float: right;
 	margin:0px 5.83% 0px 5.83%;
+
 }
+
 header span {
 	color: white;
 	font-size: 2em;
 	display: inline-block;
 	line-height: 80px;
-	margin-right: 12px;	
+	margin-right: 12px;
+	
 }
+
+
 .profilepic {
 	float: right;
 	height: 60px;
 	border-radius: 50%;
-	margin-top: 10px;	
+	margin-top: 10px;
+	
 }
+
 .navbar {
 	background-color: #2a3137;
 	height: 80px;
 	width: 100%;
 	margin: 0 auto;
-	display: inline-block;	
+	display: inline-block;
+
+
 }
+
 header ul {
 	display: inline-block;
 	float: right;
 	list-style: none;
 	font-size: 2em;
-	height: 80px;	
+	height: 80px;
+	margin-right: 1.8%
+	
 }
+
 header ul li {
 	display: inline-block;
 	float: right;
 	margin-top: 32px;
 	list-style: none;
-	margin-right: 3.4em;	
+	margin-right: 3.4em;
+	
 }
-header ul li a:hover {
-	color: #B8B8B8;
-}
+
 header ul .active a{
 	color: #FDBB2B;
 }
+
+header ul a:hover {
+	color: #B8B8B8;
+}
+
 .navbar b {
 	color: #fdba2b;
 }
+
 header a {
 	color: white;
 }
+
+
 header nav img {
 	height: 33px;
 	margin-top: 25px;
 	display: inline-block;
 }
+
+
 .search {
 	margin: 0px 5.83% 0px 5.83%;
 	height: 80px;
-	display: inline-block;	
+	display: inline-block;
+	
+	
 }
+
 .search input {
+	margin-bottom: 26px;
 	display: none;
+
 }
 
 /*MAIN*/
