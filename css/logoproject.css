@@ -41,7 +41,7 @@ header {
 
 header span {
 	color: white;
-	font-size: 2em;
+	font-size: 1.6em;
 	display: inline-block;
 	line-height: 80px;
 	margin-right: 12px;
@@ -71,7 +71,7 @@ header ul {
 	display: inline-block;
 	float: right;
 	list-style: none;
-	font-size: 2em;
+	font-size: 1.6em;
 	height: 80px;
 	margin-right: 1.8%
 	
@@ -193,6 +193,12 @@ main .projectInfo strong{
 	font-size: 1.4em;
 	color: #979797;
 }
+main .projectInfo strong a{
+	color: #979797;
+}
+main .projectInfo strong a:hover {
+	color: white;
+}
 main .projectInfo strong img{
 	height: 20px;
 }
@@ -214,22 +220,23 @@ main .projectInfo strong img{
 	width: 45%;
 	float: right;
 	color: #F2F2F2;
-	line-height: 23px;
 	margin-left: 5%;
 }
 .logoInfo h3 {
-	font-size: 2em;
-	margin-top: 20px;
+	font-size: 2.2em;
+	margin-top: 0px;
 }
 .logoInfo b {
-	font-size: 1.6em;
-	line-height: 23px;
+	font-size: 1.4em;
+	line-height: 40px;
 	margin-bottom: 15px;
+	font-weight: 300;
 }
 .logoInfo p {
 	font-size: 1.6em;
-	line-height: 18px;
+	line-height: 22px;
 	margin-top: 15px;
+	font-weight: 300;
 }
 .line {
 	display: inline-block;
@@ -257,7 +264,7 @@ main .projectInfo strong img{
 	height: 188px;
 	width: 100%;
 	border: 1px solid black;
-	padding: 10px 20px;
+	padding: 13px 18px 10px 0px;
 	font-size: 1.6em;
 	margin-bottom: 16px;
 }
@@ -292,13 +299,14 @@ main .projectInfo strong img{
 	margin-right: 55px;
 }
 .comment p {
+	margin-top: -5px;
 	width: 90%;
-	line-height: 18px;
+	line-height: 23px;
 }
 .comment small {
 	position: absolute;
 	bottom: 15px;
-	left: 88px;
+	left: 105px;
 	font-size: 12px;
 	color: #979797;
 }
@@ -340,7 +348,9 @@ footer a {
 	font-size: 1.4em;
 	list-style-type: none;
 }
-
+footer a:hover {
+	color: white;
+}
 .about {
 	margin-left: 15.83%;
 	height: 300px;

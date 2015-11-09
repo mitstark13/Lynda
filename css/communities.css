@@ -41,7 +41,7 @@ header {
 
 header span {
 	color: white;
-	font-size: 2em;
+	font-size: 1.6em;
 	display: inline-block;
 	line-height: 80px;
 	margin-right: 12px;
@@ -71,7 +71,7 @@ header ul {
 	display: inline-block;
 	float: right;
 	list-style: none;
-	font-size: 2em;
+	font-size: 1.6em;
 	height: 80px;
 	margin-right: 1.8%
 	
@@ -114,14 +114,12 @@ header nav img {
 	margin: 0px 5.83% 0px 5.83%;
 	height: 80px;
 	display: inline-block;
-	
-	
 }
 
 .search input {
-	margin-bottom: 26px;
+	margin-top: -29px;
+	margin-left: 40px;
 	display: none;
-
 }
 
 .fullDrop {
@@ -200,14 +198,17 @@ main p {
 	line-height: 22px;
 	width: 298px;
 }
-main section img {
+main a:hover h2 {
+	color: white;
+}
+main a img {
 	position: absolute;
 	right: 0;
 	top: 0;
 	height: 70px;
 	width: 70px;
 }
-main section img:last-of-type {
+main a img:last-of-type {
 	left: 0;
 	top: 80%;
 	height: 20px;
@@ -216,14 +217,14 @@ main section img:last-of-type {
 }
 main small {
 	position: absolute;
-	bottom: 25px;
+	bottom: 20px;
 	left: 70px;
 	font-size: 1.2em;
 }
 main small b {
 	font-weight: 800;
 }
-main section {
+main a {
 	position: relative;
 	display: inline-block;
 	width: 46%;
@@ -232,14 +233,14 @@ main section {
 	margin-bottom: 20px;
 	border: 1px solid #979797;
 }
-main section:nth-of-type(even) {
+main a:nth-of-type(even) {
 	margin-right: 0;
 	vertical-align: top
 }
 main button {
 	display: inline-block;
 	height: 40px;
-	width: 71px;
+	width: 8%;
 	vertical-align: top;
 	margin-top: 5px;
 	background-color: #2A3137;
@@ -253,17 +254,21 @@ main button img {
 main input {
 	-webkit-appearance:none;
 	padding: 1px 0 0 0;
-	width: 53%;
+	width: 57%;
 	height: 40px;
 	vertical-align: top;
 	margin-bottom: 20px;
 	margin-top: 5px;
+	border: 1px solid black;
 }
 main input, main input::-webkit-input-placeholder {
 	font-size: 16px;
 	font-weight: 300;
-	padding-left: 8px;
+	padding-left: 1%;
 
+}
+.searchCom {
+	width: 100%;
 }
 main .nsearch {
 	display: inline-block;
@@ -300,7 +305,9 @@ footer a {
 	font-size: 1.4em;
 	list-style-type: none;
 }
-
+footer a:hover {
+	color: white;
+}
 .about {
 	margin-left: 15.83%;
 	height: 300px;
