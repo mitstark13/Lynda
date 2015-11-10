@@ -1,443 +1,500 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>     
-	<title>Lynda</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/jquery.transit.min.js"></script>
+    <title>Lynda</title>    
 </head>
+
 <body>
-	<header>
-		<div class="topbar">
-			
-			<img class="logo" src="img/logo.png" alt="">
-			<div class="profile">
-				<span>Hi, John</span>
-				<img class="profilepic"src="img/john.jpg" alt="john photo">
-			</div>
-		</div>
-		<div class="navbar">
-		<nav>
-			<div class="search">
-			<img src="img/search.png" alt="">
-			<input type="search" placeholder="Search">
-			</div>
-			<ul>
-				<li><a href="myprojects.html">My Projects</a></li>
-				<li class='active'><a href="#">My Courses</a></li>
-				<li><a href="communities.html">Community</a></li>
-				<li><a href="#">Browse Courses <b>&or;</b></a></li>
-			</ul>
-		</nav>
-		<div class="fullDrop">
-			<img src="img/tri.png" alt="" class="dropArrow">
-			<ul class='dropDown'>
-				<li><a href="#">Developer</a></li>
-				<div class="line"> </div>
-				<li><a href="#">Design</a></li>
-				<div class="line"> </div>
-				<li><a href="#">Web</a></li>
-				<div class="line"> </div>
-				<li><a href="#">Photography</a></li>
-				<div class="line"> </div>
-				<li><a href="#">Business</a></li>
-				<div class="line"> </div>
-				<li><a href="#">Education</a></li>
-				<div class="line"> </div>
-				<li><a href="#">3D Animation</a></li>
-				<div class="line"> </div>
-				<li><a href="#">Video</a></li>
-				<div class="line"> </div>
-				<li><a href="#">Audio + Music</a></li>
-				<div class="line"> </div>
-			</ul>
-		</div>
-		</div>
-	</header>
+    <header>
+        <div class="topbar">
 
-	<!--End bar-->
-	<main>
-		<h1>Illustrator CC Essentials Training</h1>
-		<div class="boxlinks">
-		<ul>
-			<li><a href="#">Add To Playlist</a></li>
-			<li><a href="#">Exercise Files</a></li>
-			<li><a href="#">Course Projects</a></li>
-		</ul>
-		</div>
-		<a class="projectInfo" href="#">What's Projects</a>
-		
-	<div class="mainContain">
-	<nav class="leftNav">
-			<div class="searchSmall">
-				<img src="img/search.png" alt="">
-				<input type="search" placeholder="Search">
-			</div>
-		<div class="crsList" ><a href="#" class="active">Course List</a></div>
-		<div class="prjList"><a href="#">Projects</a></div>
-		<div class="courseList active" >
-			<a href="#" class="expand">Expand All</a>
-			<a href="#" class="collapse">Collapse All</a>
-			<div class="listContain">
-			<ul >
-				<li>
-					<img src="img/bluearrow.png" alt="arrow">
-					<h5>Introduction</h5>
-					<small>3m 7s</small>
-					<div class="submenu">
-					<ul>
-						<li>
-							<img src="img/bookmark.png" alt="">
-							<h6>Welcome</h6>
-							<small>1m 12s</small>
-							<img src="img/eye.png" id="eye" alt="">
-							
-						</li>
-						<li>
-							<img src="img/bookmark.png" alt="">
-							<h6>How to use Exercise Files</h6>
-							<small>42s</small>
-						</li>
-						<li>	
-							<img src="img/bookmark.png" alt="">
-							<h6>How to send feedback</h6>
-							<small>1m 13s</small>
-						</li>
-					</ul>
-					</div>
-				</li>
-				<li>
-					<img src="img/bluearrow.png" alt="arrow">
-					<h5>Getting Started</h5>
-					<small>38m 14s</small>
-				</li>
-				<li>
-					<img src="img/bluearrow.png" alt="arrow">
-					<h5>Navigating Your Documents</h5>
-					<small>33m 4s</small>
-				</li>
-				<li>
-					<img src="img/bluearrow.png" alt="arrow">
-					<h5>Working with Artboards</h5>
-					<small>19m 22s</small>
-				</li>
-				<li>
-					<img src="img/bluearrow.png" alt="arrow">
-					<h5>Working with Layers</h5>
-					<small>38m 14s</small>
-				</li>
-				<li>
-					<img src="img/bluearrow.png" alt="arrow">
-					<h5>Drawing Basic Shapes</h5>
-					<small>26m 18s</small>
-				</li>
-				<li>
-					<img src="img/bluearrow.png" alt="arrow">
-					<h5>Transforming Objects</h5>
-					<small>37m 15s</small>
-				</li>
-				<li>
-					<img src="img/bluearrow.png" alt="arrow">
-					<h5>Working with Fills</h5>
-					<small>40m 35s</small>
-				</li>
-				<li>
-					<img src="img/bluearrow.png" alt="arrow">
-					<h5>Woring with Color</h5>
-					<small>22m 11s</small>
-				</li>
-				<li>
-					<img src="img/bluearrow.png" alt="arrow">
-					<h5>Using the Appearance Panel</h5>
-					<small>14m 59s</small>
-				</li>
-				<li>
-					<img src="img/bluearrow.png" alt="arrow">
-					<h5>Creating Complex Shapes</h5>
-					<small>21m 25s</small>
-				</li>
-				<li>
-					<img src="img/bluearrow.png" alt="arrow">
-					<h5>Working with the Pen Tool</h5>
-					<small>29m 30s</small>
-				</li>
-				<li>
-					<img src="img/bluearrow.png" alt="arrow">
-					<h5>Working with Type</h5>
-					<small>27m 39s</small>
-				</li>
-				<li>
-					<img src="img/bluearrow.png" alt="arrow">
-					<h5>Using Raster Graphics in Illustrator</h5>
-					<small>21m 9s</small>
-				</li>
-				<li>
-					<img src="img/bluearrow.png" alt="arrow">
-					<h5>Printing and Exporting Artwork</h5>
-					<small>19m 26s</small>
-				</li>
-				<li>
-					<img src="img/bluearrow.png" alt="arrow">
-					<h5>Conclusion</h5>
-					<small>1m 27s</small>
-				</li>
-			</ul>	
-			<div class="projectList">
-				
-			<ul>
-				<li>
-						<img src="img/bluearrow.png" alt="arrow">
-						<h5>Logo Redesign</h5>
-						<div>
-							<img src="img/bookmark.png" alt="">
-							<h6>How to send feedback</h6>
-						</div>
-				</li>
-				<li>
-					<img src="img/bluearrow.png" alt="arrow">
-					<h6>Icon Challenge</h6>
-					
-				</li>
-				<li>
-					<img src="img/bluearrow.png" alt="arrow">
-					<h6>Abstract Shapes</h6>
-					
-				</li>
-			</ul>
-			<a href="#">Upload Project</a>		
-		</div>
-		</div>
-		</div>
+            <img class="logo" src="img/logo.png" alt="">
+            <div class="profile">
+                <span>Hi, John</span>
+                <img class="profilepic" src="img/john.jpg" alt="john photo">
+            </div>
+        </div>
+        <div class="navbar">
+            <nav>
+                <div class="search">
+                    <img src="img/search.png" alt="">
+                    <input type="search" placeholder="Search">
+                </div>
+                <ul>
+                    <li><a href="myprojects.html">My Projects</a>
+                    </li>
+                    <li class='active'><a href="#">My Courses</a>
+                    </li>
+                    <li><a href="communities.html">Community</a>
+                    </li>
+                    <li><a href="#">Browse Courses <b>&or;</b></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="fullDrop">
+                <img src="img/tri.png" alt="" class="dropArrow">
+                <ul class='dropDown'>
+                    <li><a href="#">Developer</a>
+                    </li>
+                    <div class="line"> </div>
+                    <li><a href="#">Design</a>
+                    </li>
+                    <div class="line"> </div>
+                    <li><a href="#">Web</a>
+                    </li>
+                    <div class="line"> </div>
+                    <li><a href="#">Photography</a>
+                    </li>
+                    <div class="line"> </div>
+                    <li><a href="#">Business</a>
+                    </li>
+                    <div class="line"> </div>
+                    <li><a href="#">Education</a>
+                    </li>
+                    <div class="line"> </div>
+                    <li><a href="#">3D Animation</a>
+                    </li>
+                    <div class="line"> </div>
+                    <li><a href="#">Video</a>
+                    </li>
+                    <div class="line"> </div>
+                    <li><a href="#">Audio + Music</a>
+                    </li>
+                    <div class="line"> </div>
+                </ul>
+            </div>
+        </div>
+    </header>
 
-		
-	</nav>
-		<section class="videoPlayer">			
-			<div class="videoTopBar">
-				<button id="previousBtn"><img src="img/previousvid.png" alt="">  Previous</button>
-				<button id="nextBtn">Next   <img src="img/nextvid.png" alt=""></button>
-				<span>Welcome</span>
-				<button id="autoPlayBtn">ON</button>
-				<span id="autoPlay">Auto-Play</span>
-				
-			</div>
-			<video src="" id="video" width="620px" height="350px"></video>
-			
-			<div class="videoBottomBar">
-				<button id="play"><img src="img/play.png" alt=""></button>
-				<button id="rewind"><img src="img/rewind.png" alt=""></button>
-				<button id="timeStamp"><img src="img/timestamp.png" alt=""></button>
-				<button id="bookmark"><img src="img/bookmark.png" alt=""></button>
-				<div class="timer">
-				<span id="current-time">10:07</span>
-				<span>/</span>
-				<span id="totalTime">32.54</span>
-				</div>
-				<button id="volume"><img src="img/volume.png" alt=""></button>
-				<button id="speed">1x</button>
-				<button id="cc"><img src="img/cc.png" alt=""></button>
-				<button id="settings"><img src="img/settings.png" alt=""></button>
-				<button id="expand"><img src="img/expand.png" alt=""></button>
-				<button id="popout"><img src="img/popout.png" alt=""></button>
-				<button id="fullscreen"><img src="img/fullscreen.png" alt=""></button>
-			
+    <!--End bar-->
+    <main>
+        <h1>Illustrator CC Essentials Training</h1>
+        <div class="boxLinks">
+            <ul>
+                <li><a href="#">Add To Playlist</a>
+                </li>
+                <li><a href="#">Exercise Files</a>
+                </li>
+                <li><a href="#">Course Projects</a>
+                </li>
+            </ul>
+        </div>
+        <a class="projectInfo" href="#">What's Projects</a>
+
+        <div class="mainContain">
+            <nav class="leftNav">
+                <div class="searchSmall">
+                    <img src="img/search.png" alt="">
+                    <input type="search" placeholder="Search">
+                </div>
+                <div class="crsList"><a href="#" class="active">Course List</a>
+                </div>
+                <div class="prjList"><a href="#">Projects</a>
+                </div>
+                <div class="listContain" class="rotate">
+                    <a href="#" class="expand">Expand All</a>
+                    <a href="#" class="collapse">Collapse All</a>
+                    <div  class="courseList activeTab">
+                        <ul>
+                            <li >
+                                <img src="img/bluearrow.png" alt="arrow">
+                                <h5>Introduction</h5>
+                                <small>3m 7s</small>
+                                <div class="submenu">
+                                    <ul>
+                                        <li>
+                                            <img src="img/bookmark.png" alt="">
+                                            <h5>Welcome</h5>
+                                            <small>1m 12s</small>
+                                            <img src="img/eye.png" id="eye" alt="">
+
+                                        </li>
+                                        <li>
+                                            <img src="img/bookmark.png" alt="">
+                                            <h5>How to use Exercise Files</h5>
+                                            <small>42s</small>
+                                        </li>
+                                        <li>
+                                            <img src="img/bookmark.png" alt="">
+                                            <h5>How to send feedback</h5>
+                                            <small>1m 13s</small>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/bluearrow.png" alt="arrow">
+                                <h5>Getting Started</h5>
+                                <small>38m 14s</small>
+                            </li>
+                            <li>
+                                <img src="img/bluearrow.png" alt="arrow">
+                                <h5>Navigating Your Documents</h5>
+                                <small>33m 4s</small>
+                            </li>
+                            <li>
+                                <img src="img/bluearrow.png" alt="arrow">
+                                <h5>Working with Artboards</h5>
+                                <small>19m 22s</small>
+                            </li>
+                            <li>
+                                <img src="img/bluearrow.png" alt="arrow">
+                                <h5>Working with Layers</h5>
+                                <small>38m 14s</small>
+                            </li>
+                            <li>
+                                <img src="img/bluearrow.png" alt="arrow">
+                                <h5>Drawing Basic Shapes</h5>
+                                <small>26m 18s</small>
+                            </li>
+                            <li>
+                                <img src="img/bluearrow.png" alt="arrow">
+                                <h5>Transforming Objects</h5>
+                                <small>37m 15s</small>
+                            </li>
+                            <li>
+                                <img src="img/bluearrow.png" alt="arrow">
+                                <h5>Working with Fills</h5>
+                                <small>40m 35s</small>
+                            </li>
+                            <li>
+                                <img src="img/bluearrow.png" alt="arrow">
+                                <h5>Woring with Color</h5>
+                                <small>22m 11s</small>
+                            </li>
+                            <li>
+                                <img src="img/bluearrow.png" alt="arrow">
+                                <h5>Using the Appearance Panel</h5>
+                                <small>14m 59s</small>
+                            </li>
+                            <li>
+                                <img src="img/bluearrow.png" alt="arrow">
+                                <h5>Creating Complex Shapes</h5>
+                                <small>21m 25s</small>
+                            </li>
+                            <li>
+                                <img src="img/bluearrow.png" alt="arrow">
+                                <h5>Working with the Pen Tool</h5>
+                                <small>29m 30s</small>
+                            </li>
+                            <li>
+                                <img src="img/bluearrow.png" alt="arrow">
+                                <h5>Working with Type</h5>
+                                <small>27m 39s</small>
+                            </li>
+                            <li>
+                                <img src="img/bluearrow.png" alt="arrow">
+                                <h5>Using Raster Graphics in Illustrator</h5>
+                                <small>21m 9s</small>
+                            </li>
+                            <li>
+                                <img src="img/bluearrow.png" alt="arrow">
+                                <h5>Printing and Exporting Artwork</h5>
+                                <small>19m 26s</small>
+                            </li>
+                            <li>
+                                <img src="img/bluearrow.png" alt="arrow">
+                                <h5>Conclusion</h5>
+                                <small>1m 27s</small>
+                            </li>
+                        </ul>
+                    
+                </div>
+                <div class="projectList">
+
+                    <ul>
+                        <li>
+                            <img src="img/bluearrow.png" alt="arrow">
+                            <h5>Logo Redesign</h5>
+                            <div class="submenu">
+                                <img src="img/bookmark.png" alt="">
+                                <h6>How to send feedback</h6>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/bluearrow.png" alt="arrow">
+                            <h5>Icon Challenge</h5>
+
+                        </li>
+                        <li>
+                            <img src="img/bluearrow.png" alt="arrow">
+                            <h5>Abstract Shapes</h5>
+
+                        </li>
+                    </ul>
+                    <a href="#" class="upload">Upload Project</a>
 
 
-			</div>
-		
-		<div class="detailHeaderContainer">
-			<nav class="detailHeader">
-				<ul>
-					<li><a href="#" class="active">Video Details</a></li>
-					<li><a href="#">Transcript</a></li>
-					<li><a href="#">My Notes</a></li>
-					<li><a href="#">FAQ</a></li>
-				</ul>
-			</nav>
-			<article>
-			<h2>Welcome</h2>
-				<div class="boxes">
-				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
-				<span>Beginner</span>
-				</div>
-				<div class="viewers">
-				<p>Video Duration: <small>1m 12s</small></p>
-				<p>Viewers: <b>25,430</b> in <b>129s</b> countries Watching Now: <b>64</b></p>
-				</div>
-			<h3>Course Description</h3>
-			<p id="paragraph">Illustrator is an unparalleled tool for digital artists, and Adobe
-takes it to new heights with Creative Cloud 2015. This course
-helps put Illustrator's power and flexibility at your disposal,
-offering a tip-to-tail overview of the program, from installation to
-exporting final artwork. Staff author Justin Seeley explains how
-to work with layers and artboards the dual core of Illustrator's
-nondestructive workflow and start drawing and transforming
-basic objects. He also shows how to create fills and strokes, add
-color, work with live effects, and integrate typography into your
-designs. At the end of the course, he'll show you how to print
-and export artwork, so you can share it with the world. Start here
-for everything you need to know to design, draw, and illustrate
-with Illustrator.</p>
-		</article>
-		</div>
-	</section>
-		</div>	
-		</div>
-	<div class='greenBar'>
-        <strong>Post Successful</strong>
-        <img src="img/greencheck.png" alt="">
+                </div>
+
+            </div>
+                
+            </nav>
+            <section class="videoPlayer">
+                <div class="videoTopBar">
+                    <button id="previousBtn"><img src="img/previousvid.png" alt=""> Previous</button>
+                    <button id="nextBtn"> Next <img src="img/nextvid.png" alt="">
+                    </button>
+                    <span>Welcome</span>
+                    <button id="autoPlayBtn">ON</button>
+                    <span id="autoPlay">Auto-Play</span>
+
+                </div>
+                <video src="" id="video" width="620px" height="350px"></video>
+
+                <div class="videoBottomBar">
+                    <button id="play"><img src="img/play.png" alt="">
+                    </button>
+                    <button id="rewind"><img src="img/rewind.png" alt="">
+                    </button>
+                    <button id="timeStamp"><img src="img/timestamp.png" alt="">
+                    </button>
+                    <button id="bookmark"><img src="img/bookmark.png" alt="">
+                    </button>
+                    <div class="timer">
+                        <span id="current-time">10:07</span>
+                        <span>/</span>
+                        <span id="totalTime">32.54</span>
+                    </div>
+                    <button id="volume"><img src="img/volume.png" alt="">
+                    </button>
+                    <button id="speed">1x</button>
+                    <button id="cc"><img src="img/cc.png" alt="">
+                    </button>
+                    <button id="settings"><img src="img/settings.png" alt="">
+                    </button>
+                    <button id="expand"><img src="img/expand.png" alt="">
+                    </button>
+                    <button id="popout"><img src="img/popout.png" alt="">
+                    </button>
+                    <button id="fullscreen"><img src="img/fullscreen.png" alt="">
+                    </button>
+
+
+
+                </div>
+
+                <div class="detailHeaderContainer">
+                    <nav class="detailHeader">
+                        <ul>
+                            <li><a href="#" class="active">Video Details</a>
+                            </li>
+                            <li><a href="#">Transcript</a>
+                            </li>
+                            <li><a href="#">My Notes</a>
+                            </li>
+                            <li><a href="#">FAQ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <article>
+                        <h2>Welcome</h2>
+                        <div class="boxes">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <span>Beginner</span>
+                        </div>
+                        <div class="viewers">
+                            <p>Video Duration: <small>1m 12s</small>
+                            </p>
+                            <p>Viewers: <b>25,430</b> in <b>129s</b> countries Watching Now: <b>64</b>
+                            </p>
+                        </div>
+                        <h3>Course Description</h3>
+                        <p id="paragraph">Illustrator is an unparalleled tool for digital artists, and Adobe takes it to new heights with Creative Cloud 2015. This course helps put Illustrator's power and flexibility at your disposal, offering a tip-to-tail overview of the program, from installation to exporting final artwork. Staff author Justin Seeley explains how to work with layers and artboards the dual core of Illustrator's nondestructive workflow and start drawing and transforming basic objects. He also shows how to create fills and strokes, add color, work with live effects, and integrate typography into your designs. At the end of the course, he'll show you how to print and export artwork, so you can share it with the world. Start here for everything you need to know to design, draw, and illustrate with Illustrator.</p>
+                    </article>
+                </div>
+            </section>
+        </div>
+        </div>
+        <div class='greenBar'>
+            <strong>Post Successful</strong>
+            <img src="img/greencheck.png" alt="">
+        </div>
+    </main>
+    <footer>
+        <div class="footerGray"></div>
+        <div class="about">
+            <h4>About Us</h4>
+            <ul>
+                <li><a href="#">About Us</a>
+                </li>
+                <li><a href="#">Careers</a>
+                </li>
+                <li><a href="#">Press Center</a>
+                </li>
+                <li><a href="#">Call For Trainers</a>
+                </li>
+                <li><a href="#">Video2Brain</a>
+                </li>
+            </ul>
+        </div>
+        <div class="products">
+            <h4>Products</h4>
+            <ul>
+                <li><a href="#">Our Plans</a>
+                </li>
+                <li><a href="#">Free Trial</a>
+                </li>
+                <li><a href="#">Academic Solutions</a>
+                </li>
+                <li><a href="#">Business Solutions</a>
+                </li>
+                <li><a href="#">Government Solutions</a>
+                </li>
+            </ul>
+        </div>
+        <div class="support">
+            <h4>Support</h4>
+            <ul>
+                <li><a href="#">Support</a>
+                </li>
+                <li><a href="#">Contact Us</a>
+                </li>
+                <li><a href="#">System Requirements</a>
+                </li>
+                <li><a href="#">Register Activation Key</a>
+                </li>
+                <li><a href="#">Site Feedback</a>
+                </li>
+            </ul>
+        </div>
+        <div class="apps">
+            <h4>Apps</h4>
+            <ul>
+                <li><a href="#">iPhone & iPad</a>
+                </li>
+                <li><a href="#">Android</a>
+                </li>
+                <li><a href="#">Windows 8</a>
+                </li>
+                <li><a href="#">Desktop App</a>
+                </li>
+            </ul>
+        </div>
+        <div class="connect">
+            <h4>Connect</h4>
+            <ul>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-rss"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-envelope-o"></i></a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div class="bottomBlack">
+            <img src="img/logo.png" alt="">
+        </div>
+    </footer>
+    <!-- Congratulations Popup -->
+    <div id="congratulations">
+        <div class="topRounded">
+            <h3>Projects</h3>
+            <a href="#" class="x">x</a>
+        </div>
+        <p><strong>Congratulations you completed the course!</strong>
+        </p>
+        <p> You can apply everything you've learned by trying one of the projects. Once finished you can upload it to the community for feedback.</p>
+        <a href="#" class="watchPrompt">Watch Prompt</a>
     </div>
-	</main>
-	<footer>
-		<div class="footerGray"></div>
-		<div class="about">
-		<h4>About Us</h4>
-			<ul>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Careers</a></li>
-				<li><a href="#">Press Center</a></li>
-				<li><a href="#">Call For Trainers</a></li>
-				<li><a href="#">Video2Brain</a></li>
-			</ul>
-		</div>
-		<div class="products">
-			<h4>Products</h4>
-			<ul>
-				<li><a href="#">Our Plans</a></li>
-				<li><a href="#">Free Trial</a></li>
-				<li><a href="#">Academic Solutions</a></li>
-				<li><a href="#">Business Solutions</a></li>
-				<li><a href="#">Government Solutions</a></li>
-			</ul>
-		</div>
-		<div class="support">
-			<h4>Support</h4>
-			<ul>
-				<li><a href="#">Support</a></li>
-				<li><a href="#">Contact Us</a></li>
-				<li><a href="#">System Requirements</a></li>
-				<li><a href="#">Register Activation Key</a></li>
-				<li><a href="#">Site Feedback</a></li>
-			</ul>
-		</div>
-		<div class="apps">
-			<h4>Apps</h4>
-			<ul>
-				<li><a href="#">iPhone & iPad</a></li>
-				<li><a href="#">Android</a></li>
-				<li><a href="#">Windows 8</a></li>
-				<li><a href="#">Desktop App</a></li>
-			</ul>
-		</div>
-		<div class="connect">
-			<h4>Connect</h4>
-			<ul>
-				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-				<li><a href="#"><i class="fa fa-rss"></i></a></li>
-				<li><a href="#"><i class="fa fa-envelope-o"></i></a></li>
-			</ul>
-		</div>
-		</div>
-		<div class="bottomBlack">
-		<img src="img/logo.png" alt="">
-		</div>
-	</footer>
-	<!-- Congratulations Popup -->
-	<div id="congratulations">
-		<div class="topRounded">
-		<h3>Projects</h3>
-		<a href="#" class="x">x</a>
-		</div>
-		<p><strong>Congratulations you completed the course!</strong></p> <p> You can apply everything you've learned by trying one of the projects.  Once finished you can upload it to the community for feedback.</p>
-		<a href="#" class="watchPrompt">Watch Prompt</a>
-	</div>
-	<!-- Congratulations Popup -->
+    <!-- Congratulations Popup -->
 
-	<!-- Upload Your Project -->
-	<div id="upload1">
-		<div class="uploadBlack">
-			<h3>Upload your Project</h3>
-			<img src="img/progress1.png" alt="">
-		</div>
-		<img class="dragDrop" src="img/dragDrop.png" alt="">
-		<p>You can drag and drop files into this window or browse your computer</p>
-		<b>.jpg .pdf .gif .png</b>
-		<button class="browse">Browse Computer</button>
-		<div class="bottomLine">
-			<button class="cancel">Cancel</button>
-			<button class="next">Next</button>
-		</div>
-	</div>
+    <!-- Upload Your Project -->
+    <div id="upload1">
+        <div class="uploadBlack">
+            <h3>Upload your Project</h3>
+            <img src="img/progress1.png" alt="">
+        </div>
+        <img class="dragDrop" src="img/dragDrop.png" alt="">
+        <p>You can drag and drop files into this window or browse your computer</p>
+        <b>.jpg .pdf .gif .png</b>
+        <button class="browse">Browse Computer</button>
+        <div class="bottomLine">
+            <button class="cancel">Cancel</button>
+            <button class="next">Next</button>
+        </div>
+    </div>
 
-	<div id="upload2">
-		<div class="uploadBlack">
-			<h3>Confirm your Upload</h3>
-			<img src="img/progress2.png">
-		</div>
-		
-		<img class="greenCheck" src="img/check.png" alt="">
-		<b>Successfully Uploaded</b>
-		<img class="goldenLogo" src="img/goldenlife.png" alt="">
-		<span>x</span>
-		<p>Name.jpg</p>
-		<div class="bottomLine">
-			<button class="cancel">Cancel</button>
-			<button class="next">Next</button>
-		</div>
-	</div>
+    <div id="upload2">
+        <div class="uploadBlack">
+            <h3>Confirm your Upload</h3>
+            <img src="img/progress2.png">
+        </div>
 
-	<div id="upload3">
-		<div class="uploadBlack">
-			<h3>Add a Title and Description</h3>
-			<img src="img/progress3.png" alt="">
-		</div>
-		<img class="goldenLogo" src="img/goldenlife.png" alt="">
-		<div class="textFields">
-		<p>Title:</p>
-		 <input  type="text">
-		 <p>Description:</p>
-		<textarea name="textarea" rows="7" cols="34"></textarea>
-		</div>
-		<div class="bottomLine">
-				<button class="cancel">Cancel</button>
-				<button class="next">Next</button>
-				<button class="previous">Previous</button>
-		</div>
-	</div>
+        <img class="greenCheck" src="img/check.png" alt="">
+        <b>Successfully Uploaded</b>
+        <img class="goldenLogo" src="img/goldenlife.png" alt="">
+        <span>x</span>
+        <p>Name.jpg</p>
+        <div class="bottomLine">
+            <button class="cancel">Cancel</button>
+            <button class="next">Next</button>
+        </div>
+    </div>
 
-	<div id="upload4">
-		<div class="uploadBlack">
-			<h3>Preview and Submit your Post</h3>
-			<img src="img/progress4.png" alt="">
-		</div>
-		<div class="blackBox">
-			<img src="img/goldenlife.png" alt="">
-			<h3>First time using Illustrator</h3>
-			<h4>John Wright | Product Manager at Salesforce</h4>
-			<div class="uploadLine">	
-			<p>Hey everyone, here is my stab at the logo design project for Illustrator CC Essential Training.  Any feedback is appreciated.  This is my first time using Illustrator, so I'm sure I havae plenty of room for improvement.</p>
-			</div>
-			<div class="bottomLine">
-					<button class="cancel">Cancel</button>
-					<button class="submit">Submit</button>
-					<button class="previous">Previous</button>
-					
-			</div>
-		</div>
-	</div>
+    <div id="upload3">
+        <div class="uploadBlack">
+            <h3>Add a Title and Description</h3>
+            <img src="img/progress3.png" alt="">
+        </div>
+        <img class="goldenLogo" src="img/goldenlife.png" alt="">
+        <div class="textFields">
+            <p>Title:</p>
+            <input type="text">
+            <p>Description:</p>
+            <textarea name="textarea" rows="7" cols="34"></textarea>
+        </div>
+        <div class="bottomLine">
+            <button class="cancel">Cancel</button>
+            <button class="next">Next</button>
+            <button class="previous">Previous</button>
+        </div>
+    </div>
 
-	<!-- End Upload Your Project -->
+    <div id="upload4">
+        <div class="uploadBlack">
+            <h3>Preview and Submit your Post</h3>
+            <img src="img/progress4.png" alt="">
+        </div>
+        <div class="blackBox">
+            <img src="img/goldenlife.png" alt="">
+            <h3>First time using Illustrator</h3>
+            <h4>John Wright | Product Manager at Salesforce</h4>
+            <div class="uploadLine">
+                <p>Hey everyone, here is my stab at the logo design project for Illustrator CC Essential Training. Any feedback is appreciated. This is my first time using Illustrator, so I'm sure I havae plenty of room for improvement.</p>
+            </div>
+            <div class="bottomLine">
+                <button class="cancel">Cancel</button>
+                <button class="submit">Submit</button>
+                <button class="previous">Previous</button>
 
-	<script src="js/courses.js"></script>
-	</body>
-	</html>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Upload Your Project -->
+
+    <script src="js/courses.js"></script>
+</body>
+
+</html>
