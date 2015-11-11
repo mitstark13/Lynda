@@ -211,6 +211,9 @@ header nav ul li:first-of-type {
 	margin-bottom: 5px;
 	float: left;
 }
+.secondDrop ul li a {
+	color: #AEAEAE;
+}
 .secondDrop ul li a:hover{
 	color: #FDBB2B;
 }
