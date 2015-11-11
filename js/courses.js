@@ -102,14 +102,69 @@ $("#fullscreen").mouseenter(function(){
   }, 150, 'swing');
 });
 
-$("#popout").mouseleave(function(){
+
+$("#fullscreen").mouseleave(function(){
   $('.fullscreen').delay(500).animate({
     opacity: 0,
   }, 300, 'swing');
 });
 
+$("#expand").mouseenter(function(){
+  $('.expands').animate({
+    height: "30px",
+    opacity: 1,
+    bottom: "50px"
+  }, 150, 'swing');
+});
 
 
+$("#expand").mouseleave(function(){
+  $('.expands').delay(500).animate({
+    opacity: 0,
+  }, 300, 'swing');
+});
+
+$("#rewind").mouseenter(function(){
+  $('.rewind').animate({
+    height: "30px",
+    opacity: 1,
+    bottom: "50px"
+  }, 150, 'swing');
+});
+
+$("#rewind").mouseleave(function(){
+  $('.rewind').delay(500).animate({
+    opacity: 0,
+  }, 300, 'swing');
+});
+
+$("#timeStamp").mouseenter(function(){
+  $('.timeStamp').animate({
+    height: "30px",
+    opacity: 1,
+    bottom: "50px"
+  }, 150, 'swing');
+});
+
+$("#timeStamp").mouseleave(function(){
+  $('.timeStamp').delay(500).animate({
+    opacity: 0,
+  }, 300, 'swing');
+});
+
+$("#bookmark").mouseenter(function(){
+  $('.bookmark').animate({
+    height: "30px",
+    opacity: 1,
+    bottom: "50px"
+  }, 150, 'swing');
+});
+
+$("#bookmark").mouseleave(function(){
+  $('.bookmark').delay(500).animate({
+    opacity: 0,
+  }, 300, 'swing');
+});
 
 
 

@@ -1183,6 +1183,22 @@ Hover Popups
 	right: 150px;
 }
 
+.rewind {
+	left: 5px;
+}
+
+.timeStamp {
+	left: 35px;
+}
+
+.bookmark {
+	left: 60px;
+}
+
+.expands {
+	right: 93px;
+}
+
 .triangle {
 	width: 0; 
 	height: 0; 
