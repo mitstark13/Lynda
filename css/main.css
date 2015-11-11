@@ -1148,3 +1148,49 @@ Upload1
 
 }
 
+
+/******************************************************
+Hover Popups
+*******************************************************/
+.popup {
+	width: 110px;
+	height: 0px;
+	background-color: #2a3137;
+	z-index: 5;
+	color: white;
+	position: absolute;
+	font-size: 1em;
+	padding: 10px;
+	text-align: center;
+	font-weight: 600;
+	opacity: 0;	
+}
+
+.closed {
+	bottom: 20px;
+	right: 30px;
+}
+
+.settings {
+	right: 65px;
+}
+
+.popout {
+	right: 123px;
+}
+
+.fullscreen {
+	right: 150px;
+}
+
+.triangle {
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #2a3137;
+	position: relative;
+	margin-top: 10px;
+	margin-left: 35px;	
+	
+}
