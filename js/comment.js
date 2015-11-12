@@ -2,13 +2,15 @@
 var editTop = $('.editProject');
 var editBtn = $('.projectInfo strong');
 
-
+//Adding a comment
 $('.comments li button').click(function() {
 	$('.reply').css('display', 'block');
 });
+
 $('.writeReply button:last-of-type').click(function(){
 	$('.reply').css('display', 'none');
 });
+
 $('.writeReply button:first-of-type').click(function(){
 	$('.reply').css('display', 'none');
 	var reply = ($('.writeReply textarea').val());
@@ -19,11 +21,13 @@ $('.writeReply button:first-of-type').click(function(){
 	});
 });
 
+//Editing a comment
 $('#strong').click(function(e) {
 	e.preventDefault();
 	alert("working");
 });
 
+//Editing the project info
 editBtn.click(function() {
 	editTop.css('display', 'block');
 	editBtn.css('opacity', '0');
