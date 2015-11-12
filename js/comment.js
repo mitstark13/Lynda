@@ -1,3 +1,8 @@
+//Variables
+var editTop = $('.editProject');
+var editBtn = $('.projectInfo strong');
+
+
 $('.comments li button').click(function() {
 	$('.reply').css('display', 'block');
 });
@@ -14,17 +19,17 @@ $('.writeReply button:first-of-type').click(function(){
 });
 
 
-$('.projectInfo strong').click(function() {
-	$('.editProject').css('display', 'block');
-	$('.projectInfo strong').css('opacity', '0');
+editBtn.click(function() {
+	editTop.css('display', 'block');
+	editBtn.css('opacity', '0');
 });
 $('.editProject img:first-of-type').click(function() {
-	$('.editProject').css('display', 'none');
-	$('.projectInfo strong').css('opacity', '1');
+	editTop.css('display', 'none');
+	editBtn.css('opacity', '1');
 })
 $('.editProject img:last-of-type').click(function() {
-	$('.editProject').css('display', 'none');
+	editTop.css('display', 'none');
 	$('.logoInfo h3').text($('.editProject input').val());
 	$('.logoInfo p').text($('.editProject textarea').val());
-	$('.projectInfo strong').css('opacity', '1');
+	editBtn.css('opacity', '1');
 })
