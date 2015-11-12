@@ -4,7 +4,7 @@ var full = $('.fullDrop');
 var second = $('.secondDrop');
 var john = $('header span');
 var account = $('.profileInfo');
-
+var mitchell;
 
 //Search
 $('.navbar .search img').click(function() {
