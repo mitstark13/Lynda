@@ -14,17 +14,25 @@ $('.writeReply button:last-of-type').click(function(){
 $('.writeReply button:first-of-type').click(function(){
 	$('.reply').css('display', 'none');
 	var reply = ($('.writeReply textarea').val());
-	$('.comments ul li:first-child').after('<div class="fullReply"><img src=img/replyArrow.png class=replyArrow> <li class=newComment> <div class=comment> <h3>John Wright | Some job at Salesforce</h3> <strong id=strong><a href="#"><img src="img/edit.png" alt=""> Edit</a></strong><img src=img/john.jpg> <p>' + reply + '</p> <small>Posted 0 minutes ago</small> <button>Reply</button></li></div>');
+	$('.comments ul li:first-child').after('<div class="fullReply"><img src=img/replyArrow.png class=replyArrow> <li class=newComment> <div class=comment> <h3>John Wright | Project Manager at Salesforce</h3> <strong id=strong><a href="#"><img src="img/edit.png" alt=""> Edit</a></strong><img src=img/john.jpg> <p>' + reply + '</p> <small>Posted 0 minutes ago</small> <button>Reply</button></li></div>');
 	$('.fullReply').after('<div class="editReply"><textarea name=editReply cols=80 rows=6</div>');
 	$('main').height(function (index, height) {
     return (height + 210);
 	});
+	// $(function() {
+	// 		    setInterval(function() {
+	// 		        $('#myscript').remove();
+	// 		        $.getScript("js/comment.js", function() {
+	// 		            $('script:last').attr('id', 'myscript');
+	// 		        });
+	// 		    }, 2000);
+
+	// 		});
 });
 
 //Editing a comment
-$('#strong').click(function(e) {
+$('strong').click(function(e) {
 	e.preventDefault();
-	alert("working");
 });
 
 //Editing the project info
