@@ -1177,40 +1177,41 @@ Hover Popups
 	font-weight: 600;
 	opacity: 0;
 	bottom: 0;
+	
 		
 }
 
 .closed {
 	bottom: 0px;
-	right: 30px;
+	right: 50px;
 }
 
 .settings {
-	right: 65px;
+	right: 87px;
 }
 
 .popout {
-	right: 123px;
+	right: 159px;
 }
 
 .fullscreen {
-	right: 150px;
+	right: 190px;
 }
 
 .rewind {
-	left: 5px;
+	left: 10px;
 }
 
 .timeStamp {
-	left: 35px;
+	left: 45px;
 }
 
 .bookmark {
-	left: 60px;
+	left: 80px;
 }
 
 .expands {
-	right: 93px;
+	right: 123px;
 }
 
 

@@ -57,143 +57,195 @@ $("#cc").mouseenter(function(){
   $('.closed').velocity({
     height: "30px",
     opacity: 1,
-    bottom: "50px"
-  }, 150, 'swing');
+    bottom: "-45px",
+    rotateY: "360deg",
+  }, 100, 'swing');
 });
 
 $("#cc").mouseleave(function(){
-  $('.closed').delay(500).velocity({
+  
+ $('.closed').velocity({
+    height: "0px",
     opacity: 0,
-  }, 300, 'swing');
+    bottom: "45px",
+    rotateY: "-360deg",
+ }, 70, 'swing');
 });
+
+
   
 $("#settings").mouseenter(function(){
   $('.settings').velocity({
-    height: "30px",
+     height: "30px",
     opacity: 1,
-    bottom: "50px"
-  }, 150, 'swing');
+    bottom: "-45px",
+    rotateY: "360deg",
+  }, 100, 'swing');
 });
+
 
 $("#settings").mouseleave(function(){
   $('.settings').delay(500).velocity({
+     height: "0px",
     opacity: 0,
-  }, 300, 'swing');
+    bottom: "45px",
+    rotateY: "-360deg",
+ }, 70, 'swing');
 });
   $("#popout").mouseenter(function(){
   $('.popout').velocity({
-    height: "30px",
+     height: "30px",
     opacity: 1,
-    bottom: "50px"
-  }, 150, 'swing');
+    bottom: "-45px",
+    rotateY: "360deg",
+  }, 100, 'swing');
 });
+
 
 $("#popout").mouseleave(function(){
   $('.popout').delay(500).velocity({
+    height: "0px",
     opacity: 0,
-  }, 300, 'swing');
+    bottom: "45px",
+    rotateY: "-360deg",
+ }, 70, 'swing');
 });
 
 $("#fullscreen").mouseenter(function(){
   $('.fullscreen').velocity({
-    height: "30px",
+     height: "30px",
     opacity: 1,
-    bottom: "50px"
-  }, 150, 'swing');
+    bottom: "-45px",
+    rotateY: "360deg",
+  }, 100, 'swing');
 });
+
 
 
 $("#fullscreen").mouseleave(function(){
   $('.fullscreen').delay(500).velocity({
+     height: "0px",
     opacity: 0,
-  }, 300, 'swing');
+    bottom: "45px",
+    rotateY: "-360deg",
+ }, 70, 'swing');
 });
 
 $("#expand").mouseenter(function(){
   $('.expands').velocity({
-    height: "30px",
+     height: "30px",
     opacity: 1,
-    bottom: "50px"
-  }, 150, 'swing');
+    bottom: "-45px",
+    rotateY: "360deg",
+  }, 100, 'swing');
 });
+
 
 
 $("#expand").mouseleave(function(){
   $('.expands').delay(500).velocity({
+    height: "0px",
     opacity: 0,
-  }, 300, 'swing');
+    bottom: "45px",
+    rotateY: "-360deg",
+ }, 70, 'swing');
 });
 
 $("#rewind").mouseenter(function(){
   $('.rewind').velocity({
-    height: "30px",
+     height: "30px",
     opacity: 1,
-    bottom: "50px"
-  }, 150, 'swing');
+    bottom: "-45px",
+    rotateY: "360deg",
+  }, 100, 'swing');
 });
+
 
 $("#rewind").mouseleave(function(){
   $('.rewind').delay(500).velocity({
+     height: "0px",
     opacity: 0,
-  }, 300, 'swing');
+    bottom: "45px",
+    rotateY: "-360deg",
+ }, 70, 'swing');
 });
 
 $("#timeStamp").mouseenter(function(){
   $('.timeStamp').velocity({
-    height: "30px",
+      height: "30px",
     opacity: 1,
-    bottom: "50px"
-  }, 150, 'swing');
+    bottom: "-45px",
+    rotateY: "360deg",
+  }, 100, 'swing');
 });
+
 
 $("#timeStamp").mouseleave(function(){
   $('.timeStamp').delay(500).velocity({
+     height: "0px",
     opacity: 0,
-  }, 300, 'swing');
+    bottom: "45px",
+    rotateY: "-360deg",
+ }, 70, 'swing');
 });
 
 
 $("#bookmark").mouseenter(function(){
   $('.bookmark').velocity({
-    height: "30px",
+      height: "30px",
     opacity: 1,
-    bottom: "50px"
-  }, 150, 'swing');
+    bottom: "-45px",
+    rotateY: "360deg",
+  }, 100, 'swing');
 });
+
 
 $("#bookmark").mouseleave(function(){
   $('.bookmark').delay(500).velocity({
+   height: "0px",
     opacity: 0,
-  }, 300, 'swing');
+    bottom: "45px",
+    rotateY: "-360deg",
+ }, 70, 'swing');
 });
 
 
 $("#nextBtn").mouseenter(function(){
   $('.nextVid').velocity({
-    height: "30px",
+      height: "30px",
     opacity: 1,
-    bottom: "50px"
-  }, 150, 'swing');
+    bottom: "-45px",
+    rotateY: "360deg",
+  }, 100, 'swing');
 });
+
 
 $("#nextBtn").mouseleave(function(){
   $('.nextVid').delay(500).velocity({
+     height: "0px",
     opacity: 0,
-  }, 300, 'swing');
+    bottom: "45px",
+    rotateY: "-360deg",
+ }, 70, 'swing');
 });
 
 $("#previousBtn").mouseenter(function(){
   $('.prevVid').velocity({
-    height: "30px",
+        height: "30px",
     opacity: 1,
-    bottom: "50px"
-  }, 150, 'swing');
+    bottom: "-45px",
+    rotateY: "360deg",
+  }, 100, 'swing');
 });
+
 
 $("#previousBtn").mouseleave(function(){
   $('.prevVid').delay(500).velocity({
+   height: "0px",
     opacity: 0,
-  }, 300, 'swing');
+    bottom: "45px",
+    rotateY: "-360deg",
+ }, 70, 'swing');
 });
  
 
@@ -208,4 +260,3 @@ $('#play').click(function() {
     }
 })
 
-var = jeff;
