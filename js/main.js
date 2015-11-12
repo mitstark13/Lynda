@@ -1,7 +1,16 @@
+//Variables
+var search = $('.search input');
+var full = $('.fullDrop');
+var second = $('.secondDrop');
+var john = $('header span');
+var account = $('.profileInfo');
+
+
+//Search
 $('.navbar .search img').click(function() {
-	$('.search input').animate({opacity: '1'});
-	$('.search input').animate({width: '250px'}, "slow");
-	$('.search input').css('display', 'block');
+	search.animate({opacity: '1'});
+	search.animate({width: '250px'}, "slow");
+	search.css('display', 'block');
 });
 $('.search input').keypress(function() {
 	$('.searchDrop').css('display', 'block');
@@ -10,25 +19,27 @@ $('.searchDrop').mouseleave(function() {
 	$('.searchDrop').css('display', 'none');
 });
 
+
+//Nav Dropdowns
 $('.courses').mouseenter(function() {
-	$('.fullDrop').css('display', 'block');
+	full.css('display', 'block');
 });
-$('.secondDrop').mouseenter(function() {
-	$('.secondDrop').css('display', 'block');
-	$('.fullDrop').css('display', 'block');
+second.mouseenter(function() {
+	second.css('display', 'block');
+	full.css('display', 'block');
 });
-$('.secondDrop').mouseleave(function() {
-	$('.secondDrop').css('display', 'none');
+second.mouseleave(function() {
+	second.css('display', 'none');
 	$('.fullDrop li a').css('color', 'white');
-	$('.fullDrop').css('display', 'none');
+	full.css('display', 'none');
 	$('.secondDrop div').css('display', 'none');
 });
-$('.fullDrop').mouseenter(function() {
+full.mouseenter(function() {
 	$('.fullDrop li a').css({
 		'color': '',
 		'border-bottom' : '',
 	});
-	$('.fullDrop').css('display', 'block');
+	full.css('display', 'block');
 })
 $('.fullDrop li a').mouseenter(function() {
 	index = $(this).data('index');
@@ -39,23 +50,30 @@ $('.fullDrop li a').mouseenter(function() {
 	$(this).css('color', '#FDBB2B');
 	$(this).css('border-bottom', '4px solid #FDBB2B');
 	$('.secondDrop div').css('display', 'none');	
-	$('.secondDrop').css('display', 'block');
+	second.css('display', 'block');
 	$('.secondDrop div:nth-child(' + index + ')').css('display', 'block');
-	$('.fullDrop').css('display', 'block');
+	full.css('display', 'block');
 });
-$('.fullDrop').mouseleave(function() {
-	$('.fullDrop').css('display', 'none');
-	$('.secondDrop').css('display', 'none');
+full.mouseleave(function() {
+	full.css('display', 'none');
+	second.css('display', 'none');
 })
+
+
+//Profile John Settings
 $('.profilepic').mouseenter(function() {
-	$('header span').animate({opacity: '0'});
-	$('header span').css('display', 'none');
-	$('.profileInfo').css('display', 'inline-block');
-	$('.profileInfo').animate({opacity: '1'});
+	john.animate({opacity: '0'});
+	john.css('display', 'none');
+	account.css('display', 'inline-block');
+	account.animate({opacity: '1'});
 });
-$('.profileInfo').mouseleave(function() {
-	$('header span').animate({opacity: '1'});
-	$('header span').css('display', 'inline-block');
-	$('.profileInfo').css('display', 'none');
-	$('.profileInfo').animate({opacity: '0'});
+account.mouseleave(function() {
+	john.animate({opacity: '1'});
+	john.css('display', 'inline-block');
+	account.css('display', 'none');
+	account.animate({opacity: '0'});
 });
+
+
+
+
