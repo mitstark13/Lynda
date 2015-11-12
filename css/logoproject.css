@@ -369,7 +369,7 @@ main .projectInfo strong img{
 	position: relative;
 	height: 188px;
 	width: 100%;
-	border: 1px solid black;
+	border: 1px solid #979797;
 	padding: 13px 18px 10px 0px;
 	font-size: 1.6em;
 	margin-bottom: 16px;
@@ -394,6 +394,18 @@ main .projectInfo strong img{
 }
 .fullReply {
 	height: 210px;
+}
+.fullReply strong {
+	float: right;
+	margin-top: -30px;
+}
+.fullReply strong a {
+	color: #979797;
+}
+.fullReply strong img {
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
 }
 .vote small, .vote p{
 	display: block;
@@ -475,6 +487,13 @@ main .projectInfo strong img{
 	cursor: pointer;
 }
 
+.editReply {
+	display: none;
+	position: absolute;
+    z-index: 992;
+    margin-top: -162px;
+    margin-left: 220px;
+}
 
 /* FOOTER */
 
