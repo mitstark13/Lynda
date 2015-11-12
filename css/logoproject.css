@@ -406,6 +406,10 @@ main .projectInfo strong img{
 	height: 17px;
 	margin-bottom: 3px;
 }
+.vote img:hover {
+	cursor: pointer;
+	color: #7ED321;
+}
 .comment {
 	position: relative;
 	height: 100%;
@@ -442,22 +446,34 @@ main .projectInfo strong img{
 }
 
 .editProject {
-	display: block;
+	display: none;
 	position: absolute;
-	z-index: 999;
-	width: 300px;
-	top: 125px;
-	right: 212px;
+	z-index: 99;
+	width: 470px;
+	top: 100px;
+	right: 42px;
 }
 .editProject input {
+	display: inline-block;
 	width: 340px;
 	height: 28px;
+	margin-top: 26px;
 	margin-bottom: 60px;
 }
-.editProject textarea {
-
+.editProject img {
+	float: right;
+	height: 20px;
 }
-
+.editProject img:first-of-type {
+	margin-left: 20px;
+}
+.editProject img:last-of-type {
+	height: 36px;
+	margin-top: -5px;
+}
+.editProject img:hover {
+	cursor: pointer;
+}
 
 
 /* FOOTER */

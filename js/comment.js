@@ -12,3 +12,19 @@ $('.writeReply button:first-of-type').click(function(){
     return (height + 210);
 	});
 });
+
+
+$('.projectInfo strong').click(function() {
+	$('.editProject').css('display', 'block');
+	$('.projectInfo strong').css('opacity', '0');
+});
+$('.editProject img:first-of-type').click(function() {
+	$('.editProject').css('display', 'none');
+	$('.projectInfo strong').css('opacity', '1');
+})
+$('.editProject img:last-of-type').click(function() {
+	$('.editProject').css('display', 'none');
+	$('.logoInfo h3').text($('.editProject input').val());
+	$('.logoInfo p').text($('.editProject textarea').val());
+	$('.projectInfo strong').css('opacity', '1');
+})
