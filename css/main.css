@@ -460,6 +460,10 @@ VIDEO PLAYER
 
 }
 
+video {
+	width: 100%;
+}
+
 .videoTopBar {
 	height: 41px;
 	background-color: #2a3137;
@@ -495,11 +499,14 @@ VIDEO PLAYER
 	color: white;
 }
 
-
-.videoPlayer span{
+.videoPlayer span {
 	color: #ffc537;
 	font-size: 1.4em;
-}
+}	
+
+
+
+
 
 #autoPlay  {
 	color: white;
@@ -533,13 +540,19 @@ VIDEO PLAYER
 .videoBottomBar button img {
 	height: 15px;
 	display: inline-block;
-	
+	cursor: pointer;
+	z-index: 4;
 }
 
 
-.video-bottom-bar button{
+.videoBottomBar button{
 	display: inline-block;
 	margin-right: .8%;
+	height: 40px;
+	margin-top: -10px;
+	cursor: pointer;
+	z-index: 4;
+
 }
 
 #bookmark {
@@ -1156,18 +1169,19 @@ Hover Popups
 	width: 110px;
 	height: 0px;
 	background-color: #2a3137;
-	z-index: 5;
 	color: white;
 	position: absolute;
 	font-size: 1em;
 	padding: 10px;
 	text-align: center;
 	font-weight: 600;
-	opacity: 0;	
+	opacity: 0;
+	bottom: 0;
+		
 }
 
 .closed {
-	bottom: 20px;
+	bottom: 0px;
 	right: 30px;
 }
 
@@ -1199,6 +1213,8 @@ Hover Popups
 	right: 93px;
 }
 
+
+
 .triangle {
 	width: 0; 
 	height: 0; 
@@ -1210,3 +1226,37 @@ Hover Popups
 	margin-left: 35px;	
 	
 }
+
+#videoPlayer {
+	z-index: -4;
+}
+
+.videoTopBar .popup :not(p) {
+	transform: rotate(180deg);
+}
+
+.videoTopBar .popup .triangle {
+	margin-top: -30px;
+	margin-left: 60px;
+}
+
+.nextVid {
+	width: 150px;
+	top: 53px;
+	left: 60px;
+}
+
+.prevVid {
+	width: 150px;
+	top: 53px;
+	left: -20px;
+}
+
+.videoPlayer img:hover, button:hover {
+	-webkit-filter: brightness(0.75);}
+}
+
+.videoTopBar span:hover {
+	color: #f2f2f2;
+}
+

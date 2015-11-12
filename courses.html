@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/jquery.transit.min.js"></script>
+    <script src="js/velocity.min.js"></script>
     <title>Lynda</title>    
 </head>
 
@@ -246,9 +247,18 @@
                     <span>Welcome</span>
                     <button id="autoPlayBtn">ON</button>
                     <span id="autoPlay">Auto-Play</span>
+                <!-- Hover States --> 
+                     <div class="nextVid popup">
+                        <p>Skip to the next video</p> 
+                        <div class="triangle"></div>
+                     </div> 
+                     <div class="prevVid popup">
+                        <p>Go back to last video</p>
+                        <div class="triangle"></div>
+                     </div> 
 
                 </div>
-                <video src="" id="video" width="620px" height="350px"></video>
+                <video src="img/lyndadraplin.mp4" id="videoPlayer"   poster="img/lyndapic.jpg" ></video>
 
                 <div class="videoBottomBar">
                     <button id="play"><img src="img/play.png" alt="">
@@ -257,7 +267,7 @@
                     </button>
                     <button id="timeStamp"><img src="img/timestamp.png" alt="">
                     </button>
-                    <button id="bookmark"><img src="img/bookmark.png" alt="">
+                    <button id="bookmark"><img src="img/bookmarkvid.png" alt="">
                     </button>
                     <div class="timer">
                         <span id="current-time">10:07</span>

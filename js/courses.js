@@ -54,7 +54,7 @@ $('.collapse').click(function(e) {
 }); 
 
 $("#cc").mouseenter(function(){
-  $('.closed').animate({
+  $('.closed').velocity({
     height: "30px",
     opacity: 1,
     bottom: "50px"
@@ -62,13 +62,13 @@ $("#cc").mouseenter(function(){
 });
 
 $("#cc").mouseleave(function(){
-  $('.closed').delay(500).animate({
+  $('.closed').delay(500).velocity({
     opacity: 0,
   }, 300, 'swing');
 });
   
 $("#settings").mouseenter(function(){
-  $('.settings').animate({
+  $('.settings').velocity({
     height: "30px",
     opacity: 1,
     bottom: "50px"
@@ -76,12 +76,12 @@ $("#settings").mouseenter(function(){
 });
 
 $("#settings").mouseleave(function(){
-  $('.settings').delay(500).animate({
+  $('.settings').delay(500).velocity({
     opacity: 0,
   }, 300, 'swing');
 });
   $("#popout").mouseenter(function(){
-  $('.popout').animate({
+  $('.popout').velocity({
     height: "30px",
     opacity: 1,
     bottom: "50px"
@@ -89,13 +89,13 @@ $("#settings").mouseleave(function(){
 });
 
 $("#popout").mouseleave(function(){
-  $('.popout').delay(500).animate({
+  $('.popout').delay(500).velocity({
     opacity: 0,
   }, 300, 'swing');
 });
 
 $("#fullscreen").mouseenter(function(){
-  $('.fullscreen').animate({
+  $('.fullscreen').velocity({
     height: "30px",
     opacity: 1,
     bottom: "50px"
@@ -104,13 +104,13 @@ $("#fullscreen").mouseenter(function(){
 
 
 $("#fullscreen").mouseleave(function(){
-  $('.fullscreen').delay(500).animate({
+  $('.fullscreen').delay(500).velocity({
     opacity: 0,
   }, 300, 'swing');
 });
 
 $("#expand").mouseenter(function(){
-  $('.expands').animate({
+  $('.expands').velocity({
     height: "30px",
     opacity: 1,
     bottom: "50px"
@@ -119,13 +119,13 @@ $("#expand").mouseenter(function(){
 
 
 $("#expand").mouseleave(function(){
-  $('.expands').delay(500).animate({
+  $('.expands').delay(500).velocity({
     opacity: 0,
   }, 300, 'swing');
 });
 
 $("#rewind").mouseenter(function(){
-  $('.rewind').animate({
+  $('.rewind').velocity({
     height: "30px",
     opacity: 1,
     bottom: "50px"
@@ -133,13 +133,13 @@ $("#rewind").mouseenter(function(){
 });
 
 $("#rewind").mouseleave(function(){
-  $('.rewind').delay(500).animate({
+  $('.rewind').delay(500).velocity({
     opacity: 0,
   }, 300, 'swing');
 });
 
 $("#timeStamp").mouseenter(function(){
-  $('.timeStamp').animate({
+  $('.timeStamp').velocity({
     height: "30px",
     opacity: 1,
     bottom: "50px"
@@ -147,13 +147,14 @@ $("#timeStamp").mouseenter(function(){
 });
 
 $("#timeStamp").mouseleave(function(){
-  $('.timeStamp').delay(500).animate({
+  $('.timeStamp').delay(500).velocity({
     opacity: 0,
   }, 300, 'swing');
 });
 
+
 $("#bookmark").mouseenter(function(){
-  $('.bookmark').animate({
+  $('.bookmark').velocity({
     height: "30px",
     opacity: 1,
     bottom: "50px"
@@ -161,10 +162,50 @@ $("#bookmark").mouseenter(function(){
 });
 
 $("#bookmark").mouseleave(function(){
-  $('.bookmark').delay(500).animate({
+  $('.bookmark').delay(500).velocity({
     opacity: 0,
   }, 300, 'swing');
 });
 
 
+$("#nextBtn").mouseenter(function(){
+  $('.nextVid').velocity({
+    height: "30px",
+    opacity: 1,
+    bottom: "50px"
+  }, 150, 'swing');
+});
 
+$("#nextBtn").mouseleave(function(){
+  $('.nextVid').delay(500).velocity({
+    opacity: 0,
+  }, 300, 'swing');
+});
+
+$("#previousBtn").mouseenter(function(){
+  $('.prevVid').velocity({
+    height: "30px",
+    opacity: 1,
+    bottom: "50px"
+  }, 150, 'swing');
+});
+
+$("#previousBtn").mouseleave(function(){
+  $('.prevVid').delay(500).velocity({
+    opacity: 0,
+  }, 300, 'swing');
+});
+ 
+
+ var videoPlayer = $('#videoPlayer');
+
+$('#play').click(function() {
+    if(videoPlayer[0].paused) {
+    videoPlayer[0].play();
+  }
+    else {
+      videoPlayer[0].pause();
+    }
+})
+
+var = jeff;
