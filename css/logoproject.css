@@ -392,6 +392,9 @@ main .projectInfo strong img{
 	height: 77px;
 	width: 65px;
 }
+.fullReply {
+	height: 210px;
+}
 .vote small, .vote p{
 	display: block;
 	font-size: 12px;
@@ -437,6 +440,24 @@ main .projectInfo strong img{
 	background-color: #F9BD3C;
 	border: 1px solid black;
 }
+
+.editProject {
+	display: block;
+	position: absolute;
+	z-index: 999;
+	width: 300px;
+	top: 125px;
+	right: 212px;
+}
+.editProject input {
+	width: 340px;
+	height: 28px;
+	margin-bottom: 60px;
+}
+.editProject textarea {
+
+}
+
 
 
 /* FOOTER */

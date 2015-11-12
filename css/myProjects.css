@@ -313,12 +313,15 @@ main .cell {
 	height: 248px;
 	border: 1px solid black;
 }
+main .cell:hover {
+	border: 2px solid #FDBB2B;
+}
 main .cell h3 {
 	float: left;
 	font-size: 1.7em;
 	margin-bottom: 17px;
 }
-main li img:first-of-type {
+main li .cell img:first-of-type {
 	width: 100%;
 	height: 94px;
 	padding: 5px 15%;
@@ -326,24 +329,29 @@ main li img:first-of-type {
 	border: 1px solid black;
 	margin-bottom: 60px;
 }
+main li img {
+	padding-bottom: 40px;
+}
 main ul li:nth-child(3n-2){
 	padding-left: 0px;
 }
-main ul li:nth-child(3n-1) img:first-of-type {
+main ul li:nth-child(3n-1) .cell img:first-of-type {
 	background-color: #FED78E;
+	padding-bottom: 0px;
 }
 main ul li:nth-child(3n) {
 	padding-right: 0px;
 }
-main ul li:nth-child(3n) img:first-of-type {
+main ul li:nth-child(3n) .cell img:first-of-type {
 	padding: 5px 25%;
 	background-color: #FF3367;
 }
-main li img:last-of-type {
+main li .cell img:last-of-type {
 	width: 24px;
 	height: 20px;
 	margin-right: 2%;
 	float: left;
+	padding-bottom: 0px;
 }
 main li span {
 	float: left;
