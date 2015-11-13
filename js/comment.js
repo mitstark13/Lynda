@@ -43,6 +43,7 @@ down.click(function() {
 //Adding a comment
 $(document).on('click', '.replyModal', function() {
 	replyBox.css('display', 'block');
+	$('.writeReply textarea').val('');
 	$('.judgeComment').html(($(this).closest("li").html()));
 
 	$(document).on('click', '.submit', function() {
