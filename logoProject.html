@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/logoproject.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.min.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<title>Logo Design</title>
@@ -397,7 +398,7 @@
 						The “blends” type, even though I don’t like it, it constrasts with the type above it well, but the 
 						sun doesn’t work with either one style. I would work on that.</p>
 						<small>Posted 20 minutes ago</small>
-						<button>Reply</button>
+						<button class="replyModal">Reply</button>
 					</div>
 				</li>
 				<li>
@@ -415,7 +416,7 @@
 						some other symbols that evoke the brand that Golden Blends is trying to portray? Overall, I 
 						think this is a good effort, but you should continue to iterate.</p>
 						<small>Posted 30 minutes ago</small>
-						<button>Reply</button>
+						<button class="replyModal">Reply</button>
 					</div>
 				</li>
 				<li>
@@ -431,7 +432,7 @@
 						<img src="img/cody.png" alt="">
 						<p>Awesome job dude! I’m going through the course now and I’m excited to start this project.</p>
 						<small>Posted 50 minutes ago</small>
-						<button>Reply</button>
+						<button class="replyModal">Reply</button>
 					</div>
 				</li>
 			</ul>
@@ -440,8 +441,8 @@
 		<ul>
 			<li class="com">
 				<h2>Leave a Reply</h2>
-				<div class="judge">
-					<div class="vote">
+				<div class="judgeComment">
+					<!-- <div class="vote">
 						<small>Up Vote</small>
 						<img src="img/upvote.png" alt="">
 						<p>26</p>
@@ -456,7 +457,7 @@
 						The “blends” type, even though I don’t like it, it constrasts with the type above it well, but the 
 						sun doesn’t work with either one style. I would work on that.</p>
 						<small>Posted 20 minutes ago</small>
-					</div>
+					</div> -->
 				</div>
 			</li>
 			<li class="writeReply">
@@ -469,8 +470,8 @@
 					<img src="img/aligncenter.png" alt="">
 					<img src="img/alignright.png" alt="">
 					<textarea name="reply" cols="30" rows="5"></textarea>
-					<button>Post Reply</button>
-					<button>Cancel</button>
+					<button class="submit">Post Reply</button>
+					<button class="cancel">Cancel</button>
 				</div>
 			</li>
 		</ul>
@@ -532,8 +533,33 @@
 		<div class="bottomblack">
 		<img src="img/logo.png" alt="">
 		</div>
-		<script src="js/main.js"> </script>
-		<script id="myscript" src="js/comment.js"></script>
 	</footer>
+
+	<script id="response" type="text/x-handlebars-template">
+	 	<div class="fullReply">
+	  		<img src="img/replyArrow.png" class="replyArrow"/>
+  				<li class="newComment">
+  				<div class="comment">
+  					<h3>
+	  					John Wright | Project Manager at Salesforce
+	  					<img src="img/linkedin.png"/>
+  					</h3>
+  					<strong id=strong>
+	  					<a href="#">
+	  						<img src="img/edit.png" alt="">
+	  						Edit
+	  					</a>
+  					</strong>
+  					<img src="img/john.jpg"/>
+					<p>{{reply}}</p>
+					<small>Posted 0 minutes ago</small>
+					<button class="replyModal">Reply</button>
+				</div>
+			</li>
+		</div>
+	</script>
+
+	<script src="js/main.js"> </script>
+	<script src="js/comment.js"></script>
 </body>
 </html>

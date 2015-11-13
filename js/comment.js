@@ -21,46 +21,39 @@ down.click(function() {
 });
 
 //Adding a comment
-$('.comments li button').click(function() {
+$(document).on('click', '.replyModal', function() {
 	replyBox.css('display', 'block');
+	$('.judgeComment').html(this.parent().html());
 });
 
-$('.writeReply button:last-of-type').click(function(){
-	replyBox.css('display', 'none');
-});
-
-$('.writeReply button:first-of-type').click(function(){
-	replyBox.css('display', 'none');
+$(document).on('click', '.submit', function() {
 	var reply = ($('.writeReply textarea').val());
-	$('.comments ul li:first-child').after('<div class="fullReply"><img src=img/replyArrow.png class=replyArrow> <li class=newComment> <div class=comment> <h3>John Wright | Project Manager at Salesforce <img src="img/linkedin.png"></h3> <strong id=strong><a href="#"><img src="img/edit.png" alt=""> Edit</a></strong><img src=img/john.jpg> <p>' + reply + '</p> <small>Posted 0 minutes ago</small> <button>Reply</button></li></div>');
+	var responseTemplate = getTemplate('response', { reply: reply });
+	// create handlebars tempate in HTML of other appended HTML
+
+	$('.comments ul li:first-child').after(responseTemplate);
 	$('.fullReply').after('<div class="editReply"><textarea name=editReply cols=80 rows=6></textarea></div>');
 	$('main').height(function (index, height) {
-    return (height + 210);
+	    return (height + 210);
 	});
 
 	//Edit your reply
 	$('#strong').click(function(e) {
-	e.preventDefault();
-	$('.editReply').css('display', 'block');
-	$('.fullReply button').text("Save").css('font-size', '20px').css('font-weight', '600');
-	$('.fullReply button').click(function() {
-		var newtext = $('.editReply textarea').val();
-		$('.fullReply p').text(newtext);
-		$('.editReply').css('display', 'none');
-		$('.fullReply button').text('Reply').css('font-size', '14px').css('font-weight', '300');
+		e.preventDefault();
+		$('.editReply').css('display', 'block');
+		$('.fullReply button').text("Save").css('font-size', '20px').css('font-weight', '600');
+		$('.fullReply button').click(function() {
+			var newtext = $('.editReply textarea').val();
+			$('.fullReply p').text(newtext);
+			$('.editReply').css('display', 'none');
+			$('.fullReply button').text('Reply').css('font-size', '14px').css('font-weight', '300');
 		});
 	});
-
-	// $(function() {
-	// 		    setInterval(function() {
-	// 		        $('#myscript').remove();
-	// 		        $.getScript("js/comment.js", function() {
-	// 		            $('script:last').attr('id', 'myscript');
-	// 		        });
-	// 		    }, 2000);
-
-	// 		});
-})
+	closeForm();
+});
+$('.cancel').click(function(){
+	closeForm();
+});
 
 //Editing the project info
 editBtn.click(function() {
@@ -81,5 +74,12 @@ $('.editProject img:last-of-type').click(function() {
 	}
 	editBtn.css('opacity', '1');
 });
-
+function closeForm() {
+	replyBox.css('display', 'none');
+}
+function getTemplate (name, data) {
+	var source = $("#" + name).html();
+	var template = Handlebars.compile(source);
+	return template(data);
+}
 
