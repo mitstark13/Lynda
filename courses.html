@@ -258,10 +258,14 @@
                      </div> 
 
                 </div>
-                <video src="../../lyndadraplin.mp4" id="videoPlayer"   poster="img/lyndapic.jpg" ></video>
-
+                <video src="../../lyndadraplin.mp4" id="videoPlayer"  type="video/mp4" preload='metadata' poster="img/lyndapic.jpg" ></video>
+                <div id="scrubber">
+                 <div id="progress"></div>
+</div>
                 <div class="videoBottomBar">
                     <button id="play"><img src="img/play.png" alt="">
+                    </button>
+                    <button id="pause"><img src="img/pause.png" alt="">
                     </button>
                     <button id="rewind"><img src="img/rewind.png" alt="">
                     </button>
@@ -270,9 +274,9 @@
                     <button id="bookmark"><img src="img/bookmarkvid.png" alt="">
                     </button>
                     <div class="timer">
-                        <span id="current-time">10:07</span>
+                        <span id="current">0:0</span>
                         <span>/</span>
-                        <span id="totalTime">32.54</span>
+                        <span id="totalTime">0</span>
                     </div>
                     <button id="volume"><img src="img/volume.png" alt="">
                     </button>

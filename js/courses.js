@@ -1,3 +1,6 @@
+
+
+
 $('.prjList a').click(function(e) {
 	$(this).addClass('active');
 	$('.crsList a').removeClass('active')
@@ -251,12 +254,121 @@ $("#previousBtn").mouseleave(function(){
 
  var videoPlayer = $('#videoPlayer');
 
-$('#play').click(function() {
+
+
+
+$('#play, #pause').click(function() {
     if(videoPlayer[0].paused) {
     videoPlayer[0].play();
-  }
-    else {
-      videoPlayer[0].pause();
-    }
-})
+    $('#pause').css('display', 'inline-block');
+    $('#play').css('display', 'none');
 
+  }
+      else {
+        videoPlayer[0].pause();
+        $('#play').css('display', 'inline-block');
+      $('#pause').css('display', 'none');
+    }
+});
+
+
+
+
+/*
+$(function(){
+$('#current').html($('#videoPlayer').find('video').get(0).load());                      
+$('#currentTime').html($('#videoPlayer').find('video').get(0).play());
+})
+setInterval(function(){
+$('#current').html($('#videoPlayer').find('video').get(0).currentTime);
+$('#totalTime').html($('#videoPlayer').find('video').get(0).duration);},500)
+});
+
+*/
+var video = document.getElementsByTagName('video')[0];
+
+video.addEventListener('loadedmetadata', function() {
+       var time = video.duration;
+if(time<0) {
+    time = 0;
+}
+
+var seconds = Math.floor(time%60);
+var minutes = Math.floor((time-seconds)/60);
+var output;
+
+if(minutes >= 10) {
+    output = ""+minutes;
+} else {
+    output = "0"+minutes;
+}
+output += ":";
+if(seconds >= 10) {
+    output += seconds;
+} else {
+    output += "0"+seconds;
+}
+       $('#totalTime').html(output);
+});
+
+$(document).ready(function(){
+  $('video').bind('timeupdate',function(){
+    var current_time = $('video')[0].currentTime;
+    var s = parseInt(current_time % 60);
+    var m = parseInt((current_time / 60) % 60);
+    
+    $('#current').html( m + ':' + s );
+    
+  });
+});
+
+
+    $(document).ready(function () {
+        var $video = $("#videoPlayer");
+        var $scrubber = $("#scrubber");
+        var $progress = $("#progress");
+        
+        $video.bind("timeupdate", videoTimeUpdateHandler);
+        $scrubber.bind("mousedown", scrubberMouseDownHandler);
+        
+        function videoTimeUpdateHandler(e) {
+            var video = $video.get(0);
+            var percent = video.currentTime / video.duration;
+            updateProgressWidth(percent);
+        }
+        
+        function scrubberMouseDownHandler(e) {
+            var $this = $(this);
+            var x = e.pageX - $this.offset().left;
+            var percent = x / $this.width();
+            updateProgressWidth(percent);
+            updateVideoTime(percent);
+        }
+        
+        function updateProgressWidth(percent) {
+            $progress.width((percent * 100) + "%");
+        }
+        
+        function updateVideoTime(percent) {
+            var video = $video.get(0);
+            video.currentTime = percent * video.duration;
+        }
+    });
+
+$('#fullscreen').click(function(){ 
+var elem = document.getElementById("videoPlayer");
+if (elem.requestFullscreen) {
+  elem.requestFullscreen();
+} else if (elem.msRequestFullscreen) {
+  elem.msRequestFullscreen();
+} else if (elem.mozRequestFullScreen) {
+  elem.mozRequestFullScreen();
+} else if (elem.webkitRequestFullscreen) {
+  elem.webkitRequestFullscreen();
+}
+}) 
+
+
+document.getElementById("#rewind").addEventListener("click", function(){
+                setTime(-10);                
+            }, false);
