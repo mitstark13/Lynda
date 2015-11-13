@@ -1,12 +1,15 @@
-$('.searchCom input').keypress(function() {
-	$('.comDrop').css('display', 'block');
-});
-$('.searchCom input').mouseleave(function() {
-	$('.comDrop').css('display', 'none');
-})
-$('.comDrop').mouseleave(function() {
-	$('.comDrop').css('display', 'none');
-})
-$('.comDrop').mouseenter(function() {
-	$('.comDrop').css('display', 'block');
-})
+var $input = $('.searchCom input')
+var $drop = $('.comDrop')
+
+$input.keypress(displayDropdown);
+$input.mouseleave(hideDropdown);
+$drop.mouseleave(hideDropdown);
+$drop.mouseenter(displayDropdown);
+
+function displayDropdown () {
+	$drop.css('display', 'block');
+}
+
+function hideDropdown () {
+	$drop.css('display', 'none');	
+}

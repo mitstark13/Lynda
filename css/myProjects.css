@@ -294,12 +294,12 @@ main strong {
 main strong b {
 	color: black;
 }
-main ul {
+main .projects {
 	display: table;
 	height: 248px;
 	width: 100%;
 }
-main ul li{
+main .projects li{
 	display: table-cell;
  	width: 250px;
   	text-align: center;
@@ -307,7 +307,31 @@ main ul li{
 	padding: 1%;
 	vertical-align: top;
 }
-
+main .sort {
+	display: none;
+	position: absolute;
+	right: 10px;
+	z-index: 99;
+	top: 55px;
+	padding: 0px 5px;
+	background-color: #2A3137;
+}
+main .sort li {
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+main .sort li a {
+	color: white;
+}
+main .sort li a:hover {
+	color: #FDBB2B;
+}
+main .sort .line {
+	height: 1px;
+	width: 100%;
+	background-color: #979797;
+	margin-bottom: 5px;
+}
 main .cell {
 	padding: 7%;
 	height: 248px;
@@ -332,17 +356,17 @@ main li .cell img:first-of-type {
 main li img {
 	padding-bottom: 40px;
 }
-main ul li:nth-child(3n-2){
+main .projects li:nth-child(3n-2){
 	padding-left: 0px;
 }
-main ul li:nth-child(3n-1) .cell img:first-of-type {
+main .projects li:nth-child(3n-1) .cell img:first-of-type {
 	background-color: #FED78E;
 	padding-bottom: 0px;
 }
-main ul li:nth-child(3n) {
+main .projects li:nth-child(3n) {
 	padding-right: 0px;
 }
-main ul li:nth-child(3n) .cell img:first-of-type {
+main .projects li:nth-child(3n) .cell img:first-of-type {
 	padding: 5px 25%;
 	background-color: #FF3367;
 }
@@ -370,15 +394,6 @@ main li small {
 main li:last-of-type small {
 	color: #EF9C9C
 }
-
-
-
-
-
-
-
-
-
 
 
 /* FOOTER */
