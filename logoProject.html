@@ -384,14 +384,14 @@
 			<ul>
 				<li>
 					<div class="vote">
-						<small>Up Vote</small>
-						<img src="img/upvote.png" alt="">
-						<p>26</p>
-						<img src="img/downvote.png" alt="">
-						<small>Down Vote</small>
+						<small class='like'>Up Vote</small>
+						<img class='like' src="img/upvote.png" alt="">
+						<p class='num'>26</p>
+						<img class='dislike' src="img/downvote.png" alt="">
+						<small class='dislike'>Down Vote</small>
 					</div>
 					<div class="comment">
-						<h3>Ravi Mohan | Consultant at Deloitte <img src="img/linkedin.png" alt=""></h3>
+						<h3>Ravi Mohan | Consultant at Deloitte <img class='linkedin' src="img/linkedin.png" alt=""></h3>
 						<img src="img/ravi.png" alt="">
 						<p>You have two clashing styles. Your type is clean and elegant, but the sun is more like a childish
 						drawing which doesn’t work with the type.
@@ -403,14 +403,14 @@
 				</li>
 				<li>
 					<div class="vote">
-						<small>Up Vote</small>
-						<img src="img/upvote.png" alt="">
-						<p>12</p>
-						<img src="img/downvote.png" alt="">
-						<small>Down Vote</small>
+						<small class='like'>Up Vote</small>
+						<img class='like' src="img/upvote.png" alt="">
+						<p class='num'>12</p>
+						<img class='dislike' src="img/downvote.png" alt="">
+						<small class='dislike'>Down Vote</small>
 					</div>
 					<div class="comment">
-						<h3>Sherri Barnes | Designer at Fuzzy Math <img src="img/linkedin.png" alt=""></h3>
+						<h3>Sherri Barnes | Designer at Fuzzy Math <img class='linkedin' src="img/linkedin.png" alt=""></h3>
 						<img src="img/ashlee.png" alt="">
 						<p>I suggest thinking outside the box more. Maybe explore some alternative concepts. What are
 						some other symbols that evoke the brand that Golden Blends is trying to portray? Overall, I 
@@ -421,14 +421,14 @@
 				</li>
 				<li>
 					<div class="vote">
-						<small>Up Vote</small>
-						<img src="img/upvote.png" alt="">
-						<p>10</p>
-						<img src="img/downvote.png" alt="">
-						<small>Down Vote</small>
+						<small class='like'>Up Vote</small>
+						<img class='like' src="img/upvote.png" alt="">
+						<p class='num'>10</p>
+						<img class='dislike' src="img/downvote.png" alt="">
+						<small class='dislike'>Down Vote</small>
 					</div>
 					<div class="comment">
-						<h3>Cody Cooper | Student at Otterbein University <img src="img/linkedin.png" alt=""></h3>
+						<h3>Cody Cooper | Student at Otterbein University <img class='linkedin' src="img/linkedin.png" alt=""></h3>
 						<img src="img/cody.png" alt="">
 						<p>Awesome job dude! I’m going through the course now and I’m excited to start this project.</p>
 						<small>Posted 50 minutes ago</small>
@@ -442,22 +442,7 @@
 			<li class="com">
 				<h2>Leave a Reply</h2>
 				<div class="judgeComment">
-					<!-- <div class="vote">
-						<small>Up Vote</small>
-						<img src="img/upvote.png" alt="">
-						<p>26</p>
-						<img src="img/downvote.png" alt="">
-						<small>Down Vote</small>
-					</div>
-					<div class="comment">
-						<h3>Ravi Mohan | Consultant at Deloitte</h3>
-						<img src="img/ravi.png" alt="">
-						<p>You have two clashing styles. Your type is clean and elegant, but the sun is more like a childish
-						drawing which doesn’t work with the type.
-						The “blends” type, even though I don’t like it, it constrasts with the type above it well, but the 
-						sun doesn’t work with either one style. I would work on that.</p>
-						<small>Posted 20 minutes ago</small>
-					</div> -->
+					
 				</div>
 			</li>
 			<li class="writeReply">
@@ -475,7 +460,7 @@
 				</div>
 			</li>
 		</ul>
-	</div>
+		</div>
 	</main>
 	<footer>
 		<div class="footergray"></div>
@@ -534,7 +519,6 @@
 		<img src="img/logo.png" alt="">
 		</div>
 	</footer>
-
 	<script id="response" type="text/x-handlebars-template">
 	 	<div class="fullReply">
 	  		<img src="img/replyArrow.png" class="replyArrow"/>
@@ -550,9 +534,10 @@
 	  						Edit
 	  					</a>
   					</strong>
-  					<img src="img/john.jpg"/>
+  					<img  class="johnPic" src="img/john.jpg"/>
 					<p>{{reply}}</p>
 					<small>Posted 0 minutes ago</small>
+					<button class="change">Save</button>
 					<button class="replyModal">Reply</button>
 				</div>
 			</li>

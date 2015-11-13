@@ -1,32 +1,51 @@
 //Variables
 var editTop = $('.editProject');
 var editBtn = $('.projectInfo strong');
-var replyBox = $('.reply');
 var replyBtn = $('.fullReply button');
-var up = $('.vote small:first-of-type');
-var down = $('.vote small:last-of-type');
+var replyBox = $('.reply');
+var up = $('.vote .like');
+var down = $('.vote .dislike');
 
 //Voting on a comment
 up.click(function() {
-	current = ($(this).next().next().text());
-	$(this).next().next().text((parseInt(current) + 1).toString()).css('color', 'green');
-	$(this).className("active");
-	$(this).next().next().next().next().className('nactive');
+	var color = $(this).nextAll('.num').css('color');
+	if (color == 'rgb(0, 128, 0)') {
+		alert('hey now, dont vote twice.');
+	} else if (color == 'rgb(255, 0, 0)') {
+		current = ($(this).nextAll('.num').text());
+		$(this).nextAll('.num').text((parseInt(current) + 2).toString()).css('color', 'green');
+		$(this).css('color', 'green').prev().css('color', 'green');
+		$(this).nextAll('.dislike').css('color', '#C2C2C2');
+	} else {
+		current = ($(this).nextAll('.num').text());
+		$(this).nextAll('.num').text((parseInt(current) + 1).toString()).css('color', 'green');
+		$(this).css('color', 'green').prev().css('color', 'green');
+		$(this).nextAll('.dislike').css('color', '#C2C2C2');
+	}
 });
 down.click(function() {
-	current = ($(this).prev().prev().text());
-	$(this).prev().prev().text((parseInt(current) - 1).toString()).css('color', 'red');
-	$(this).className('downvote');
-	$(this).prev().prev().prev().prev().className('inactive');
+	var color = $(this).prevAll('.num').css('color');
+	if (color == 'rgb(255, 0, 0)') {
+		alert('hey now, dont be harsh. It wasnt that bad of a comment.');
+	} else if (color == 'rgb(0, 128, 0)') {
+		current = ($(this).prevAll('.num').text());
+		$(this).prevAll('.num').text((parseInt(current) - 2).toString()).css('color', 'red');
+		$(this).css('color', 'red').next().css('color', 'red');
+		$(this).prevAll('.like').css('color', '#C2C2C2');
+	} else {
+		current = ($(this).prevAll('.num').text());
+		$(this).prevAll('.num').text((parseInt(current) - 1).toString()).css('color', 'red');
+		$(this).css('color', 'red').next().css('color', 'red');
+		$(this).prevAll('.like').css('color', '#C2C2C2');
+	}
 });
 
 //Adding a comment
 $(document).on('click', '.replyModal', function() {
 	replyBox.css('display', 'block');
-	$('.judgeComment').html(this.parent().html());
-});
+	$('.judgeComment').html(($(this).closest("li").html()));
 
-$(document).on('click', '.submit', function() {
+	$(document).on('click', '.submit', function() {
 	var reply = ($('.writeReply textarea').val());
 	var responseTemplate = getTemplate('response', { reply: reply });
 	// create handlebars tempate in HTML of other appended HTML
@@ -34,23 +53,26 @@ $(document).on('click', '.submit', function() {
 	$('.comments ul li:first-child').after(responseTemplate);
 	$('.fullReply').after('<div class="editReply"><textarea name=editReply cols=80 rows=6></textarea></div>');
 	$('main').height(function (index, height) {
-	    return (height + 210);
+	    return (height + 240);
 	});
 
 	//Edit your reply
 	$('#strong').click(function(e) {
 		e.preventDefault();
-		$('.editReply').css('display', 'block');
-		$('.fullReply button').text("Save").css('font-size', '20px').css('font-weight', '600');
-		$('.fullReply button').click(function() {
-			var newtext = $('.editReply textarea').val();
-			$('.fullReply p').text(newtext);
+		$(this).parent().parent().parent().next('.editReply').css('display', 'block');
+		$('.fullReply .change').css('z-index', '999');
+		$('.change').click(function() {
+			var newtext = $(this).parent().parent().parent().next('.editReply').children('textarea').val();
+			$(this).prevAll('p').text(newtext);
 			$('.editReply').css('display', 'none');
-			$('.fullReply button').text('Reply').css('font-size', '14px').css('font-weight', '300');
+			$('.fullReply .change').css('z-index', '0');
 		});
 	});
 	closeForm();
 });
+});
+
+
 $('.cancel').click(function(){
 	closeForm();
 });
@@ -76,6 +98,7 @@ $('.editProject img:last-of-type').click(function() {
 });
 function closeForm() {
 	replyBox.css('display', 'none');
+	replyBox.delete();
 }
 function getTemplate (name, data) {
 	var source = $("#" + name).html();
