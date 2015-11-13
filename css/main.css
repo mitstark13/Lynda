@@ -427,6 +427,18 @@ h5 {
 	float: right;	
 }
 
+.blackbook {
+	 
+	visibility: hidden;
+
+	
+}
+	
+.blackbook  {
+	
+
+}
+
 .projectList {
 	display: none;
 }
@@ -435,9 +447,13 @@ h5 {
 	display: none;
 }
 
+
 .activeTab {
 	display: inline-block;
 }
+
+
+
 
 
 
@@ -548,7 +564,7 @@ video {
 .videoBottomBar button{
 	display: inline-block;
 	margin-right: .8%;
-	height: 40px;
+	height: 40px;f
 	margin-top: -10px;
 	cursor: pointer;
 	z-index: 4;
@@ -596,6 +612,49 @@ video {
 
 #volume, #speed, #cc, #settings, #expand, #popout, #fullscreen {
 	float: right;
+}
+
+.volumeContainer {
+	width: 0px;
+	height: 45px;
+	background-color: #2a3137;
+	position: relative;
+	transform: rotate(-90deg);
+	top: -150px;
+	z-index: 30;
+	left: 90%;
+	opacity: 0;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    position: absolute;
+    top: 20px;
+    display: block;
+    width: 85%;
+    height: 4px;
+    margin-left: 10px;
+    border-radius: 25%;
+    background: #b8b8b8;
+ 	
+    
+}
+
+.volumeContainer .triangle {
+	margin-left: -12px;
+	position: absolute;
+	transform: rotate(90deg);
+	margin-top: 20px;
+}
+
+ 
+input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px; 
+    background: #fdc549; 
+    border-radius: 50%;
+
 }
 
 /******************************************************
@@ -814,6 +873,7 @@ footer a {
 footer li a:hover {
 	color: white;
 }
+
 
 /******************************************************
 congratulations

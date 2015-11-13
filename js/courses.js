@@ -154,6 +154,19 @@ $("#expand").mouseleave(function(){
  }, 70, 'swing');
 });
 
+$("#volume").mouseenter(function(){
+  $('.volumeContainer').velocity({
+      opacity: 1,
+      width: '115px',
+  }, 100, 'swing');
+});
+
+$("#volume").mouseleave(function(){
+  $('.volumeContainer').delay(4000).velocity({
+    opacity: 0,
+ }, 150, 'swing');
+});
+
 $("#rewind").mouseenter(function(){
   $('.rewind').velocity({
      height: "30px",
@@ -318,6 +331,7 @@ $(document).ready(function(){
     var m = parseInt((current_time / 60) % 60);
     
     $('#current').html( m + ':' + s );
+
     
   });
 });
@@ -368,7 +382,13 @@ if (elem.requestFullscreen) {
 }
 }) 
 
+  var volumeBar = document.getElementById("volume-bar");
 
-document.getElementById("#rewind").addEventListener("click", function(){
-                setTime(-10);                
-            }, false);
+volumeBar.addEventListener("change", function() {
+  // Update the video volume
+  video.volume = volumeBar.value;
+});
+
+$('#rewind').click(function (){
+      video.currentTime -=10;
+    })
