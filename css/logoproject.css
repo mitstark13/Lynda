@@ -394,10 +394,12 @@ main .projectInfo strong img{
 }
 .fullReply {
 	height: 210px;
+	margin-bottom: 40px;
 }
 .fullReply strong {
 	float: right;
 	margin-top: -30px;
+	margin-right: -88px;
 }
 .fullReply strong a {
 	color: #979797;
@@ -413,37 +415,68 @@ main .projectInfo strong img{
 	color: #C2C2C2;
 	margin-bottom: 3px;
 }
+.vote small.active {
+	color: green;
+}
+.vote small.inactive {
+	color: #C2C2C2;
+}
+.vote small.inactive:hover {
+	color: green;
+}
+.vote small.nactive:hover {
+	color: red;
+}
+.vote small.downvote {
+	color: red;
+}
+.vote small {
+	z-index: 999;
+}
+.vote small:first-of-type:hover {
+	color: green;
+	cursor: pointer;
+}
+.vote small:last-of-type:hover {
+	color: red;
+	cursor: pointer;
+}
 .vote img {
 	width: 17px;
 	height: 17px;
 	margin-bottom: 3px;
 }
-.vote img:hover {
-	cursor: pointer;
-	color: #7ED321;
-}
 .comment {
 	position: relative;
 	height: 100%;
+	width: 90%;
+	float: left;
 }
 .comment h3 {
 	margin-bottom: 18px;
+}
+.comment h3 img {
+	height: 15px;
+	width: 15px;
+	float: none;
 }
 .comment img {
 	float: left;
 	width: 75px;
 	height: 75px;
-	margin-right: 55px;
+}
+.comment img:first-child {
+	margin-left: 7px;
 }
 .comment p {
 	margin-top: -5px;
-	width: 90%;
+	width: 85%;
+	float: right;
 	line-height: 23px;
 }
 .comment small {
 	position: absolute;
 	bottom: 15px;
-	left: 105px;
 	font-size: 12px;
 	color: #979797;
 }
@@ -455,8 +488,11 @@ main .projectInfo strong img{
 	height: 40px;
 	background-color: #F9BD3C;
 	border: 1px solid black;
+	font-size: 14px;
 }
-
+.newComment .comment button {
+	right: -32px;
+}
 .editProject {
 	display: none;
 	position: absolute;
@@ -491,7 +527,7 @@ main .projectInfo strong img{
 	display: none;
 	position: absolute;
     z-index: 992;
-    margin-top: -162px;
+    margin-top: -202px;
     margin-left: 220px;
 }
 
@@ -591,12 +627,11 @@ footer a:hover {
 }
 .judge .comment h3 {
 	padding-top: 10px;
+	font-size: 16px;
 }
-.judge .comment h3, .judge .comment p {
-	font-size: 1.6em;
+.comment p {
+	font-size: 16px;
 	color: #2A3137;
-	line-height: 18px;
-	width: 94%;
 }
 .judge .vote {
 	text-align: center;

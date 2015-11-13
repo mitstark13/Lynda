@@ -1,18 +1,14 @@
+//Search
 //Variables
 var search = $('.search input');
-var first = $('.fullDrop');
-var second = $('.secondDrop');
-var john = $('header span');
-var account = $('.profileInfo');
 
 
-//Search
 $('.navbar .search img').click(function() {
 	search.animate({opacity: '1'});
 	search.animate({width: '250px'}, "slow");
 	search.css('display', 'block');
 });
-$('.search input').keypress(function() {
+search.keypress(function() {
 	$('.searchDrop').css('display', 'block');
 });
 $('.searchDrop').mouseleave(function() {
@@ -21,6 +17,11 @@ $('.searchDrop').mouseleave(function() {
 
 
 //Nav Dropdowns
+//Variables
+var first = $('.fullDrop');
+var second = $('.secondDrop');
+
+
 $('.courses').mouseenter(function() {
 	first.css('display', 'block');
 });
@@ -61,6 +62,11 @@ first.mouseleave(function() {
 
 
 //Profile John Settings
+//Variables
+var john = $('header span');
+var account = $('.profileInfo');
+
+
 $('.profilepic').mouseenter(function() {
 	john.animate({opacity: '0'});
 	john.css('display', 'none');
