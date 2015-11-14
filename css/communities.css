@@ -513,3 +513,84 @@ footer a:hover {
 	float: right;
 	margin:10px 5.83% 10px 5.83%;
 }
+
+
+
+/*Media Queries */
+
+@media (max-width: 1220px) {
+	.searchCom input {
+		width: 40%;
+	}
+	.navbar .fullDrop li a {
+		font-size: 13px;
+	} 
+}
+
+@media (max-width: 920px) {
+	.searchCom h1 {
+		font-size: 22px;
+	}
+	main a p {
+		font-size: 14px;
+		width: 200px;
+	}
+	.navbar .fullDrop .dropdown {
+		opacity: 0;
+		z-index: -99;
+	} 
+	.navbar .secondDrop {
+		opacity: 0;
+		z-index: -99;
+	}
+	.navbar nav .search {
+		display: none;
+	}
+	.navbar ul {
+		width: 100%;
+		margin: 30px 10%;
+	}
+	.navbar .courses b {
+		display: none;
+	}
+	.navbar ul li{
+		margin: 0 3%;
+	}
+	.footergray, .about, .products, .support, .apps, .connect {
+		display: none;
+	}
+	footer .bottomblack {
+		display: block;
+	}
+}
+
+@media (max-width: 654px) {
+	.profile span {
+		display: none;
+	}
+	.navbar nav ul li a {
+		font-size: 12px;
+	}
+	.navbar nav ul li {
+		margin-right: 2px;
+	}
+	main a {
+		width: 100%;
+	}
+	main {
+		height: 2200px;
+	}
+	.searchCom h1 {
+		text-align: center;
+		display: block;
+		margin-bottom: 10px;
+	}
+	.searchCom input {
+		margin-left: 15%;
+		width: 60%;
+	}
+	.searchCom button {
+		width: 15%;
+	}
+}
+
