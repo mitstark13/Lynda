@@ -753,7 +753,12 @@ footer a:hover {
 
 
 /* Media Queries */
-@media (max-width: 1040px) {
+@media (max-width: 1180px) {
+	.judgeComment .comment img:first-child {
+		margin-right: 265px;
+	}
+}
+@media (max-width: 1085px) {
 	.footergray {
 		height: 350px;
 	}
@@ -762,6 +767,9 @@ footer a:hover {
 	    margin-right: 20px;
 	}
 	nav .search {
+		display: none;
+	}
+	.judgeComment .comment img {
 		display: none;
 	}
 }
@@ -775,6 +783,24 @@ footer a:hover {
 	}
 	main .projectInfo {
 		height: 340px;
+	}
+	.newComment strong {
+		display: none;
+	}
+	.judgeComment {
+		height: 250px;
+	}
+	.judgeComment .comment p {
+		font-size: 14px;
+	}
+	.judgeComment .comment small {
+		display: none;
+	}
+	.reply {
+		height: 750px;
+	}
+	.judgeComment .vote {
+		display: none;
 	}
 }
 
@@ -821,6 +847,13 @@ footer a:hover {
 	}
 	main {
 		height: 1570px;
+	}
+	.judgeComment .comment p {
+		font-size: 13px;
+		width: 99%;
+	}
+	.judgeComment {
+		height: 320px;
 	}
 }
 
