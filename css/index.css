@@ -674,12 +674,10 @@ footer a:hover {
 	height: 300px;
 	position: relative;	
 }
-
 .about, .products, .support, .apps, .connect {
 	padding-top: 80px;
 	display: inline-block;
 }
-
 .connect {
 	width: 158px;
 	margin-left: -2%;
@@ -690,22 +688,187 @@ footer a:hover {
 	margin: 12px 15px;
 	float: left;
 }
-
 .connect h4 {
 	text-align: center;
 }
-
 .bottomblack {
 	height: 80px;
 	background-color: #111111;
 	width: 100%;
 }
-
 .bottomblack img {
 	height: 60px;
 	float: right;
 	margin:10px 5.83% 10px 5.83%;
 }
+
+/*Media Queries */
+
+@media (max-width: 1135px) {
+	.dropdown li a {
+		font-size: 12px;
+	}
+	.navbar .secondDrop div ul:last-of-type {
+		margin-left: -50px;
+	}
+	.learnMore {
+		height: 670px;
+	}
+	.learnMore ul li {
+		margin-bottom: 50px;
+	}
+	.learnMore ul li div h4 {
+		white-space: nowrap;
+	}
+	.watch div:first-of-type .quote {
+    	margin: -4px 0%;
+    	text-align: center;
+	}
+	.watch .lyndashot {
+		display: none;
+	}
+	.watch div {
+	    display: inline-block;
+	    margin-left: 33%;
+	    width: 390px;
+	}
+	.heads img{
+		display: none;
+	}
+	.learn {
+		margin-top: -53%;
+	}
+	aside ul li {
+		left: 12%;
+	}
+	.footergray {
+		height: 370px;
+	}
+}
+
+@media (max-width: 854px) {
+	nav ul li {
+		display: none;
+	}
+	nav ul li.logIn {
+		display: block;
+	}
+	.footergray, .about, .products, .support, .apps, .connect {
+		display: none;
+	}
+	footer .bottomblack {
+		display: block;
+	}
+	.aboveFold p {
+		left: 43.6%;
+	}
+	.learnMore {
+		height: 900px;
+	}
+	.learnMore ul {
+		margin: 0 10%;
+	}
+	.learnMore ul li{
+		display: block;
+		float: none;
+		width: 90%;
+		margin: 20px 20px 0px;
+	}
+	.learnMore ul li:nth-child(even) {
+    	float: none;
+	}
+	.learnMore ul li:nth-child(odd) {
+    	float: none;
+	}
+	.progress {
+		display: none;
+	}
+	.projects {
+		height: 120px;
+	}
+	.watch div {
+		margin: 10px 15%;
+	}
+	.watch div.learn {
+		margin-top: -120px;
+	}
+	.watch .line {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	aside ul li {
+		margin-right: 10%;
+	}
+	.ready {
+		height: 130px;
+	}
+	.ready a {
+		left: 38%;
+		top: 60%;
+	}
+}
+
+@media (max-width: 610px) {
+	nav ul li.logIn {
+		position: absolute;
+		top: 0px;
+		right: 25px;
+		margin-right: 0px;
+	}
+	nav .search {
+		margin-left: 15%;
+	}
+	main .aboveFold {
+		background-image: none;
+		background-color: #111111;
+		height: 950px;
+	}
+	.aboveFold h1 {
+		font-size: 38px;
+	}
+	.aboveFold ul {
+		width: 450px;
+	}
+	.aboveFold ul li {
+		margin-bottom: 0px;
+	}
+	.aboveFold ul li:nth-child(even) {
+		margin-right: 0px;
+		margin-left: 5px;
+		float: left;
+	}
+	.aboveFold ul li:nth-child(odd) {
+		margin-left: 0px;
+		margin-right: 5px;
+		float: right;
+	}
+	.aboveFold ul li:last-of-type {
+		margin-right: 29%;
+	}
+	.aboveFold p {
+		top: 1045px;
+		font-size: 2em;
+	}
+	.aboveFold .carrot {
+		top: 1072px;
+	}
+	aside{
+		display: none;
+	}
+	.ready {
+		height: 110px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
