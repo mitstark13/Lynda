@@ -750,3 +750,57 @@ footer a:hover {
 .text button:last-child {
 	background-color: #F2F2F2;
 }
+
+
+/* Media Queries */
+@media (max-width: 1040px) {
+	.footergray {
+		height: 350px;
+	}
+	.comment img:first-child {
+	    margin-left: 7px;
+	    margin-right: 20px;
+	}
+	nav .search {
+		display: none;
+	}
+}
+
+@media (max-width: 920px) {
+	.comments ul li {
+		height: 240px;
+	}
+	main {
+		height: 1300px;
+	}
+	main .projectInfo {
+		height: 340px;
+	}
+}
+
+@media (max-width: 750px) {
+	.footergray, .about, .products, .support, .apps, .connect {
+		display: none;
+	}
+	footer .bottomblack {
+		display: block;
+	}
+	.navbar ul li a {
+		font-size: 12px;
+	}
+	.navbar ul li {
+		margin-right: 19px;
+	}
+	header .logo {
+		height: 45px;
+	}
+	main .projectInfo strong {
+		display: none;
+	}
+}
+
+
+
+
+
+
