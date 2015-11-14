@@ -772,6 +772,14 @@ footer a:hover {
 	.judgeComment .comment img {
 		display: none;
 	}
+	.navbar .fullDrop .dropdown {
+		opacity: 0;
+		z-index: -99;
+	} 
+	.navbar .secondDrop {
+		opacity: 0;
+		z-index: -99;
+	}
 }
 
 @media (max-width: 920px) {
@@ -801,6 +809,17 @@ footer a:hover {
 	}
 	.judgeComment .vote {
 		display: none;
+	}
+	.navbar ul li b {
+		display: none;
+	}
+	.navbar .fullDrop .dropdown {
+		opacity: 0;
+		z-index: -99;
+	} 
+	.navbar .secondDrop {
+		opacity: 0;
+		z-index: -99;
 	}
 }
 
@@ -850,7 +869,7 @@ footer a:hover {
 	}
 	.judgeComment .comment p {
 		font-size: 13px;
-		width: 99%;
+		width: 93%;
 	}
 	.judgeComment {
 		height: 320px;

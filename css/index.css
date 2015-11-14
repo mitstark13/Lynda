@@ -787,7 +787,7 @@ footer a:hover {
 		height: 120px;
 	}
 	.watch div {
-		margin: 10px 15%;
+		margin: 10px 0%;
 	}
 	.watch div.learn {
 		margin-top: -120px;
@@ -839,7 +839,7 @@ footer a:hover {
 	}
 	.aboveFold ul li:nth-child(odd) {
 		margin-left: 0px;
-		margin-right: 5px;
+		margin-right: 65px;
 		float: right;
 	}
 	.aboveFold ul li:last-of-type {
@@ -851,12 +851,16 @@ footer a:hover {
 	}
 	.aboveFold .carrot {
 		top: 1072px;
-	}
-	aside{
+	} 
+	main aside{
 		display: none;
 	}
 	.ready {
 		height: 110px;
+		background-size: cover;
+	}
+	.ready a {
+		left: 30%;
 	}
 }
 

@@ -487,6 +487,17 @@ footer a:hover {
 	.profile span {
 		display: none;
 	}
+	.navbar .fullDrop .dropdown {
+		opacity: 0;
+		z-index: -99;
+	} 
+	.navbar .secondDrop {
+		opacity: 0;
+		z-index: -99;
+	}
+	.navbar ul li b {
+		display: none;
+	}
 }
 @media(max-width: 685px) {
 	main .projects li {
