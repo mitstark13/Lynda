@@ -218,7 +218,7 @@
                             <h5>Logo Redesign</h5>
                             <div class="submenu">
                                 <img src="img/bookmark.png" alt="">
-                                <h6>How to send feedback</h6>
+                                <h5>How to send feedback</h5>
                             </div>
                         </li>
                         <li>
@@ -264,6 +264,7 @@
                  <div id="progress"></div>
 </div>
                 <div class="videoBottomBar">
+                   <div class="videoIcons">
                     <button id="play"><img src="img/play.png" alt="">
                     </button>
                     <button id="pause"><img src="img/pause.png" alt="">
@@ -297,7 +298,7 @@
                     <div class="triangle"></div>
                     </div>
                      
-
+                    </div>
                 </div>
                  <!-- Hover States -->
                     <div class="rewind popup">
@@ -316,8 +317,12 @@
                         <p>Closed Caption</p> 
                         <div class="triangle"></div>
                      </div>
-                     <div class="settings popup">
-                        <p>Settings</p> 
+                     <div class="settings" id="settingsTab">
+                        <p>View Mode<small>Dim Lights</small></p>
+                        
+                        <p>Video Quality<small>360p <b>720p</b> 1080p HD</small></p>
+                        
+                        <p>Player<small>Flash <b>HTML5</b></small></p> 
                         <div class="triangle"></div>
                      </div>
                      <div class="popout popup">
@@ -328,12 +333,25 @@
                         <p>Fullscreen</p> 
                         <div class="triangle"></div>
                      </div>
+                        <div class='speedBar'> 
+                        <ul>
+                            <li id="2x"><a href="#">2x</a></li>
+                            <li id="175" 
+                            ><a href="#">1.75x</a></li>
+                            <li id="15"><a href="#">1.5x</a></li>
+                            <li id="125">
+                            <a href="#">1.25x</a></li>
+                            <li id="1x" class="active"><a href="#">1x</a></li>
+                        </ul>
+                    <div class="triangle"></div>
+                    </div>
                      <div class="expands popup">
                         <p>Expand</p> 
                         <div class="triangle"></div>
                      </div>
-
-                <div class="detailHeaderContainer">
+                     
+            <div 
+            class="detailHeaderContainer">
                     <nav class="detailHeader">
                         <ul>
                             <li><a href="#" class="active">Video Details</a>

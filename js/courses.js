@@ -31,7 +31,7 @@ $('.detailHeader li a.active').removeClass('active');
 
 
 
-$('.courseList ul li img').not( ".submenu img" ).click(function() {
+$('.courseList ul li img, .projectList ul li img').not( ".submenu img" ).click(function() {
   var clicks = $(this).data('clicks');
   if (clicks) {
      $(this).transition({ rotate: '0deg' },500,'ease');
@@ -79,20 +79,17 @@ $("#cc").mouseleave(function(){
   
 $("#settings").mouseenter(function(){
   $('.settings').velocity({
-     height: "30px",
-    opacity: 1,
-    bottom: "-45px",
-    rotateY: "360deg",
+      opacity: 1,
+      width: '190px',
   }, 100, 'swing');
 });
 
 
+
 $("#settings").mouseleave(function(){
-  $('.settings').delay(500).velocity({
-     height: "0px",
+  $('.settings').delay(2000).velocity({
     opacity: 0,
-    bottom: "45px",
-    rotateY: "-360deg",
+    width: '0px'
  }, 70, 'swing');
 });
   $("#popout").mouseenter(function(){
@@ -163,6 +160,19 @@ $("#volume").mouseenter(function(){
 
 $("#volume").mouseleave(function(){
   $('.volumeContainer').delay(4000).velocity({
+    opacity: 0,
+ }, 150, 'swing');
+});
+
+$("#speed").mouseenter(function(){
+  $('.speedBar').velocity({
+      opacity: 1,
+      width: '45px',
+  }, 100, 'swing');
+});
+
+$("#speed").mouseleave(function(){
+  $('.speedBar').delay(4000).velocity({
     opacity: 0,
  }, 150, 'swing');
 });
@@ -299,6 +309,7 @@ $('#totalTime').html($('#videoPlayer').find('video').get(0).duration);},500)
 
 */
 var video = document.getElementsByTagName('video')[0];
+video.volume= .8;
 
 video.addEventListener('loadedmetadata', function() {
        var time = video.duration;
@@ -337,37 +348,37 @@ $(document).ready(function(){
 });
 
 
-    $(document).ready(function () {
-        var $video = $("#videoPlayer");
-        var $scrubber = $("#scrubber");
-        var $progress = $("#progress");
-        
-        $video.bind("timeupdate", videoTimeUpdateHandler);
-        $scrubber.bind("mousedown", scrubberMouseDownHandler);
-        
-        function videoTimeUpdateHandler(e) {
-            var video = $video.get(0);
-            var percent = video.currentTime / video.duration;
-            updateProgressWidth(percent);
-        }
-        
-        function scrubberMouseDownHandler(e) {
-            var $this = $(this);
-            var x = e.pageX - $this.offset().left;
-            var percent = x / $this.width();
-            updateProgressWidth(percent);
-            updateVideoTime(percent);
-        }
-        
-        function updateProgressWidth(percent) {
-            $progress.width((percent * 100) + "%");
-        }
-        
-        function updateVideoTime(percent) {
-            var video = $video.get(0);
-            video.currentTime = percent * video.duration;
-        }
-    });
+$(document).ready(function () {
+    var $video = $("#videoPlayer");
+    var $scrubber = $("#scrubber");
+    var $progress = $("#progress");
+    
+    $video.bind("timeupdate", videoTimeUpdateHandler);
+    $scrubber.bind("mousedown", scrubberMouseDownHandler);
+    
+    function videoTimeUpdateHandler(e) {
+        var video = $video.get(0);
+        var percent = video.currentTime / video.duration;
+        updateProgressWidth(percent);
+    }
+    
+    function scrubberMouseDownHandler(e) {
+        var $this = $(this);
+        var x = e.pageX - $this.offset().left;
+        var percent = x / $this.width();
+        updateProgressWidth(percent);
+        updateVideoTime(percent);
+    }
+    
+    function updateProgressWidth(percent) {
+        $progress.width((percent * 100) + "%");
+    }
+    
+    function updateVideoTime(percent) {
+        var video = $video.get(0);
+        video.currentTime = percent * video.duration;
+    }
+});
 
 $('#fullscreen').click(function(){ 
 var elem = document.getElementById("videoPlayer");
@@ -392,3 +403,92 @@ volumeBar.addEventListener("change", function() {
 $('#rewind').click(function (){
       video.currentTime -=10;
     })
+
+
+$('#bookmark').click(function() {
+    $('#blackbook').toggleClass('blackbook');
+})
+
+$('#nextBtn').click(function() {
+  $('#videoPlayer').attr('src', "../../lyndaillustrator.mp4");
+  video.load();
+  video.play();
+})
+
+$('#previousBtn').click(function() {
+  $('#videoPlayer').attr('src', "../../lyndadraplin.mp4");
+  video.load();
+  video.play();
+})
+
+
+$('#2x').on('click', function(e) {
+    $("video")[0].playbackRate = 2;
+    $('.speedBar li.active').removeClass('active');
+    $(this).toggleClass('active');
+    $('#speed').text('2x');
+   e.preventDefault();
+}); 
+
+$('#175').on('click', function(e) {
+    $("video")[0].playbackRate = 1.75;
+    $('.speedBar li.active').removeClass('active');
+    $(this).toggleClass('active');
+    $('#speed').text('1.75x');
+   e.preventDefault();
+}); 
+
+$('#15').on('click', function(e) {
+    $("video")[0].playbackRate = 1.5;
+    $('.speedBar li.active').removeClass('active');
+    $(this).toggleClass('active');
+    $('#speed').text(' 1.5x');
+   e.preventDefault();
+}); 
+
+$('#125').on('click', function(e) {
+    $("video")[0].playbackRate = 1.25;
+    $('.speedBar li.active').removeClass('active');
+    $(this).toggleClass('active');
+    $('#speed').text('1.25x');
+   e.preventDefault();
+}); 
+
+$('#1x').on('click', function(e) {
+    $("video")[0].playbackRate = 1;
+    $('.speedBar li.active').removeClass('active');
+    $(this).toggleClass('active');
+    $('#speed').text('1x');
+   e.preventDefault();
+}); 
+
+jQuery.fn.extend({
+        toggleText: function (a, b){
+            var isClicked = false;
+            var that = this;
+            this.click(function (){
+                if (isClicked) { that.text(a); isClicked = false; }
+                else { that.text(b); isClicked = true; }
+            });
+            return this;
+        }
+    });
+
+$('#autoPlayBtn').toggleText("ON", "OFF");
+
+$('#expand').click(function(e){
+    $('.videoPlayer').css("width", '100%');
+    $('main').css('height', '2000px');
+    $('.detailHeaderContainer').css('width', '60%');
+    $('#expandimg').attr('src', "img/close.png" );
+    $(this).attr('id', ($('#expand').attr('id') === 'close' ? 'expand' : 'close'));
+     e.preventDefault;
+ });   
+
+
+$('body').on('click', '#close', function(e){
+    $('.videoPlayer').css("width", '67%');
+    
+    
+    e.preventDefault;
+}); 
