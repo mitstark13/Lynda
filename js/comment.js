@@ -54,7 +54,7 @@ $(document).on('click', '.replyModal', function() {
 	$('.comments ul li:first-child').after(responseTemplate);
 	$('.fullReply').after('<div class="editReply"><textarea name=editReply cols=80 rows=6></textarea></div>');
 	$('main').height(function (index, height) {
-	    return (height + 240);
+	    return (height + $('.comments .comment').height() + 100);
 	});
 
 	//Edit your reply

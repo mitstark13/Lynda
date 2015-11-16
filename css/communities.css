@@ -378,6 +378,7 @@ main input, main input::-webkit-input-placeholder {
 
 }
 .searchCom {
+	position: relative;
 	width: 100%;
 }
 main .nsearch {
@@ -394,14 +395,17 @@ main input:focus {
 
 main .comDrop {
 	display: none;
+	margin-left: 360px;
+	width: 57%;
+	margin-top: -20px;
+	margin-bottom: 20px;
 }
 main .comDown {
-	position: absolute;
 	z-index: 999;
-	top: 694px;
+/*	top: 694px;
 	right: 125px;
+	width: 54.5%;*/
 	height: 234px;
-	width: 54.5%;
 	background-color: #2A3137;
 	border: 1px solid black;
 }
@@ -513,3 +517,110 @@ footer a:hover {
 	float: right;
 	margin:10px 5.83% 10px 5.83%;
 }
+
+
+
+/*Media Queries */
+
+@media (max-width: 1220px) {
+	.searchCom input {
+		width: 40%;
+	}
+	main .comDrop {
+		width: 40%;
+	}
+	.navbar .fullDrop li a {
+		font-size: 13px;
+	} 
+	.comDrop ul li a {
+		width: 60%;
+	}
+}
+
+@media (max-width: 920px) {
+	.searchCom h1 {
+		font-size: 22px;
+	}
+	.comDrop ul li a {
+		width: 40%;
+	}
+	main .comDrop {
+		margin-left: 280px;
+	}
+	main .comDown {
+		height: 270px;
+	}
+	main a p {
+		font-size: 14px;
+		width: 200px;
+	}
+	.navbar .fullDrop .dropdown {
+		opacity: 0;
+		z-index: -99;
+	} 
+	.navbar .secondDrop {
+		opacity: 0;
+		z-index: -99;
+	}
+	.navbar nav .search {
+		display: none;
+	}
+	.navbar ul {
+		width: 100%;
+		margin: 30px 10%;
+	}
+	.navbar .courses b {
+		display: none;
+	}
+	.navbar ul li{
+		margin: 0 3%;
+	}
+	.footergray, .about, .products, .support, .apps, .connect {
+		display: none;
+	}
+	footer .bottomblack {
+		display: block;
+	}
+}
+
+@media (max-width: 654px) {
+	.profile span {
+		display: none;
+	}
+	.navbar nav ul li a {
+		font-size: 12px;
+	}
+	.navbar nav ul li {
+		margin-right: 2px;
+	}
+	main a {
+		width: 100%;
+	}
+	main {
+		height: 2200px;
+	}
+	.searchCom h1 {
+		text-align: center;
+		display: block;
+		margin-bottom: 10px;
+	}
+	.searchCom input {
+		margin-left: 15%;
+		width: 60%;
+	}
+	.searchCom button {
+		width: 15%;
+	}
+	main .comDown {
+		margin-left: -40px;
+		width: 150%;
+		height: 289px;
+	}
+	main .comDrop {
+		margin-left: 28%;
+	}
+	.comDown li a {
+		width: 108px;
+	}
+}
+
