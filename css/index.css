@@ -123,7 +123,6 @@ header nav img {
 }
 header nav ul li:first-of-type {
 	font-size: 20px;
-	margin-top: 30px;
 }
 
 .search {
@@ -234,13 +233,12 @@ header nav ul li:first-of-type {
 	float: right;
 	z-index: 999;
 	background-color: #2A3137;
-	width: 250px;
+	width: 290px;
 	height: 215px;
-	margin-left: 115px;
+	margin-left: 5.83%;
 	margin-top:-20px;
 }
 .navbar .searchDown a {
-	display: inline-block;
 	margin-left: 5px;
 	font-size: 15px;
 	font-weight: 300;
@@ -250,14 +248,15 @@ header nav ul li:first-of-type {
 	width: 15px;
 	height: 15px;
 	float: left;
-	margin-left: 5px;
+	margin-left: 7px;
+	margin-right: 7px;
+	margin-top: 0px;
 }
 .searchDown li:first-child a img {
 	height: 15px;
 	width: 15px;
 	float: left;
-	margin-right: 5px;
-	margin-left: 0px;
+	margin-top: 3px;
 }
 .searchDown a:hover {
 	background-color: grey;
@@ -750,6 +749,9 @@ footer a:hover {
 	nav ul li {
 		display: none;
 	}
+	nav ul.searchDown li {
+		display: block;
+	}
 	nav ul li.logIn {
 		display: block;
 	}
@@ -818,6 +820,9 @@ footer a:hover {
 	nav .search {
 		margin-left: 15%;
 	}
+	.searchDown {
+		margin-left: 15%;
+	}
 	main .aboveFold {
 		background-image: none;
 		background-color: #111111;
@@ -843,14 +848,16 @@ footer a:hover {
 		float: right;
 	}
 	.aboveFold ul li:last-of-type {
-		margin-right: 29%;
+		margin-right: 35%;
 	}
 	.aboveFold p {
 		top: 1045px;
+		left: 40%;
 		font-size: 2em;
 	}
 	.aboveFold .carrot {
 		top: 1072px;
+		left: 46%;
 	} 
 	main aside{
 		display: none;

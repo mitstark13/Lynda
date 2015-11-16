@@ -378,6 +378,7 @@ main input, main input::-webkit-input-placeholder {
 
 }
 .searchCom {
+	position: relative;
 	width: 100%;
 }
 main .nsearch {
@@ -394,14 +395,17 @@ main input:focus {
 
 main .comDrop {
 	display: none;
+	margin-left: 360px;
+	width: 57%;
+	margin-top: -20px;
+	margin-bottom: 20px;
 }
 main .comDown {
-	position: absolute;
 	z-index: 999;
-	top: 694px;
+/*	top: 694px;
 	right: 125px;
+	width: 54.5%;*/
 	height: 234px;
-	width: 54.5%;
 	background-color: #2A3137;
 	border: 1px solid black;
 }
@@ -522,14 +526,29 @@ footer a:hover {
 	.searchCom input {
 		width: 40%;
 	}
+	main .comDrop {
+		width: 40%;
+	}
 	.navbar .fullDrop li a {
 		font-size: 13px;
 	} 
+	.comDrop ul li a {
+		width: 60%;
+	}
 }
 
 @media (max-width: 920px) {
 	.searchCom h1 {
 		font-size: 22px;
+	}
+	.comDrop ul li a {
+		width: 40%;
+	}
+	main .comDrop {
+		margin-left: 280px;
+	}
+	main .comDown {
+		height: 270px;
 	}
 	main a p {
 		font-size: 14px;
@@ -591,6 +610,17 @@ footer a:hover {
 	}
 	.searchCom button {
 		width: 15%;
+	}
+	main .comDown {
+		margin-left: -40px;
+		width: 150%;
+		height: 289px;
+	}
+	main .comDrop {
+		margin-left: 28%;
+	}
+	.comDown li a {
+		width: 108px;
 	}
 }
 
