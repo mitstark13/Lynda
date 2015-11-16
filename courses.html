@@ -259,7 +259,7 @@
                      </div> 
 
                 </div>
-                <video src="../../lyndadraplin.mp4" id="videoPlayer"  type="video/mp4" preload='metadata' poster="img/lyndapic.jpg" ></video>
+                <video class='popit' src="../../lyndadraplin.mp4" id="videoPlayer"  type="video/mp4" preload='metadata' poster="img/lyndapic.jpg" ><track label="English" kind="subtitles" srclang="en" src="../../img/english_en.vtt" default></video>
                 <div id="scrubber">
                  <div id="progress"></div>
 </div>
@@ -497,7 +497,7 @@
         <img class="dragDrop" src="img/dragDrop.png" alt="">
         <p>You can drag and drop files into this window or browse your computer</p>
         <b>.jpg .pdf .gif .png</b>
-        <button class="browse">Browse Computer</button>
+        <label class="browse"><input id="a" name="a" type="file">Browse Computer</label>
         <div class="bottomLine">
             <button class="cancel">Cancel</button>
             <button class="next">Next</button>
@@ -513,7 +513,7 @@
         <img class="greenCheck" src="img/check.png" alt="">
         <b>Successfully Uploaded</b>
         <img class="goldenLogo" src="img/goldenlife.png" alt="">
-        <span>x</span>
+        <span>+</span>
         <p>Name.jpg</p>
         <div class="bottomLine">
             <button class="cancel">Cancel</button>
@@ -529,9 +529,9 @@
         <img class="goldenLogo" src="img/goldenlife.png" alt="">
         <div class="textFields">
             <p>Title:</p>
-            <input type="text">
+            <input id="textInput" type="text">
             <p>Description:</p>
-            <textarea name="textarea" rows="7" cols="34"></textarea>
+            <textarea id='textarea' name="textarea" rows="7" cols="34"></textarea>
         </div>
         <div class="bottomLine">
             <button class="cancel">Cancel</button>
@@ -547,18 +547,19 @@
         </div>
         <div class="blackBox">
             <img src="img/goldenlife.png" alt="">
-            <h3>First time using Illustrator</h3>
+            <h3 id="newTitle">First time using Illustrator</h3>
             <h4>John Wright | Product Manager at Salesforce</h4>
             <div class="uploadLine">
-                <p>Hey everyone, here is my stab at the logo design project for Illustrator CC Essential Training. Any feedback is appreciated. This is my first time using Illustrator, so I'm sure I havae plenty of room for improvement.</p>
+                <p id="newp">Hey everyone, here is my stab at the logo design project for Illustrator CC Essential Training. Any feedback is appreciated. This is my first time using Illustrator, so I'm sure I havae plenty of room for improvement.</p>
             </div>
+        </div>    
             <div class="bottomLine">
                 <button class="cancel">Cancel</button>
                 <button class="submit">Submit</button>
-                <button class="previous">Previous</button>
+                <button class="previous" id="prev2">Previous</button>
 
             </div>
-        </div>
+        
     </div>
 
  

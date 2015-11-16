@@ -456,7 +456,11 @@ h5 {
 	display: inline-block;
 }
 
-
+.upload {
+	padding-top: 12px;
+	text-align: center;
+	font-weight: 400;
+}
 
 
 
@@ -477,6 +481,7 @@ VIDEO PLAYER
 	background-color: black;
 	height: 430px;
 	width: 67%;
+
 
 
 }
@@ -996,35 +1001,47 @@ Upload1
 
 #upload1, #upload2, #upload3, #upload4{
 	position: fixed;
-	width: 637px;
-	top: 5%;
+	height: 90%;
+	top: 50%;
 	left: 50%;
-	margin-left: -20%;
-	height: 588px;
+	transform: translate(-50%, -50%);
+	max-height: calc(100% - 50px);
 	background: white;
-	z-index: 5;
+	z-index: 999;
 	border: 1px solid #2a3137;
 
 }
 
+#a{
+	opacity: .01;
+	height:  60px;
+	width: 100px;
+	position: absolute;
+	margin-top: 10px;
+
+}
+
 .uploadBlack {
-	height: 136px;
+	max-height: 136px;
 	background-color: #2a3137;
 	width: 100%;
 	display: block;
+	padding-bottom: 4%
 }
 
 .uploadBlack img {
-	width: 365px;
+	width: 60%;
 	text-align: center;
-	margin-top: 24px;
-	margin-left: 136px;
+	margin-top: 2.4em;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 
 .uploadBlack h3 {
 	color: #fdba2b;
 	text-align: center;
-	padding-top: 24px;
+	padding-top: 2.4em;
 	font-weight: 400;
 
 }
@@ -1032,10 +1049,11 @@ Upload1
 .dragDrop {
 	width: 212px;
 	text-align: center;
-	margin-left: 212px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 14px;
 	margin-bottom: 14px;
-
+	display: block;
 }
 
 #upload1  p, #upload2 p {
@@ -1061,9 +1079,13 @@ Upload1
 	border: 1px solid #373d43;
 	color: #373d43;
 	text-align: center;
-	margin-left: 248px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 20px;
 	font-size: 1.4em;
+	cursor: pointer;
+	padding-top: 10px;
+	display: block;
 }
 
 
@@ -1139,6 +1161,11 @@ Upload1
 	margin-top: -8px;
 }
 
+#upload2 span {
+	transform: rotate(45deg);
+}
+
+
 .goldenLogo {
 	border: 1px solid #373d43;
 	height: 158px;
@@ -1154,6 +1181,10 @@ Upload1
 #upload3 .goldenLogo {
 	margin-top: 10px;
 	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	height: 130px;
 }
 
 
@@ -1221,19 +1252,21 @@ Upload1
 
 
 .blackBox {
-	width: 600px;
-	height: 320px;
+	width: 95%;
+	max-height: 340px;
 	background-color: #2a3137;
 	clear: both;
 	margin-top: 18px;
-	margin-left: 18px;	
+	margin-left: auto;
+	margin-right: auto;
+	display: block;	
 }
 
 
 .blackBox img {
 	width: 200px;
 	margin-left: 5px;
-	margin-top: 100px;
+	margin-top: 80px;
 	margin-right: 10px;
 	display: inline-block;
 	float: left;
@@ -1242,7 +1275,7 @@ Upload1
 #upload4 .blackBox h3 {
 	color: white;
 	display: inline-block;
-	margin-top: 90px;
+	margin-top: 70px;
 	font-size: 2em;
 	line-height: 1.5em;
 }
@@ -1268,9 +1301,6 @@ Upload1
 	line-height: 1.4em;
 }
 
-#upload4 .bottomLine {
-	margin-left: -18px;
-}
 
 #upload4 {
 	display: none;

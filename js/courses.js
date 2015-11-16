@@ -31,7 +31,7 @@ $('.detailHeader li a.active').removeClass('active');
 
 
 
-$('.courseList ul li img, .projectList ul li img').not( ".submenu img" ).click(function() {
+$('.courseList ul li img,  .projectList ul li img').not( ".submenu img" ).click(function() {
   var clicks = $(this).data('clicks');
   if (clicks) {
      $(this).transition({ rotate: '0deg' },500,'ease');
@@ -56,27 +56,97 @@ $('.collapse').click(function(e) {
 
 }); 
 
-$("#cc").mouseenter(function(){
-  $('.closed').velocity({
+/******************************************************
+Hover Functions
+*******************************************************/
+
+function flyin(className){
+  $(className).velocity({
     height: "30px",
     opacity: 1,
     bottom: "-45px",
     rotateY: "360deg",
-  }, 100, 'swing');
-});
+    }, 100, 'swing');
+};
 
-$("#cc").mouseleave(function(){
-  
- $('.closed').velocity({
+function flyout(className){
+  $(className).velocity({
     height: "0px",
     opacity: 0,
     bottom: "45px",
     rotateY: "-360deg",
- }, 70, 'swing');
+ }, 10, 'swing');
+};
+
+
+
+
+$('#cc').mouseenter(function() {
+  flyin('.closed');
+});
+
+$('#cc').mouseleave(function() {
+  flyout('.closed');
+});
+
+$('#popout').mouseenter(function() {
+  flyin('.popout');
+});
+
+$('#popout').mouseleave(function() {
+  flyout('.popout');
+});
+$('#fullscreen').mouseenter(function() {
+  flyin('.fullscreen');
+});
+
+$('#fullscreen').mouseleave(function() {
+  flyout('.fullscreen');
+});
+$('#expand').mouseenter(function() {
+  flyin('.expands');
+});
+
+$('#expand').mouseleave(function() {
+  flyout('.expands');
+});
+$('#rewind').mouseenter(function() {
+  flyin('.rewind');
+});
+
+$('#rewind').mouseleave(function() {
+  flyout('.rewind');
+});
+$('#timeStamp').mouseenter(function() {
+  flyin('.timeStamp');
+});
+
+$('#timeStamp').mouseleave(function() {
+  flyout('.timeStamp');
+});
+$('#bookmark').mouseenter(function() {
+  flyin('.bookmark');
+});
+
+$('#bookmark').mouseleave(function() {
+  flyout('.bookmark');
+});
+$('#nextBtn').mouseenter(function() {
+  flyin('.nextVid');
+});
+
+$('#nextBtn').mouseleave(function() {
+  flyout('.nextVid');
+});
+$('#previousBtn').mouseenter(function() {
+  flyin('.prevVid');
+});
+
+$('#previousBtn').mouseleave(function() {
+  flyout('.prevVid');
 });
 
 
-  
 $("#settings").mouseenter(function(){
   $('.settings').velocity({
       opacity: 1,
@@ -84,70 +154,10 @@ $("#settings").mouseenter(function(){
   }, 100, 'swing');
 });
 
-
-
 $("#settings").mouseleave(function(){
   $('.settings').delay(2000).velocity({
     opacity: 0,
     width: '0px'
- }, 70, 'swing');
-});
-  $("#popout").mouseenter(function(){
-  $('.popout').velocity({
-     height: "30px",
-    opacity: 1,
-    bottom: "-45px",
-    rotateY: "360deg",
-  }, 100, 'swing');
-});
-
-
-$("#popout").mouseleave(function(){
-  $('.popout').delay(500).velocity({
-    height: "0px",
-    opacity: 0,
-    bottom: "45px",
-    rotateY: "-360deg",
- }, 70, 'swing');
-});
-
-$("#fullscreen").mouseenter(function(){
-  $('.fullscreen').velocity({
-     height: "30px",
-    opacity: 1,
-    bottom: "-45px",
-    rotateY: "360deg",
-  }, 100, 'swing');
-});
-
-
-
-$("#fullscreen").mouseleave(function(){
-  $('.fullscreen').delay(500).velocity({
-     height: "0px",
-    opacity: 0,
-    bottom: "45px",
-    rotateY: "-360deg",
- }, 70, 'swing');
-});
-
-$("#expand").mouseenter(function(){
-  $('.expands').velocity({
-     height: "30px",
-    opacity: 1,
-    bottom: "-45px",
-    rotateY: "360deg",
-  }, 100, 'swing');
-});
-
-
-
-$("#expand").mouseleave(function(){
-  $('.expands').delay(500).velocity({
-    height: "0px",
-    opacity: 0,
-    bottom: "45px",
-    rotateY: "-360deg",
  }, 70, 'swing');
 });
 
@@ -177,103 +187,7 @@ $("#speed").mouseleave(function(){
  }, 150, 'swing');
 });
 
-$("#rewind").mouseenter(function(){
-  $('.rewind').velocity({
-     height: "30px",
-    opacity: 1,
-    bottom: "-45px",
-    rotateY: "360deg",
-  }, 100, 'swing');
-});
-
-
-$("#rewind").mouseleave(function(){
-  $('.rewind').delay(500).velocity({
-     height: "0px",
-    opacity: 0,
-    bottom: "45px",
-    rotateY: "-360deg",
- }, 70, 'swing');
-});
-
-$("#timeStamp").mouseenter(function(){
-  $('.timeStamp').velocity({
-      height: "30px",
-    opacity: 1,
-    bottom: "-45px",
-    rotateY: "360deg",
-  }, 100, 'swing');
-});
-
-
-$("#timeStamp").mouseleave(function(){
-  $('.timeStamp').delay(500).velocity({
-     height: "0px",
-    opacity: 0,
-    bottom: "45px",
-    rotateY: "-360deg",
- }, 70, 'swing');
-});
-
-
-$("#bookmark").mouseenter(function(){
-  $('.bookmark').velocity({
-      height: "30px",
-    opacity: 1,
-    bottom: "-45px",
-    rotateY: "360deg",
-  }, 100, 'swing');
-});
-
-
-$("#bookmark").mouseleave(function(){
-  $('.bookmark').delay(500).velocity({
-   height: "0px",
-    opacity: 0,
-    bottom: "45px",
-    rotateY: "-360deg",
- }, 70, 'swing');
-});
-
-
-$("#nextBtn").mouseenter(function(){
-  $('.nextVid').velocity({
-      height: "30px",
-    opacity: 1,
-    bottom: "-45px",
-    rotateY: "360deg",
-  }, 100, 'swing');
-});
-
-
-$("#nextBtn").mouseleave(function(){
-  $('.nextVid').delay(500).velocity({
-     height: "0px",
-    opacity: 0,
-    bottom: "45px",
-    rotateY: "-360deg",
- }, 70, 'swing');
-});
-
-$("#previousBtn").mouseenter(function(){
-  $('.prevVid').velocity({
-        height: "30px",
-    opacity: 1,
-    bottom: "-45px",
-    rotateY: "360deg",
-  }, 100, 'swing');
-});
-
-
-$("#previousBtn").mouseleave(function(){
-  $('.prevVid').delay(500).velocity({
-   height: "0px",
-    opacity: 0,
-    bottom: "45px",
-    rotateY: "-360deg",
- }, 70, 'swing');
-});
- 
+  
 
  var videoPlayer = $('#videoPlayer');
 
@@ -380,34 +294,33 @@ $(document).ready(function () {
     }
 });
 
-$('#fullscreen').click(function(){ 
-var elem = document.getElementById("videoPlayer");
-if (elem.requestFullscreen) {
-  elem.requestFullscreen();
-} else if (elem.msRequestFullscreen) {
-  elem.msRequestFullscreen();
-} else if (elem.mozRequestFullScreen) {
-  elem.mozRequestFullScreen();
-} else if (elem.webkitRequestFullscreen) {
-  elem.webkitRequestFullscreen();
-}
-}) 
 
   var volumeBar = document.getElementById("volume-bar");
+
 
 volumeBar.addEventListener("change", function() {
   // Update the video volume
   video.volume = volumeBar.value;
 });
 
+/******************************************************
+REWIND
+*******************************************************/
+
 $('#rewind').click(function (){
       video.currentTime -=10;
     })
-
+/******************************************************
+BOOKMARK
+*******************************************************/
 
 $('#bookmark').click(function() {
     $('#blackbook').toggleClass('blackbook');
 })
+
+/******************************************************
+PREVIOUS/NEXT BUTTONS
+*******************************************************/
 
 $('#nextBtn').click(function() {
   $('#videoPlayer').attr('src', "../../lyndaillustrator.mp4");
@@ -420,6 +333,10 @@ $('#previousBtn').click(function() {
   video.load();
   video.play();
 })
+
+/******************************************************
+SPEEDBAR
+*******************************************************/
 
 
 $('#2x').on('click', function(e) {
@@ -462,6 +379,10 @@ $('#1x').on('click', function(e) {
    e.preventDefault();
 }); 
 
+/******************************************************
+AUTOPLAY
+*******************************************************/
+
 jQuery.fn.extend({
         toggleText: function (a, b){
             var isClicked = false;
@@ -474,21 +395,96 @@ jQuery.fn.extend({
         }
     });
 
+
+
+
 $('#autoPlayBtn').toggleText("ON", "OFF");
 
-$('#expand').click(function(e){
+/******************************************************
+EXPAND
+*******************************************************/
+
+function handler1(e) {
     $('.videoPlayer').css("width", '100%');
     $('main').css('height', '2000px');
     $('.detailHeaderContainer').css('width', '60%');
-    $('#expandimg').attr('src', "img/close.png" );
-    $(this).attr('id', ($('#expand').attr('id') === 'close' ? 'expand' : 'close'));
+    $('#expand img').attr('src', "img/close.png" );
+    $(this).one("click", handler2);
      e.preventDefault;
- });   
+ }   
 
 
-$('body').on('click', '#close', function(e){
+function handler2(e) {
     $('.videoPlayer').css("width", '67%');
-    
-    
-    e.preventDefault;
-}); 
+    $('main').css('height', '');
+    $('.detailHeaderContainer').css('width', '100%');
+    $('#expand img').attr('src', "img/expand.png" );
+    $(this).one("click", handler1);
+     e.preventDefault;
+ }   
+
+$("#expand").one("click", handler1);
+
+$('#fullscreen').click(function(){ 
+var elem = document.getElementById("videoPlayer");
+if (elem.requestFullscreen) {
+  elem.requestFullscreen();
+} else if (elem.msRequestFullscreen) {
+  elem.msRequestFullscreen();
+} else if (elem.mozRequestFullScreen) {
+  elem.mozRequestFullScreen();
+} else if (elem.webkitRequestFullscreen) {
+  elem.webkitRequestFullscreen();
+}
+});
+
+/******************************************************
+UPLOAD MODALS
+*******************************************************/
+
+$('a.upload').click(function(e){
+    $('#upload1').css('display', 'block');
+    e.preventDefault();
+
+});
+
+$('.cancel, .submit').click(function(e){
+    $('#upload1, #upload2, #upload3, #upload4').css('display', 'none');
+    e.preventDefault();
+
+});
+
+$('.next').click(function(e){
+    $(this).parent().parent().next().css('display', 'block');
+    e.preventDefault();
+
+});
+
+$('.previous').click(function(e){
+    $(this).parent().parent().css('display', 'none');
+    e.preventDefault();
+
+});
+
+$(function(){
+  $('#textInput').keyup(function(){
+     $('#newTitle').text($(this).val());
+  });
+});
+
+$(function(){
+  $('#textarea').keyup(function(){
+     $('#newp').text($(this).val());
+  });
+});
+
+$('#popout').click(function (e) {
+    e.preventDefault();
+    window.open('../../lyndadraplin.mp4', '_blank', 'location=yes,height=500,width=600,scrollbars=no,status=yes');
+    $('#pause').click;
+});
+
+
+$('video').textTracks[0].mode = "showing";
+
+
