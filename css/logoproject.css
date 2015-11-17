@@ -137,6 +137,14 @@ header nav img {
 	outline-color: transparent;
     outline-style: none;
 }
+.search img:hover {
+	-webkit-transition-duration: 1s;
+	-ms-transform-duration: 1s;
+    transition-duration: 1s;
+	transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+}
 .fullDrop {
 	display: none;
 }
@@ -223,6 +231,9 @@ header nav img {
 }
 .searchDown {
 	position: absolute;
+	-webkit-transition-duration: 1s;
+	-ms-transform-duration: 1s;
+    transition-duration: 1s;
 	left: 0px;
 	float: right;
 	z-index: 999;
@@ -278,6 +289,14 @@ main {
 	padding: 20px;
 	height: 1093px;
 	color: #2A3137;
+}
+main a:hover {
+	-webkit-transition-duration: 1s;
+	-ms-transform-duration: 1s;
+    transition-duration: 1s;
+	transform: skew(10deg);
+    -webkit-transform: skew(10deg);
+    -ms-transform: skew(10deg);
 }
 main span {
 	font-size: 1.4em;
@@ -476,14 +495,14 @@ main .projectInfo strong img{
 }
 .comment small {
 	position: absolute;
-	bottom: 15px;
+	bottom: -50px;
 	font-size: 12px;
 	color: #979797;
 }
 .comment button {
 	position: absolute;
 	right: 65px;
-	bottom: 5px;
+	bottom: -50px;
 	width: 139px;
 	height: 40px;
 	background-color: #F9BD3C;
@@ -492,6 +511,10 @@ main .projectInfo strong img{
 }
 .newComment .comment button {
 	right: -32px;
+	margin-bottom: 45px;
+}
+.newComment .comment small {
+	margin-bottom: 45px;
 }
 .editProject {
 	display: none;
@@ -644,7 +667,7 @@ footer a:hover {
 .reply {
 	display: none;
 	position: absolute;
-	top: 25%;
+	top: 45%;
 	left: 10%;
 	height: 574px;
 	width: 80%;
@@ -672,6 +695,10 @@ footer a:hover {
 .judgeComment .comment small {
 	position: absolute;
 	left: 20px;
+	bottom: -38px;
+}
+.judgeComment small.your {
+	bottom: 10px;
 }
 .judgeComment .vote img {
 	margin: 2px 40%;
