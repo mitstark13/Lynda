@@ -10,7 +10,7 @@ var down = $('.vote .dislike');
 up.click(function() {
 	var color = $(this).nextAll('.num').css('color');
 	if (color == 'rgb(0, 128, 0)') {
-		alert('hey now, dont vote twice.');
+		$(this).css('color', 'green').prev().css('color', 'green');
 	} else if (color == 'rgb(255, 0, 0)') {
 		current = ($(this).nextAll('.num').text());
 		$(this).nextAll('.num').text((parseInt(current) + 2).toString()).css('color', 'green');
@@ -26,7 +26,7 @@ up.click(function() {
 down.click(function() {
 	var color = $(this).prevAll('.num').css('color');
 	if (color == 'rgb(255, 0, 0)') {
-		alert('hey now, dont be harsh. It wasnt that bad of a comment.');
+		$(this).css('color', 'red').next().css('color', 'red');
 	} else if (color == 'rgb(0, 128, 0)') {
 		current = ($(this).prevAll('.num').text());
 		$(this).prevAll('.num').text((parseInt(current) - 2).toString()).css('color', 'red');
@@ -42,6 +42,7 @@ down.click(function() {
 
 //Adding a comment
 $(document).on('click', '.replyModal', function() {
+	index = $(this).parent().parent().parent();
 	replyBox.css('display', 'block');
 	$('.writeReply textarea').val('');
 	$('.judgeComment').html(($(this).closest("li").html()));
@@ -51,10 +52,10 @@ $(document).on('click', '.replyModal', function() {
 	var responseTemplate = getTemplate('response', { reply: reply });
 	// create handlebars tempate in HTML of other appended HTML
 
-	$('.comments ul li:first-child').after(responseTemplate);
+	index.after(responseTemplate);
 	$('.fullReply').after('<div class="editReply"><textarea name=editReply cols=80 rows=6></textarea></div>');
 	$('main').height(function (index, height) {
-	    return (height + $('.comments .comment').height() + 100);
+	    return (height + $('.comments .comment').height() + 150);
 	});
 
 	//Edit your reply

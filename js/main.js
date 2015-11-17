@@ -1,15 +1,23 @@
 //Search
 //Variables
 var search = $('.search input');
-
+count = 2;
 
 $('.navbar .search img').click(function() {
-	search.animate({opacity: '1'});
-	search.animate({width: '250px'}, "slow");
-	search.css('display', 'block');
+	if (count % 2 === 0) {
+		search.animate({opacity: '1'});
+		search.animate({width: '250px'}, "slow");
+		search.css('display', 'block');
+	} else {
+		search.animate({width: '2px'}, "slow");
+		$('.searchDrop').css('display', 'none');
+		search.animate({opacity: '0'});
+	}
+	count++;
 });
 search.keypress(function() {
 	$('.searchDrop').css('display', 'block');
+	$('.searchDown').animate({'height': '215px'}, '.5s');
 });
 $('.searchDrop').mouseleave(function() {
 	$('.searchDrop').css('display', 'none');

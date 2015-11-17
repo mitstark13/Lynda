@@ -383,56 +383,62 @@
 		<div class='comments'>
 			<ul>
 				<li>
-					<div class="vote">
-						<small class='like'>Up Vote</small>
-						<img class='like' src="img/upvote.png" alt="">
-						<p class='num'>26</p>
-						<img class='dislike' src="img/downvote.png" alt="">
-						<small class='dislike'>Down Vote</small>
-					</div>
-					<div class="comment">
-						<h3>Ravi Mohan | Consultant at Deloitte <img class='linkedin' src="img/linkedin.png" alt=""></h3>
-						<img src="img/ravi.png" alt="">
-						<p>You have two clashing styles. Your type is clean and elegant, but the sun is more like a childish
-						drawing which doesn’t work with the type.
-						The “blends” type, even though I don’t like it, it constrasts with the type above it well, but the 
-						sun doesn’t work with either one style. I would work on that.</p>
-						<small>Posted 20 minutes ago</small>
-						<button class="replyModal">Reply</button>
-					</div>
-				</li>
-				<li>
-					<div class="vote">
-						<small class='like'>Up Vote</small>
-						<img class='like' src="img/upvote.png" alt="">
-						<p class='num'>12</p>
-						<img class='dislike' src="img/downvote.png" alt="">
-						<small class='dislike'>Down Vote</small>
-					</div>
-					<div class="comment">
-						<h3>Sherri Barnes | Designer at Fuzzy Math <img class='linkedin' src="img/linkedin.png" alt=""></h3>
-						<img src="img/ashlee.png" alt="">
-						<p>I suggest thinking outside the box more. Maybe explore some alternative concepts. What are
-						some other symbols that evoke the brand that Golden Blends is trying to portray? Overall, I 
-						think this is a good effort, but you should continue to iterate.</p>
-						<small>Posted 30 minutes ago</small>
-						<button class="replyModal">Reply</button>
+					<div>
+						<div class="vote">
+							<small class='like'>Up Vote</small>
+							<img class='like' src="img/upvote.png" alt="">
+							<p class='num'>26</p>
+							<img class='dislike' src="img/downvote.png" alt="">
+							<small class='dislike'>Down Vote</small>
+						</div>
+						<div class="comment">
+							<h3>Ravi Mohan | Consultant at Deloitte <img class='linkedin' src="img/linkedin.png" alt=""></h3>
+							<img src="img/ravi.png" alt="">
+							<p>You have two clashing styles. Your type is clean and elegant, but the sun is more like a childish
+							drawing which doesn’t work with the type.
+							The “blends” type, even though I don’t like it, it constrasts with the type above it well, but the 
+							sun doesn’t work with either one style. I would work on that.</p>
+							<small>Posted 20 minutes ago</small>
+							<button class="replyModal">Reply</button>
+						</div>
 					</div>
 				</li>
 				<li>
-					<div class="vote">
-						<small class='like'>Up Vote</small>
-						<img class='like' src="img/upvote.png" alt="">
-						<p class='num'>10</p>
-						<img class='dislike' src="img/downvote.png" alt="">
-						<small class='dislike'>Down Vote</small>
+					<div>
+						<div class="vote">
+							<small class='like'>Up Vote</small>
+							<img class='like' src="img/upvote.png" alt="">
+							<p class='num'>12</p>
+							<img class='dislike' src="img/downvote.png" alt="">
+							<small class='dislike'>Down Vote</small>
+						</div>
+						<div class="comment">
+							<h3>Sherri Barnes | Designer at Fuzzy Math <img class='linkedin' src="img/linkedin.png" alt=""></h3>
+							<img src="img/ashlee.png" alt="">
+							<p>I suggest thinking outside the box more. Maybe explore some alternative concepts. What are
+							some other symbols that evoke the brand that Golden Blends is trying to portray? Overall, I 
+							think this is a good effort, but you should continue to iterate.</p>
+							<small>Posted 30 minutes ago</small>
+							<button class="replyModal">Reply</button>
+						</div>
 					</div>
-					<div class="comment">
-						<h3>Cody Cooper | Student at Otterbein University <img class='linkedin' src="img/linkedin.png" alt=""></h3>
-						<img src="img/cody.png" alt="">
-						<p>Awesome job dude! I’m going through the course now and I’m excited to start this project.</p>
-						<small>Posted 50 minutes ago</small>
-						<button class="replyModal">Reply</button>
+				</li>
+				<li>
+					<div>
+						<div class="vote">
+							<small class='like'>Up Vote</small>
+							<img class='like' src="img/upvote.png" alt="">
+							<p class='num'>10</p>
+							<img class='dislike' src="img/downvote.png" alt="">
+							<small class='dislike'>Down Vote</small>
+						</div>
+						<div class="comment">
+							<h3>Cody Cooper | Student at Otterbein University <img class='linkedin' src="img/linkedin.png" alt=""></h3>
+							<img src="img/cody.png" alt="">
+							<p>Awesome job dude! I’m going through the course now and I’m excited to start this project.</p>
+							<small>Posted 50 minutes ago</small>
+							<button class="replyModal">Reply</button>
+						</div>
 					</div>
 				</li>
 			</ul>
@@ -522,7 +528,7 @@
 	<script id="response" type="text/x-handlebars-template">
 	 	<div class="fullReply">
 	  		<img src="img/replyArrow.png" class="replyArrow"/>
-  				<li class="newComment">
+  			<li class="newComment">
   				<div class="comment">
   					<h3>
 	  					John Wright | Project Manager at Salesforce
@@ -536,7 +542,7 @@
   					</strong>
   					<img  class="johnPic" src="img/john.jpg"/>
 					<p>{{reply}}</p>
-					<small>Posted 0 minutes ago</small>
+					<small class='your'>Posted 0 minutes ago</small>
 					<button class="change">Save</button>
 					<button class="replyModal">Reply</button>
 				</div>

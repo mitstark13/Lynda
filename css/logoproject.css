@@ -476,14 +476,14 @@ main .projectInfo strong img{
 }
 .comment small {
 	position: absolute;
-	bottom: 15px;
+	bottom: -50px;
 	font-size: 12px;
 	color: #979797;
 }
 .comment button {
 	position: absolute;
 	right: 65px;
-	bottom: 5px;
+	bottom: -50px;
 	width: 139px;
 	height: 40px;
 	background-color: #F9BD3C;
@@ -492,6 +492,10 @@ main .projectInfo strong img{
 }
 .newComment .comment button {
 	right: -32px;
+	margin-bottom: 45px;
+}
+.newComment .comment small {
+	margin-bottom: 45px;
 }
 .editProject {
 	display: none;
@@ -644,7 +648,7 @@ footer a:hover {
 .reply {
 	display: none;
 	position: absolute;
-	top: 25%;
+	top: 45%;
 	left: 10%;
 	height: 574px;
 	width: 80%;
@@ -672,6 +676,10 @@ footer a:hover {
 .judgeComment .comment small {
 	position: absolute;
 	left: 20px;
+	bottom: -38px;
+}
+.judgeComment small.your {
+	bottom: 10px;
 }
 .judgeComment .vote img {
 	margin: 2px 40%;
