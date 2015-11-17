@@ -1,17 +1,27 @@
 var $input = $('.searchCom input')
 var $drop = $('.comDrop')
 
-$input.keypress(displayDropdown);
+$input.keypress(function() {
+	if ($drop.css('display') === 'none'){
+		displayDropdown(); 
+		$('main').height(function (index, height) {
+		    return (height + $('.comments .comment').height() + 230);
+		});
+	};
+});
 $input.mouseleave(hideDropdown);
-$drop.mouseleave(hideDropdown);
+$drop.mouseleave(function() {
+	hideDropdown();
+	$('main').height(function (index, height) {
+	    return (height + $('.comments .comment').height() - 230);
+	});
+});
 $drop.mouseenter(displayDropdown);
 
 function displayDropdown () {
 	$drop.css('display', 'block');
-	$('main').css('height', '2410')
 }
 
 function hideDropdown () {
 	$drop.css('display', 'none');
-	$('main').css('height', '2200')
 }

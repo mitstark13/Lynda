@@ -494,6 +494,12 @@ footer a:hover {
 		width: 60%;
 		margin: 0 auto;
 	}
+	.fullDrop ul li{
+		font-size: 12px;
+	}
+	.secondDrop {
+		top: 160px;
+	}
 	.navbar .search {
 		display: none;
 	}
@@ -502,8 +508,14 @@ footer a:hover {
 	}
 }
 
-@media(max-width: 830px) {
+@media(max-width: 850px) {
 	.profile span {
+		display: none;
+	}
+	.navbar ul li b {
+		display: none;
+	}
+	.dropdown {
 		display: none;
 	}
 	.navbar .fullDrop .dropdown {
@@ -532,7 +544,7 @@ footer a:hover {
 		display: none;
 	}
 	header .logo {
-		height: 50px;
+		height: 45px;
 	}
 	.footergray, .about, .products, .support, .apps, .connect {
 		display: none;

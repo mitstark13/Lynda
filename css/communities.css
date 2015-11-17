@@ -612,6 +612,9 @@ footer a:hover {
 	.navbar nav ul li {
 		margin-right: 2px;
 	}
+	header .logo {
+		height: 45px;
+	}
 	main a {
 		width: 100%;
 	}

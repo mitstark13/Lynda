@@ -336,12 +336,12 @@ main h1 b {
 	color: #F9BD3C;
 }
 .aboveFold a:hover img{
-	-webkit-transition-duration: 2s;
-	-ms-transform-duration: 2s;
-    transition-duration: 2s;
-	transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
+	-webkit-transition-duration: 10s;
+	-ms-transform-duration: 10s;
+    transition-duration: 10s;
+	transform: rotate(2880deg);
+    -webkit-transform: rotate(2880deg);
+    -ms-transform: rotate(2880deg);
 }
 .aboveFold .tryFree:hover {
 	color: #F9BD3C;
