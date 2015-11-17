@@ -1,6 +1,7 @@
 
 
 
+
 $('.prjList a').click(function(e) {
 	$(this).addClass('active');
 	$('.crsList a').removeClass('active')
@@ -44,13 +45,13 @@ $('.courseList ul li img,  .projectList ul li img').not( ".submenu img" ).click(
 });
 
 $('.expand').click(function(e) {
-     $('.courseList ul li img').not( ".submenu img" ).transition({ rotate: '90deg' },500,'ease');
+     $('.courseList ul li img,  .projectList ul li img').not( ".submenu img" ).transition({ rotate: '90deg' },500,'ease');
  	 $( ".submenu" ).show( "slow" );
  	 e.preventDefault();
 });
 
 $('.collapse').click(function(e) {	
-   	$('.courseList ul li img').not( ".submenu img" ).transition({ rotate: '0deg' },500,'ease');  
+   	$('.courseList ul li img,  .projectList ul li img ').not( ".submenu img" ).transition({ rotate: '0deg' },500,'ease');  
  	$( ".submenu" ).hide( "slow" );
  e.preventDefault();
 
@@ -81,111 +82,229 @@ function flyout(className){
 
 
 
-$('#cc').mouseenter(function() {
-  flyin('.closed');
+$('#cc').hoverIntent({
+    over: function() {
+     flyin('.closed');
+   },
+    out: function() {
+    flyout('.closed');
+  }
 });
 
-$('#cc').mouseleave(function() {
-  flyout('.closed');
+$('#popout').hoverIntent({
+    over: function() {
+     flyin('.popout');
+   },
+    out: function() {
+    flyout('.popout');
+  }
 });
 
-$('#popout').mouseenter(function() {
-  flyin('.popout');
+$('#fullscreen').hoverIntent({
+    over: function() {
+     flyin('.fullscreen');
+   },
+    out: function() {
+    flyout('.fullscreen');
+  }
+});
+$('#expand').hoverIntent({
+    over: function() {
+     flyin('.expands');
+   },
+    out: function() {
+    flyout('.expands');
+  }
 });
 
-$('#popout').mouseleave(function() {
-  flyout('.popout');
-});
-$('#fullscreen').mouseenter(function() {
-  flyin('.fullscreen');
-});
-
-$('#fullscreen').mouseleave(function() {
-  flyout('.fullscreen');
-});
-$('#expand').mouseenter(function() {
-  flyin('.expands');
+$('#rewind').hoverIntent({
+    over: function() {
+     flyin('.rewind');
+   },
+    out: function() {
+    flyout('.rewind');
+  }
 });
 
-$('#expand').mouseleave(function() {
-  flyout('.expands');
-});
-$('#rewind').mouseenter(function() {
-  flyin('.rewind');
-});
-
-$('#rewind').mouseleave(function() {
-  flyout('.rewind');
-});
-$('#timeStamp').mouseenter(function() {
-  flyin('.timeStamp');
+$('#timeStamp').hoverIntent({
+    over: function() {
+     flyin('.timeStamp');
+   },
+    out: function() {
+    flyout('.timeStamp');
+  }
 });
 
-$('#timeStamp').mouseleave(function() {
-  flyout('.timeStamp');
-});
-$('#bookmark').mouseenter(function() {
-  flyin('.bookmark');
-});
-
-$('#bookmark').mouseleave(function() {
-  flyout('.bookmark');
-});
-$('#nextBtn').mouseenter(function() {
-  flyin('.nextVid');
+$('#bookmark').hoverIntent({
+    over: function() {
+     flyin('.bookmark');
+   },
+    out: function() {
+    flyout('.bookmark');
+  }
 });
 
-$('#nextBtn').mouseleave(function() {
-  flyout('.nextVid');
-});
-$('#previousBtn').mouseenter(function() {
-  flyin('.prevVid');
+$('#nextBtn').hoverIntent({
+    over: function() {
+     flyin('.nextVid');
+   },
+    out: function() {
+    flyout('.nextVid');
+  }
 });
 
-$('#previousBtn').mouseleave(function() {
-  flyout('.prevVid');
+$('#previousBtn').hoverIntent({
+    over: function() {
+     flyin('.prevVid');
+   },
+    out: function() {
+    flyout('.prevVid');
+  }
 });
 
 
-$("#settings").mouseenter(function(){
+     
+// $('#cc').mouseleave(function() {
+//   flyout('.closed');
+// });
+
+// $('#popout').mouseenter(function() {
+//   flyin('.popout');
+// });
+
+// $('#popout').mouseleave(function() {
+//   flyout('.popout');
+// });
+// $('#fullscreen').mouseenter(function() {
+//   flyin('.fullscreen');
+// });
+
+// $('#fullscreen').mouseleave(function() {
+//   flyout('.fullscreen');
+// });
+// $('#expand').mouseenter(function() {
+//   flyin('.expands');
+// });
+
+// $('#expand').mouseleave(function() {
+//   flyout('.expands');
+// });
+// $('#rewind').mouseenter(function() {
+//   flyin('.rewind');
+// });
+
+// $('#rewind').mouseleave(function() {
+//   flyout('.rewind');
+// });
+// $('#timeStamp').mouseenter(function() {
+//   flyin('.timeStamp');
+// });
+
+// $('#timeStamp').mouseleave(function() {
+//   flyout('.timeStamp');
+// });
+// $('#bookmark').mouseenter(function() {
+//   flyin('.bookmark');
+// });
+
+// $('#bookmark').mouseleave(function() {
+//   flyout('.bookmark');
+// });
+// $('#nextBtn').mouseenter(function() {
+//   flyin('.nextVid');
+// });
+
+// $('#nextBtn').mouseleave(function() {
+//   flyout('.nextVid');
+// });
+// $('#previousBtn').mouseenter(function() {
+//   flyin('.prevVid');
+// });
+
+// $('#previousBtn').mouseleave(function() {
+//   flyout('.prevVid');
+// });
+
+
+$("#settings").hoverIntent({
+  over: function() {
   $('.settings').velocity({
       opacity: 1,
       width: '190px',
   }, 100, 'swing');
-});
-
-$("#settings").mouseleave(function(){
+},
+  out: function() {
   $('.settings').delay(2000).velocity({
     opacity: 0,
     width: '0px'
  }, 70, 'swing');
+}
 });
 
-$("#volume").mouseenter(function(){
+$("#volume").hoverIntent({
+  over: function() {
   $('.volumeContainer').velocity({
       opacity: 1,
       width: '115px',
   }, 100, 'swing');
-});
-
-$("#volume").mouseleave(function(){
-  $('.volumeContainer').delay(4000).velocity({
+},
+  out: function() {
+  $('.volumeContainer').delay(2000).velocity({
     opacity: 0,
- }, 150, 'swing');
+    width: '0px'
+ }, 70, 'swing');
+}
 });
 
-$("#speed").mouseenter(function(){
+$("#speed").hoverIntent({
+  over: function() {
   $('.speedBar').velocity({
       opacity: 1,
       width: '45px',
   }, 100, 'swing');
+},
+  out: function() {
+  $('.speedBar').delay(2000).velocity({
+    opacity: 0,
+    width: '0px'
+ }, 70, 'swing');
+}
 });
 
-$("#speed").mouseleave(function(){
-  $('.speedBar').delay(4000).velocity({
-    opacity: 0,
- }, 150, 'swing');
-});
+
+
+// $("#settings").mouseleave(function(){
+//   $('.settings').delay(2000).velocity({
+//     opacity: 0,
+//     width: '0px'
+//  }, 70, 'swing');
+// });
+
+// $("#volume").mouseenter(function(){
+//   $('.volumeContainer').velocity({
+//       opacity: 1,
+//       width: '115px',
+//   }, 100, 'swing');
+// });
+
+// $("#volume").mouseleave(function(){
+//   $('.volumeContainer').delay(4000).velocity({
+//     opacity: 0,
+//  }, 150, 'swing');
+// });
+
+// $("#speed").mouseenter(function(){
+//   $('.speedBar').velocity({
+//       opacity: 1,
+//       width: '45px',
+//   }, 100, 'swing');
+// });
+
+// $("#speed").mouseleave(function(){
+//   $('.speedBar').delay(4000).velocity({
+//     opacity: 0,
+//  }, 150, 'swing');
+// });
 
   
 
@@ -259,10 +378,7 @@ $(document).ready(function(){
 
     
   });
-});
 
-
-$(document).ready(function () {
     var $video = $("#videoPlayer");
     var $scrubber = $("#scrubber");
     var $progress = $("#progress");
@@ -316,6 +432,7 @@ BOOKMARK
 
 $('#bookmark').click(function() {
     $('#blackbook').toggleClass('blackbook');
+   
 })
 
 /******************************************************
@@ -326,12 +443,17 @@ $('#nextBtn').click(function() {
   $('#videoPlayer').attr('src', "../../lyndaillustrator.mp4");
   video.load();
   video.play();
+   $('#eye').css('display', 'none');
+   $('#eye2').css('display', 'inline-block')
+
 })
 
 $('#previousBtn').click(function() {
   $('#videoPlayer').attr('src', "../../lyndadraplin.mp4");
   video.load();
   video.play();
+  $('#eye2').css('display', 'none');
+   $('#eye').css('display', 'inline-block')
 })
 
 /******************************************************
@@ -404,20 +526,43 @@ $('#autoPlayBtn').toggleText("ON", "OFF");
 EXPAND
 *******************************************************/
 
+ // function getHeight(){
+ //      var vidHeight = $('.videoPlayer').height();
+ //      $('.leftNav').css('margin-top', vidHeight);
+ //      alert(vidHeight);
+ //    };
+
 function handler1(e) {
+    
+    
     $('.videoPlayer').css("width", '100%');
     $('main').css('height', '2000px');
-    $('.detailHeaderContainer').css('width', '60%');
+    $('.detailHeaderContainer').css('float', 'right');
+    $('.detailHeaderContainer').css('width', '66%');
+    $('.detailHeaderContainer').css('display', 'inline-block');
+     $('.detailHeaderContainer').appendTo($('.newNav'));
+    // $('.leftNav').css('position', 'absolute');
+    $('.leftNav').appendTo($('.newNav'));
+    $('.leftNav').css('width', '33%');
+    $('.leftNav').css('display', 'inline-block');
     $('#expand img').attr('src', "img/close.png" );
     $(this).one("click", handler2);
      e.preventDefault;
+   
+
+
  }   
+
 
 
 function handler2(e) {
     $('.videoPlayer').css("width", '67%');
     $('main').css('height', '');
     $('.detailHeaderContainer').css('width', '100%');
+    $('.leftNav').prependTo($('.mainContain'));
+    $('.leftNav').css('width', '31%');
+    $('.detailHeaderContainer').appendTo($('videPlayer'));
+    $('.detailHeaderContainer').css('width', 'auto');
     $('#expand img').attr('src', "img/expand.png" );
     $(this).one("click", handler1);
      e.preventDefault;
@@ -485,6 +630,32 @@ $('#popout').click(function (e) {
 });
 
 
-$('video').textTracks[0].mode = "showing";
+// $('video').textTracks[0].mode = "showing";
+
+/******************************************************
+media queries
+*******************************************************/
 
 
+  $(window).on('resize', function(event){
+    var windowSize = $(window).width(); // Could've done $(this).width()
+      if(windowSize < 300){
+        $('html').css('background-color', 'red');
+      } else if(windowSize < 800){
+       
+          $('.videoPlayer').css("width", '100%');
+      $('main').css('height', '2000px');
+      $('.detailHeaderContainer').css('float', 'right');
+      $('.detailHeaderContainer').css('width', '66%');
+      $('.detailHeaderContainer').css('display', 'inline-block');
+       $('.detailHeaderContainer').appendTo($('.newNav'));
+      // $('.leftNav').css('position', 'absolute');
+      $('.leftNav').appendTo($('.newNav'));
+      $('.leftNav').css('width', '33%');
+      $('.leftNav').css('display', 'inline-block');
+      } else {
+        $('html').css('background-color', 'blue');
+      }
+  });
+
+   

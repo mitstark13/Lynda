@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/dropzone.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/jquery.transit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+
+    <script src="js/jquery.hoverIntent.minified.js"></script>
+    <script src="js/dropzone.js"></script>
     <title>Lynda</title>    
 </head>
 
@@ -116,13 +120,14 @@
                                             <img class='blackbook'id='blackbook' src="img/bookmarkblack.png" alt="">
                                             <h5>Welcome</h5>
                                             <small>1m 12s</small>
-                                            <img src="img/eye.png" id="eye" alt="">
+                                            <img src="img/eye.png" id="eye" class="eye" alt="">
 
                                         </li>
-                                        <li>
+                                        <li >
                                             <img src="img/bookmark.png" alt="">
                                             <h5>How to use Exercise Files</h5>
                                             <small>42s</small>
+                                            <img src="img/eye.png"  id="eye2" alt="">
                                         </li>
                                         <li>
                                             <img src="img/bookmark.png" alt="">
@@ -136,6 +141,29 @@
                                 <img src="img/bluearrow.png" alt="arrow">
                                 <h5>Getting Started</h5>
                                 <small>38m 14s</small>
+                                <div class="submenu">
+                                    <ul>
+                                        <li>
+                                            <img src="img/bookmark.png" alt="">
+                                            <img class='blackbook'id='blackbook' src="img/bookmarkblack.png" alt="">
+                                            <h5>Start Fresh</h5>
+                                            <small>1m 12s</small>
+        
+
+                                        </li>
+                                        <li >
+                                            <img src="img/bookmark.png" alt="">
+                                            <h5>Vector vs. Raster</h5>
+                                            <small>42s</small>
+                                           
+                                        </li>
+                                        <li>
+                                            <img src="img/bookmark.png" alt="">
+                                            <h5>Adjusting Expectations</h5>
+                                            <small>1m 13s</small>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                             <li>
                                 <img src="img/bluearrow.png" alt="arrow">
@@ -301,6 +329,7 @@
                     </div>
                 </div>
                  <!-- Hover States -->
+                 <div class="toolTips">
                     <div class="rewind popup">
                         <p>Rewind :10 Sec</p> 
                         <div class="triangle"></div>
@@ -349,7 +378,8 @@
                         <p>Expand</p> 
                         <div class="triangle"></div>
                      </div>
-                     
+                </div>
+            <div class='newNav'></div>         
             <div 
             class="detailHeaderContainer">
                     <nav class="detailHeader">
@@ -392,6 +422,7 @@
             <strong>Post Successful</strong>
             <img src="img/greencheck.png" alt="">
         </div>
+
     </main>
     <footer>
         <div class="footerGray"></div>
@@ -489,12 +520,15 @@
     <!-- Congratulations Popup -->
 
     <!-- Upload Your Project -->
-    <div id="upload1">
+        <div id="upload1">
         <div class="uploadBlack">
             <h3>Upload your Project</h3>
             <img src="img/progress1.png" alt="">
         </div>
         <img class="dragDrop" src="img/dragDrop.png" alt="">
+        <form action="/file-upload"
+      class="dropzone"
+      id="my-awesome-dropzone"></form>
         <p>You can drag and drop files into this window or browse your computer</p>
         <b>.jpg .pdf .gif .png</b>
         <label class="browse"><input id="a" name="a" type="file">Browse Computer</label>
@@ -561,8 +595,6 @@
             </div>
         
     </div>
-
- 
 
 
     <!-- End Upload Your Project -->

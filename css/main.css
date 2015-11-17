@@ -212,6 +212,7 @@ main {
 	margin:0px 5.83% 0px 5.83%;
 	background-color: white;	
 	position: relative;
+	margin-bottom: 20px;
 
 	
 
@@ -271,12 +272,13 @@ PROJECTS AND COURSES LEFT NAVE
 .mainContain {
 	position: relative;
 	min-height: 1170px;
+	height: auto;
 	clear: both;
 	background-color: #f2f2f2;
 }
 .leftNav {
 	width: 31%;
-	height: 938px;
+	min-height: 938px;
 	clear: both;
 	position: relative;
 }
@@ -423,13 +425,18 @@ h5 {
 	margin-top: 4px;
 }
 
-#eye {
+#eye, #eye2 {
 	width: 4%;
 	display: inline-block;
 	margin-right: 20px;
 	position: relative;
 	float: right;	
 }
+
+#eye2 {
+	display: none;
+}
+
 
 .blackbook {
 	 
@@ -554,6 +561,10 @@ video {
 
 }
 
+.videoPlayer button {
+	z-index: 40;
+}
+
 .videoBottomBar {
 	height: 41px;
 	background-color: #2a3137;
@@ -577,7 +588,7 @@ video {
 	height: 15px;
 	display: inline-block;
 	cursor: pointer;
-	z-index: 4;
+	z-index: 800;
 }
 
 
@@ -587,7 +598,7 @@ video {
 	height: 40px;f
 	margin-top: -20px;
 	cursor: pointer;
-	z-index: 4;
+	z-index: 800;
 
 }
 
@@ -640,9 +651,9 @@ video {
 #settingsTab {
 	width: 0px;
 	height: 117px;
-	z-index: 0;
+	
 	position: absolute;
-	margin-top: -135px;
+	margin-top: -73px;
 	background:  #2a3137;
 	color: white;
 	font-size: 1.2em;
@@ -682,17 +693,17 @@ video {
 	width: 0px;
 	height: 119px;
 	background-color: #2a3137;
-	position: relative;
+	position: absolute;
 	z-index: 30;
 	opacity: 1;
 	font-size: 1.2em;
 	color: white;
+	margin-top: -75px;
 	text-align: center;
-	line-height: 1.4em;
-	margin-top: -136px;
+	line-height: 1.4em;		
 	padding: 5px 4px 0px 2px;
 	cursor: pointer;
-	left: 88%;
+	right: 45px;
 	opacity: 0;
 	
 }
@@ -734,11 +745,11 @@ video {
 	width: 0px;
 	height: 45px;
 	background-color: #2a3137;
-	position: relative;
+	position: absolute;
 	transform: rotate(-90deg);
-	top: -150px;
-	z-index: 30;
-	left: 90%;
+	margin-top: -143px;
+	z-index: 800;
+	right: -40px;
 	opacity: 0;
 }
 
@@ -756,11 +767,12 @@ input[type="range"] {
     
 }
 
+
 .volumeContainer .triangle {
-	margin-left: -12px;
+	margin-left: -15px;
 	position: absolute;
 	transform: rotate(90deg);
-	margin-top: 20px;
+	margin-top: 18px;
 }
 
  
@@ -778,10 +790,11 @@ Video Details
 *******************************************************/
 .detailHeaderContainer {
 	background-color: white;
-	height: 610px;
+	min-height: 660px;
 	border-right: 1px solid #c4c4c4;
 	border-left: 1px solid #c4c4c4;
 	border-bottom: 1px solid #c4c4c4;
+	padding-bottom: 10px;
 }
 
 .detailHeader ul li a{
@@ -911,6 +924,8 @@ h3 {
 	line-height: 1.5em;
 }
 
+
+
 /******************************************************
 FOOTER
 *******************************************************/
@@ -921,7 +936,7 @@ FOOTER
 	background-color: #2a3137;
 	width: 100%;
 	position: absolute;
-
+	clear: both;
 }
 
 footer div {
@@ -1048,12 +1063,12 @@ Upload1
 
 .dragDrop {
 	width: 212px;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
+	top: 145px;
+	right: 35%;
 	margin-top: 14px;
 	margin-bottom: 14px;
 	display: block;
+	position: absolute;
 }
 
 #upload1  p, #upload2 p {
@@ -1395,7 +1410,7 @@ Hover Popups
 	text-align: center;
 	font-weight: 600;
 	opacity: 0;
-	bottom: 0;
+	bottom: 0;		
 	
 		
 }
@@ -1423,6 +1438,7 @@ Hover Popups
 
 .timeStamp {
 	left: 45px;
+	margin-top: 
 }
 
 .bookmark {
@@ -1433,7 +1449,11 @@ Hover Popups
 	right: 123px;
 }
 
-
+.toolTips {
+	position: relative;
+	margin-top: -65px;
+	width: 100%;
+}	
 
 .triangle {
 	width: 0; 
@@ -1480,3 +1500,39 @@ Hover Popups
 	color: #f2f2f2;
 }
 
+.upload:hover, .submit:hover, .next:hover{
+	background-color: #2a3137;
+	color: #fdba2b;
+}
+
+
+.dropzone {
+	width: 80%;
+	background-color: #f2f2f2;
+	height: 150px;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px dashed black;
+	margin-bottom: 10px;
+	color: gray;
+}
+
+.dz-thumbnail: {
+	height: 50px;
+	width: auto;
+}
+
+
+
+@media (max-width: 800px) {
+   footer  {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+   .detailHeaderContainer {
+        display: none;
+    }
+}
