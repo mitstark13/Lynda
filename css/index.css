@@ -1,5 +1,6 @@
 * {
 	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility; 
 	box-sizing: border-box;
 }
 .clearfix:before,
@@ -470,7 +471,7 @@ main h1 b {
 .projects .progress {
 	margin: 0 auto;
 	height: 78px;
-	width: 690px;
+	width: 695px;
 }
 .projects .progress div {
 	float: left;
