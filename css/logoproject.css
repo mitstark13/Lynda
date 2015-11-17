@@ -527,9 +527,16 @@ main .projectInfo strong img{
 .editProject input {
 	display: inline-block;
 	width: 340px;
+	padding: 0;
+	border: 1px solid #ccc;
 	height: 28px;
 	margin-top: 26px;
 	margin-bottom: 60px;
+}
+.editProject textarea {
+	width: 475px;
+	padding: 0;
+	border: 1px solid #ccc;
 }
 .editProject img {
 	float: right;

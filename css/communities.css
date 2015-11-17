@@ -293,12 +293,12 @@ main {
 	padding: 25px;
 }
 main a:hover {
-	-webkit-transition-duration: 1s;
-	-ms-transform-duration: 1s;
-    transition-duration: 1s;
-	transform: rotate(1turn);
-    -webkit-transform: rotate(1turn);
-    -ms-transform: rotate(1turn);
+	-webkit-transition-duration: .5s;
+	-ms-transform-duration: .5s;
+    transition-duration: .5s;
+	transform: scale(1.02, 1.02);
+    -webkit-transform: scale(1.02, 1.02);
+    -ms-transform: scale(1.02, 1.02);
 }
 main h1 {
 	font-size: 2.7em;
