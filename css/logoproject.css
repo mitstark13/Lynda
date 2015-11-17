@@ -137,6 +137,14 @@ header nav img {
 	outline-color: transparent;
     outline-style: none;
 }
+.search img:hover {
+	-webkit-transition-duration: 1s;
+	-ms-transform-duration: 1s;
+    transition-duration: 1s;
+	transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+}
 .fullDrop {
 	display: none;
 }
@@ -223,6 +231,9 @@ header nav img {
 }
 .searchDown {
 	position: absolute;
+	-webkit-transition-duration: 1s;
+	-ms-transform-duration: 1s;
+    transition-duration: 1s;
 	left: 0px;
 	float: right;
 	z-index: 999;
@@ -278,6 +289,14 @@ main {
 	padding: 20px;
 	height: 1093px;
 	color: #2A3137;
+}
+main a:hover {
+	-webkit-transition-duration: 1s;
+	-ms-transform-duration: 1s;
+    transition-duration: 1s;
+	transform: skew(10deg);
+    -webkit-transform: skew(10deg);
+    -ms-transform: skew(10deg);
 }
 main span {
 	font-size: 1.4em;

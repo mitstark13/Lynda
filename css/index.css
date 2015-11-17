@@ -294,9 +294,9 @@ main a:hover {
 	-webkit-transition-duration: 1s;
 	-ms-transform-duration: 1s;
     transition-duration: 1s;
-	transform: skew(30deg);
-    -webkit-transform: skew(30deg);
-    -ms-transform: skew(30deg);
+	transform: skew(10deg);
+    -webkit-transform: skew(10deg);
+    -ms-transform: skew(10deg);
 }
 main .aboveFold {
 	text-align: center;
