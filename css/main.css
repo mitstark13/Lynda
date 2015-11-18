@@ -1,6 +1,5 @@
 * {
-	box-sizing: border-box;
-	
+	box-sizing: border-box;	
 }
 
 a {
@@ -13,6 +12,8 @@ a {
 html {
 	font-family: "Open Sans", sans-serif;
 	font-size: 62.5%;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 body {
