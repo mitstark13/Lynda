@@ -557,7 +557,7 @@ main .projectInfo strong img{
 	display: none;
 	position: absolute;
     z-index: 992;
-    margin-top: -202px;
+    margin-top: -162px;
     margin-left: 220px;
 }
 #strong a img {
@@ -629,6 +629,7 @@ footer a {
 }
 footer a:hover {
 	color: white;
+	font-size: 16px;
 }
 .about {
 	margin-left: 15.83%;

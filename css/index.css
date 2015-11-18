@@ -238,9 +238,6 @@ header nav ul li:first-of-type {
 	display: none;
 }
 .searchDown {
-	-webkit-transition-duration: 1s;
-	-ms-transform-duration: 1s;
-    transition-duration: 1s;
 	position: absolute;
 	left: 0px;
 	float: right;
@@ -336,12 +333,12 @@ main h1 b {
 	color: #F9BD3C;
 }
 .aboveFold a:hover img{
-	-webkit-transition-duration: 10s;
-	-ms-transform-duration: 10s;
-    transition-duration: 10s;
-	transform: rotate(2880deg);
-    -webkit-transform: rotate(2880deg);
-    -ms-transform: rotate(2880deg);
+	-webkit-transition-duration: 1s;
+	-ms-transform-duration: 1s;
+    transition-duration: 1s;
+	transform: scale(1.3, 1.3);
+    -webkit-transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3);
 }
 .aboveFold .tryFree:hover {
 	color: #F9BD3C;
@@ -703,6 +700,7 @@ footer a {
 }
 footer a:hover {
 	color: white;
+	font-size: 16px;
 }
 .about {
 	margin-left: 15.83%;

@@ -50,12 +50,13 @@ $(document).on('click', '.replyModal', function() {
 	$(document).on('click', '.submit', function() {
 	var reply = ($('.writeReply textarea').val());
 	var responseTemplate = getTemplate('response', { reply: reply });
-	// create handlebars tempate in HTML of other appended HTML
-
 	index.after(responseTemplate);
-	$('.fullReply').after('<div class="editReply"><textarea name=editReply cols=80 rows=6></textarea></div>');
+	
+	// create handlebars tempate in HTML of other appended HTML
+	var editBox = getTemplate('editTextarea');
+	$('.fullReply').after(editBox);
 	$('main').height(function (index, height) {
-	    return (height + $('.comments .comment').height() + 150);
+	    return (height + $('.comments .comment').height() + 145);
 	});
 
 	//Edit your reply
