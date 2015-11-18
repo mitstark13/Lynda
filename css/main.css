@@ -249,7 +249,7 @@ h1 {
 }
 
 .boxLinks a:hover {
-	background-color: #f2f2f2;
+	background-color: #dbdbdb;
 }
 
 .projectInfo {
@@ -322,9 +322,11 @@ PROJECTS AND COURSES LEFT NAVE
 
 }
 
-.prjList a:hover {
-	background-color: #B8B8B8;
+.prjList a:hover, .crsList a:hover {
+	background-color: #dbdbdb;
 }
+
+
 
 
 .leftNav div .active {
@@ -655,8 +657,7 @@ video {
 
 #settingsTab {
 	width: 0px;
-	height: 117px;
-	
+	height: 0px;
 	position: absolute;
 	margin-top: -73px;
 	background:  #2a3137;
@@ -664,17 +665,26 @@ video {
 	font-size: 1.2em;
 	padding-top: 10px;	
 	padding-left: 10px;
+	padding-right: 10px;
 	cursor: pointer;
-	right: 40px;
+	right: -100px;
 	opacity: 0;
+	z-index: 100;
+}
+
+#settingsTab a {
+	display: block;
+	border-bottom: 1px solid gray;
+	margin-bottom: 5px;
+	cursor: pointer;
+	
 }
 
 #settingsTab p {
 	width: 90%;
-	border-bottom: 1px solid gray;
 	line-height: 1.2em;
-	margin-bottom: 5px;	
 	color: white;
+	cursor: pointer;
 }
 
 #settingsTab small {
@@ -691,7 +701,7 @@ video {
 	margin-left: 70px;
 }
 
-#settingsTab p:hover {
+#settingsTab a:hover {
 	background:  rgba(184,184,184, .4);
 }
 
@@ -754,7 +764,7 @@ video {
 	position: absolute;
 	transform: rotate(-90deg);
 	margin-top: -143px;
-	z-index: 800;
+	z-index: 99;
 	right: -40px;
 	opacity: 0;
 }
@@ -822,7 +832,7 @@ Video Details
 
 
 .detailHeader :not(.active):hover {
-	background-color: #B8B8B8
+	background-color: #dbdbdb
 }
 
 
@@ -936,7 +946,7 @@ h3 {
 }
 
 
-article {
+article:not(.welcome) {
 	display: none;
 }
 
@@ -1451,7 +1461,7 @@ Hover Popups
 
 .timeStamp {
 	left: 45px;
-	margin-top: 
+	
 }
 
 .bookmark {
@@ -1505,12 +1515,16 @@ Hover Popups
 	left: -20px;
 }
 
-.videoPlayer img:hover, button:hover {
+.videoPlayer img:hover, button:hover,  {
 	-webkit-filter: brightness(0.75);}
 }
 
 .videoTopBar span:hover {
-	color: #f2f2f2;
+	color: #dbdbdb;
+}
+
+.cancel:hover, .previous:hover {
+	background-color: #dbdbdb;
 }
 
 .upload:hover, .submit:hover, .next:hover{
@@ -1522,7 +1536,7 @@ Hover Popups
 .dropzone {
 	width: 80%;
 	background-color: #f2f2f2;
-	height: 170px;
+	height: 17em;
 	margin-top: 40px;
 	margin-left: auto;
 	margin-right: auto;

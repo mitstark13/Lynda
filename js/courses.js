@@ -184,11 +184,13 @@ $('#dim').data('state','off');
 $('#dim').click(function(e){
   if ($('#dim').data('state') == 'off') {
   $('#dim').data('state','on');
+  $('#dim small').css('color', '#f5b62b')
   $('#shadow').css('display','block');
   $('body img, body button, body span').css('opacity', '.3');
   }
   else {
   $('#dim').data('state','off');
+  $('#dim small').css('color', '#929495')
    $('#shadow').css('display','none');
   $('body img, body button, body span').css('opacity', '1');
   }
@@ -262,12 +264,16 @@ $("#settings").hoverIntent({
   $('.settings').velocity({
       opacity: 1,
       width: '190px',
+      height: '117',
+      right: '40px',
   }, 100, 'swing');
 },
   out: function() {
   $('.settings').delay(2000).velocity({
     opacity: 0,
-    width: '0px'
+    width: '0px',
+    height: '0px',
+    right: '-400px',
  }, 70, 'swing');
 }
 });
