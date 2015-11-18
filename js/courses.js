@@ -477,7 +477,7 @@ PREVIOUS/NEXT BUTTONS
 *******************************************************/
 
 $('#nextBtn').click(function() {
-  $('#videoPlayer').attr('src', "../../lyndaillustrator.mp4");
+  $('#videoPlayer').attr('src', "vid/lyndaillustrator.mp4");
   video.load();
   video.play();
    $('#eye').css('display', 'none');
@@ -486,7 +486,7 @@ $('#nextBtn').click(function() {
 })
 
 $('#previousBtn').click(function() {
-  $('#videoPlayer').attr('src', "../../lyndadraplin.mp4");
+  $('#videoPlayer').attr('src', "vid/lyndadraplin.mp4");
   video.load();
   video.play();
   $('#eye2').css('display', 'none');
