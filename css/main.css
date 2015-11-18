@@ -212,6 +212,7 @@ main {
 	margin:0px 5.83% 0px 5.83%;
 	background-color: white;	
 	position: relative;
+	margin-bottom: 20px;
 
 	
 
@@ -248,7 +249,7 @@ h1 {
 }
 
 .boxLinks a:hover {
-	background-color: #f2f2f2;
+	background-color: #dbdbdb;
 }
 
 .projectInfo {
@@ -270,13 +271,14 @@ PROJECTS AND COURSES LEFT NAVE
 
 .mainContain {
 	position: relative;
-	height: 1048px;
+	min-height: 1170px;
+	height: auto;
 	clear: both;
 	background-color: #f2f2f2;
 }
 .leftNav {
 	width: 31%;
-	height: 938px;
+	min-height: 938px;
 	clear: both;
 	position: relative;
 }
@@ -320,9 +322,11 @@ PROJECTS AND COURSES LEFT NAVE
 
 }
 
-.prjList a:hover {
-	background-color: #B8B8B8;
+.prjList a:hover, .crsList a:hover {
+	background-color: #dbdbdb;
 }
+
+
 
 
 .leftNav div .active {
@@ -371,7 +375,7 @@ PROJECTS AND COURSES LEFT NAVE
 	padding-top: 29px;
 	padding-left: 5%;
 	padding-right: 2%;
-	height: 902px;
+	min-height: 990px;	
 	width: 100%;
 	clear: both;
 	
@@ -419,12 +423,33 @@ h5 {
 	
 }
 
-#eye {
+.submenu img {
+	margin-top: 4px;
+}
+
+#eye, #eye2 {
 	width: 4%;
 	display: inline-block;
 	margin-right: 20px;
 	position: relative;
 	float: right;	
+}
+
+#eye2 {
+	display: none;
+}
+
+
+.blackbook {
+	 
+	visibility: hidden;
+
+	
+}
+	
+.blackbook  {
+	
+
 }
 
 .projectList {
@@ -435,9 +460,17 @@ h5 {
 	display: none;
 }
 
+
 .activeTab {
 	display: inline-block;
 }
+
+.upload {
+	padding-top: 12px;
+	text-align: center;
+	font-weight: 400;
+}
+
 
 
 
@@ -454,11 +487,22 @@ VIDEO PLAYER
 	position: absolute;
 	top: 0;
 	right: 0;
-	background-color: red;
+	background-color: black;
 	height: 430px;
 	width: 67%;
+	z-index: 4;
+
+	
+
 
 }
+
+video {
+	width: 100%;
+
+}
+
+
 
 .videoTopBar {
 	height: 41px;
@@ -495,11 +539,15 @@ VIDEO PLAYER
 	color: white;
 }
 
-
-.videoPlayer span{
+.videoPlayer span {
 	color: #ffc537;
 	font-size: 1.4em;
-}
+
+}	
+
+
+
+
 
 #autoPlay  {
 	color: white;
@@ -520,6 +568,10 @@ VIDEO PLAYER
 
 }
 
+.videoPlayer button {
+	z-index: 40;
+}
+
 .videoBottomBar {
 	height: 41px;
 	background-color: #2a3137;
@@ -527,19 +579,53 @@ VIDEO PLAYER
 	padding: 1.5% 2%;
 	float: right;
 	width: 100%;
+	position: relative;
 
+
+}
+
+.videoIcons {
+	position: relative;
+	width: 100%;
+	margin-top: -10px;
+	height: 20px;
 }
 
 .videoBottomBar button img {
 	height: 15px;
 	display: inline-block;
-	
+	cursor: pointer;
+	z-index: 800;
 }
 
 
-.video-bottom-bar button{
+.videoBottomBar button{
 	display: inline-block;
 	margin-right: .8%;
+	height: 40px;f
+	margin-top: -20px;
+	cursor: pointer;
+	z-index: 800;
+
+}
+
+#scrubber {
+        position: relative;
+        width: 100%;
+        height: 8px;
+        background-color: #6d6d6d;
+    	z-index: 20;
+    }
+
+    #progress {
+        width: 0;
+        height: 8px;
+        background-color: #fdba2b;
+        margin-top: -3px;
+    }
+
+#pause {
+	display: none;
 }
 
 #bookmark {
@@ -563,8 +649,156 @@ VIDEO PLAYER
 	
 }
 
-#volume, #speed, #cc, #settings, #expand, #popout, #fullscreen {
+#speed {
+	width: 30px;
+	text-align: left;
+	margin-right: 5px;
+}
+
+#settingsTab {
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	margin-top: -73px;
+	background:  #2a3137;
+	color: white;
+	font-size: 1.2em;
+	padding-top: 10px;	
+	padding-left: 10px;
+	padding-right: 10px;
+	cursor: pointer;
+	right: -100px;
+	opacity: 0;
+	z-index: 100;
+}
+
+#settingsTab a {
+	display: block;
+	border-bottom: 1px solid gray;
+	margin-bottom: 5px;
+	cursor: pointer;
+	
+}
+
+#settingsTab p {
+	width: 90%;
+	line-height: 1.2em;
+	color: white;
+	cursor: pointer;
+}
+
+#settingsTab small {
+	display: block;
+	font-size: .8em;
+	color: #929495;
+}
+
+#settingsTab b {
+	color: #f5b62b;
+}
+
+#settingsTab .triangle {
+	margin-left: 70px;
+}
+
+#settingsTab a:hover {
+	background:  rgba(184,184,184, .4);
+}
+
+.speedBar {
+	width: 0px;
+	height: 119px;
+	background-color: #2a3137;
+	position: absolute;
+	z-index: 30;
+	opacity: 1;
+	font-size: 1.2em;
+	color: white;
+	margin-top: -75px;
+	text-align: center;
+	line-height: 1.4em;		
+	padding: 5px 4px 0px 2px;
+	cursor: pointer;
+	right: 45px;
+	opacity: 0;
+	
+}
+
+.speedBar li a {
+	color: white;
+} 
+
+.speedBar li {
+	border-bottom: 1px solid gray;
+	position: relative;
+	display: inline-block;	
+	padding-top: 2px;
+	margin-left: 2px;
+	padding-bottom: 2px;
+	width: 36px;
+	
+}
+
+.speedBar ul li:hover {
+	background:  rgba(184,184,184, .4);
+}
+
+.speedBar .triangle {
+	position: absolute;
+	margin-left: 10px;
+	margin-top: 8px;
+}
+
+.speedBar .active a{
+	color: #fdbb2b;
+}
+
+#volume, #speed, #cc, #settings, #expand, #popout, #fullscreen, #close {
 	float: right;
+}
+
+.volumeContainer {
+	width: 0px;
+	height: 45px;
+	background-color: #2a3137;
+	position: absolute;
+	transform: rotate(-90deg);
+	margin-top: -143px;
+	z-index: 99;
+	right: -40px;
+	opacity: 0;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    position: absolute;
+    top: 20px;
+    display: block;
+    width: 85%;
+    height: 4px;
+    margin-left: 10px;
+    border-radius: 25%;
+    background: #b8b8b8;
+ 	
+    
+}
+
+
+.volumeContainer .triangle {
+	margin-left: -15px;
+	position: absolute;
+	transform: rotate(90deg);
+	margin-top: 18px;
+}
+
+ 
+input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px; 
+    background: #fdc549; 
+    border-radius: 50%;
+
 }
 
 /******************************************************
@@ -572,10 +806,11 @@ Video Details
 *******************************************************/
 .detailHeaderContainer {
 	background-color: white;
-	height: 610px;
+	min-height: 660px;
 	border-right: 1px solid #c4c4c4;
 	border-left: 1px solid #c4c4c4;
 	border-bottom: 1px solid #c4c4c4;
+	padding-bottom: 10px;
 }
 
 .detailHeader ul li a{
@@ -596,8 +831,8 @@ Video Details
 
 
 
-.detailHeader a:not(.active):hover {
-	background-color: #B8B8B8
+.detailHeader :not(.active):hover {
+	background-color: #dbdbdb
 }
 
 
@@ -705,17 +940,26 @@ h3 {
 	line-height: 1.5em;
 }
 
+.transcript {
+	
+	display: none
+}
+
+
+article:not(.welcome) {
+	display: none;
+}
+
 /******************************************************
 FOOTER
 *******************************************************/
 
-
 .footerGray {
 	height: 300px;
-	background-color: #2a3137;
+	background-colower: #2a3137;
 	width: 100%;
 	position: absolute;
-
+	clear: both;
 }
 
 footer div {
@@ -784,6 +1028,7 @@ footer li a:hover {
 	color: white;
 }
 
+
 /******************************************************
 congratulations
 *******************************************************/
@@ -794,46 +1039,59 @@ Upload1
 
 #upload1, #upload2, #upload3, #upload4{
 	position: fixed;
-	width: 637px;
-	top: 5%;
+	height: 90%;
+	top: 50%;
 	left: 50%;
-	margin-left: -20%;
-	height: 588px;
+	transform: translate(-50%, -50%);
+	max-height: calc(100% - 50px);
 	background: white;
-	z-index: 5;
+	z-index: 999;
 	border: 1px solid #2a3137;
 
 }
 
+#a{
+	opacity: .01;
+	height:  60px;
+	width: 100px;
+	position: absolute;
+	margin-top: 10px;
+
+}
+
 .uploadBlack {
-	height: 136px;
+	max-height: 136px;
 	background-color: #2a3137;
 	width: 100%;
 	display: block;
+	padding-bottom: 4%
 }
 
 .uploadBlack img {
-	width: 365px;
+	width: 60%;
 	text-align: center;
-	margin-top: 24px;
-	margin-left: 136px;
+	margin-top: 2.4em;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 
 .uploadBlack h3 {
 	color: #fdba2b;
 	text-align: center;
-	padding-top: 24px;
+	padding-top: 2.4em;
 	font-weight: 400;
 
 }
 
 .dragDrop {
 	width: 212px;
-	text-align: center;
-	margin-left: 212px;
+	top: 145px;
+	right: 35%;
 	margin-top: 14px;
 	margin-bottom: 14px;
-
+	display: block;
+	position: absolute;
 }
 
 #upload1  p, #upload2 p {
@@ -859,9 +1117,13 @@ Upload1
 	border: 1px solid #373d43;
 	color: #373d43;
 	text-align: center;
-	margin-left: 248px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 20px;
 	font-size: 1.4em;
+	cursor: pointer;
+	padding-top: 10px;
+	display: block;
 }
 
 
@@ -937,6 +1199,11 @@ Upload1
 	margin-top: -8px;
 }
 
+#upload2 span {
+	transform: rotate(45deg);
+}
+
+
 .goldenLogo {
 	border: 1px solid #373d43;
 	height: 158px;
@@ -952,6 +1219,10 @@ Upload1
 #upload3 .goldenLogo {
 	margin-top: 10px;
 	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	height: 130px;
 }
 
 
@@ -1019,19 +1290,21 @@ Upload1
 
 
 .blackBox {
-	width: 600px;
-	height: 320px;
+	width: 95%;
+	max-height: 340px;
 	background-color: #2a3137;
 	clear: both;
 	margin-top: 18px;
-	margin-left: 18px;	
+	margin-left: auto;
+	margin-right: auto;
+	display: block;	
 }
 
 
 .blackBox img {
 	width: 200px;
 	margin-left: 5px;
-	margin-top: 100px;
+	margin-top: 80px;
 	margin-right: 10px;
 	display: inline-block;
 	float: left;
@@ -1040,7 +1313,7 @@ Upload1
 #upload4 .blackBox h3 {
 	color: white;
 	display: inline-block;
-	margin-top: 90px;
+	margin-top: 70px;
 	font-size: 2em;
 	line-height: 1.5em;
 }
@@ -1066,9 +1339,6 @@ Upload1
 	line-height: 1.4em;
 }
 
-#upload4 .bottomLine {
-	margin-left: -18px;
-}
 
 #upload4 {
 	display: none;
@@ -1156,48 +1426,57 @@ Hover Popups
 	width: 110px;
 	height: 0px;
 	background-color: #2a3137;
-	z-index: 5;
 	color: white;
 	position: absolute;
 	font-size: 1em;
 	padding: 10px;
 	text-align: center;
 	font-weight: 600;
-	opacity: 0;	
+	opacity: 0;
+	bottom: 0;		
+	
+		
 }
 
 .closed {
-	bottom: 20px;
-	right: 30px;
+	bottom: 0px;
+	right: 50px;
 }
 
 .settings {
-	right: 65px;
+	right: 87px;
 }
 
 .popout {
-	right: 123px;
+	right: 159px;
 }
 
 .fullscreen {
-	right: 150px;
+	right: 190px;
 }
 
 .rewind {
-	left: 5px;
+	left: 10px;
 }
 
 .timeStamp {
-	left: 35px;
+	left: 45px;
+	
 }
 
 .bookmark {
-	left: 60px;
+	left: 80px;
 }
 
 .expands {
-	right: 93px;
+	right: 123px;
 }
+
+.toolTips {
+	position: relative;
+	margin-top: -65px;
+	width: 100%;
+}	
 
 .triangle {
 	width: 0; 
@@ -1209,4 +1488,126 @@ Hover Popups
 	margin-top: 10px;
 	margin-left: 35px;	
 	
+}
+
+#videoPlayer {
+	z-index: 5;
+}
+
+.videoTopBar .popup :not(p) {
+	transform: rotate(180deg);
+}
+
+.videoTopBar .popup .triangle {
+	margin-top: -30px;
+	margin-left: 60px;
+}
+
+.nextVid {
+	width: 150px;
+	top: 53px;
+	left: 60px;
+}
+
+.prevVid {
+	width: 150px;
+	top: 53px;
+	left: -20px;
+}
+
+.videoPlayer img:hover, button:hover,  {
+	-webkit-filter: brightness(0.75);}
+}
+
+.videoTopBar span:hover {
+	color: #dbdbdb;
+}
+
+.cancel:hover, .previous:hover {
+	background-color: #dbdbdb;
+}
+
+.upload:hover, .submit:hover, .next:hover{
+	background-color: #2a3137;
+	color: #fdba2b;
+}
+
+
+.dropzone {
+	width: 80%;
+	background-color: #f2f2f2;
+	height: 17em;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px dashed black;
+	margin-bottom: 10px;
+	color: gray;
+}
+
+.dz-thumbnail: {
+	height: 50px;
+	width: auto;
+}
+.dz-message: {
+	display: none !important;
+}
+
+#shadow  {
+	background-color: black;
+	opacity: .8;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	display: none;
+}
+	 
+
+
+@media (min-width: 600px) and (max-width: 800px) {
+   footer  {
+        display: none;
+    }
+    .projectInfo {
+    	display: none;
+    }
+}
+
+@media (max-width: 599px) {
+
+	
+	
+   .detailHeaderContainer {
+        display: none !important;
+    }
+	.leftNav {
+		width: 100%;
+	}
+
+	.boxLinks {
+		display: none !important;
+	}
+
+	footer {
+		display: none !important;
+	}
+	main {
+		margin-right: 2%;
+		margin-left: 2%;
+	}
+	.projectInfo {
+		display: none;
+	}
+
+#upload1, #upload2, #upload3, #upload4 {
+	width: 90%;
+}
+
+.dropzone {
+	display: none;
+}
+
 }
