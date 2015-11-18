@@ -23,8 +23,25 @@ it so link doesn't jump it to top of page */
 $('.detailHeader li a').click(function(e) {
 $('.detailHeader li a.active').removeClass('active');
     $(this).toggleClass('active');
- 	 e.preventDefault();
+ 	if($('#transcript a').hasClass('active')) {
+    $('.transcript').css('display', 'inline-block');
+    $('.transcript').siblings('article').css('display', 'none');
+  }
+    else if($('#notes a').hasClass('active')) {
+    $('.notes').css('display', 'inline-block');
+    $('.notes').siblings('article').css('display', 'none');
+  }
+  else if($('#details a').hasClass('active')) {
+    $('.welcome').css('display', 'inline-block');
+    $('.welcome').siblings('article').css('display', 'none');
+  }
+  else if($('#faq a').hasClass('active')) {
+    $('.faq').css('display', 'inline-block');
+    $('.faq').siblings('article').css('display', 'none');
+  }
+   e.preventDefault();
  });
+
 
 
 	
@@ -162,7 +179,21 @@ $('#previousBtn').hoverIntent({
   }
 });
 
+$('#dim').data('state','off');
 
+$('#dim').click(function(e){
+  if ($('#dim').data('state') == 'off') {
+  $('#dim').data('state','on');
+  $('#shadow').css('display','block');
+  $('body img, body button, body span').css('opacity', '.3');
+  }
+  else {
+  $('#dim').data('state','off');
+   $('#shadow').css('display','none');
+  $('body img, body button, body span').css('opacity', '1');
+  }
+  e.preventDefault();
+})
      
 // $('#cc').mouseleave(function() {
 //   flyout('.closed');
@@ -630,6 +661,10 @@ $('#popout').click(function (e) {
 });
 
 
+$('.submit').click(function () {
+   $(".greenBar").show().delay(5000).fadeOut();
+})
+
 // $('video').textTracks[0].mode = "showing";
 
 /******************************************************
@@ -637,10 +672,18 @@ media queries
 *******************************************************/
 
 
-  $(window).on('resize', function(event){
+  $(window).on('load resize', function(event){
     var windowSize = $(window).width(); // Could've done $(this).width()
-      if(windowSize < 300){
-        $('html').css('background-color', 'red');
+      if(windowSize < 599){
+        $('.videoPlayer').css("width", '100%');
+        $('.leftNav').css('width', '100%');
+         $('.detailHeaderContainer').appendTo($('.newNav'));
+      // $('.leftNav').css('position', 'absolute');
+      $('.leftNav').appendTo($('.newNav'));
+     
+      $('.leftNav').css('display', 'inline-block');
+
+
       } else if(windowSize < 800){
        
           $('.videoPlayer').css("width", '100%');
@@ -654,7 +697,13 @@ media queries
       $('.leftNav').css('width', '33%');
       $('.leftNav').css('display', 'inline-block');
       } else {
-        $('html').css('background-color', 'blue');
+        $('.videoPlayer').css("width", '67%');
+    $('main').css('height', '');
+    $('.detailHeaderContainer').css('width', '100%');
+    $('.leftNav').prependTo($('.mainContain'));
+    $('.leftNav').css('width', '31%');
+    $('.detailHeaderContainer').appendTo($('videPlayer'));
+    $('.detailHeaderContainer').css('width', 'auto'); 
       }
   });
 

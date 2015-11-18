@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/dropzone.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/dropzone.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
@@ -347,7 +348,8 @@
                         <div class="triangle"></div>
                      </div>
                      <div class="settings" id="settingsTab">
-                        <p>View Mode<small>Dim Lights</small></p>
+                        <a id='dim' href="#">
+                        <p>View Mode<small>Dim Lights</small></p></a>
                         
                         <p>Video Quality<small>360p <b>720p</b> 1080p HD</small></p>
                         
@@ -379,22 +381,23 @@
                         <div class="triangle"></div>
                      </div>
                 </div>
+
             <div class='newNav'></div>         
             <div 
             class="detailHeaderContainer">
                     <nav class="detailHeader">
                         <ul>
-                            <li><a href="#" class="active">Video Details</a>
+                            <li id="details"><a href="#" class="active">Video Details</a>
                             </li>
-                            <li><a href="#">Transcript</a>
+                            <li id='transcript'><a href="#">Transcript</a>
                             </li>
-                            <li><a href="#">My Notes</a>
+                            <li id='notes'><a href="#">My Notes</a>
                             </li>
-                            <li><a href="#">FAQ</a>
+                            <li id='faq'><a href="#">FAQ</a>
                             </li>
                         </ul>
                     </nav>
-                    <article>
+                    <article class='welcome'>
                         <h2>Welcome</h2>
                         <div class="boxes">
                             <ul>
@@ -413,6 +416,23 @@
                         </div>
                         <h3>Course Description</h3>
                         <p id="paragraph">Illustrator is an unparalleled tool for digital artists, and Adobe takes it to new heights with Creative Cloud 2015. This course helps put Illustrator's power and flexibility at your disposal, offering a tip-to-tail overview of the program, from installation to exporting final artwork. Staff author Justin Seeley explains how to work with layers and artboards the dual core of Illustrator's nondestructive workflow and start drawing and transforming basic objects. He also shows how to create fills and strokes, add color, work with live effects, and integrate typography into your designs. At the end of the course, he'll show you how to print and export artwork, so you can share it with the world. Start here for everything you need to know to design, draw, and illustrate with Illustrator.</p>
+                    </article>
+                    <article class="transcript">
+                        <h2>Transcript</h2>
+                        <h3>Preview</h3>
+                        <p id="paragraph">So here at the Draplin Design Company, I mean it's basically just me, doing whatever it takes to make cool stuff. lynda.com has sort of challenged me to make a logo. When you make this logo, there's like a sense of me that always likes to pretend that All Base is as big as their biggest competitor. You take a look at that thing and you say okay, we got a little A happening right there. This is sketching, this is meant to be fast and fun, your hand is freer here than it would be on your Illustrator.
+
+Now becomes the fun part. We've got something to work with. There is your patch on your hat, already done. Some shirts for the dudes out, loading up the cement, bam. When you go back and you look at this old world, there's just sort of reminders of just a simple little logo.</p>
+                    </article>
+                    <article class="notes">
+                        <h2>Notes</h2>
+                        <h3>Jot down some thoughts</h3>
+                        
+                    </article>
+                    <article class="faq">
+                        <h2>FAQ</h2>
+                        <h3>There are currently no questions for this video.</h3>
+                        
                     </article>
                 </div>
             </section>
@@ -505,11 +525,15 @@
         <div class="bottomBlack">
             <img src="img/logo.png" alt="">
         </div>
+    
     </footer>
+    <div id="shadow"></div> 
     <!-- Congratulations Popup -->
     <div id="congratulations">
-        <div class="topRounded">
-            <h3>Projects</h3>
+        <div class="topRounded">:absolute; left:0; top:0; width:100%; z-index:100;}
+}
+            <h3>Projecolor: black; position:absolute; left:0; top:0; width:100%; z-index:100;}
+}ts</h3>
             <a href="#" class="x">x</a>
         </div>
         <p><strong>Congratulations you completed the course!</strong>
@@ -525,10 +549,11 @@
             <h3>Upload your Project</h3>
             <img src="img/progress1.png" alt="">
         </div>
-        <img class="dragDrop" src="img/dragDrop.png" alt="">
         <form action="/file-upload"
       class="dropzone"
-      id="my-awesome-dropzone"></form>
+      id="my-awesome-dropzone">
+      <div class="dz-message" data-dz-message><span></span></div>  
+      </form>
         <p>You can drag and drop files into this window or browse your computer</p>
         <b>.jpg .pdf .gif .png</b>
         <label class="browse"><input id="a" name="a" type="file">Browse Computer</label>
@@ -590,7 +615,7 @@
             <div class="bottomLine">
                 <button class="cancel">Cancel</button>
                 <button class="submit">Submit</button>
-                <button class="previous" id="prev2">Previous</button>
+                <button class="previous" id="prev2"><a href="#">Previous</button>
 
             </div>
         

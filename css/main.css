@@ -488,14 +488,19 @@ VIDEO PLAYER
 	background-color: black;
 	height: 430px;
 	width: 67%;
+	z-index: 4;
 
+	
 
 
 }
 
 video {
 	width: 100%;
+
 }
+
+
 
 .videoTopBar {
 	height: 41px;
@@ -669,6 +674,7 @@ video {
 	border-bottom: 1px solid gray;
 	line-height: 1.2em;
 	margin-bottom: 5px;	
+	color: white;
 }
 
 #settingsTab small {
@@ -924,16 +930,23 @@ h3 {
 	line-height: 1.5em;
 }
 
+.transcript {
+	
+	display: none
+}
 
+
+article {
+	display: none;
+}
 
 /******************************************************
 FOOTER
 *******************************************************/
 
-
 .footerGray {
 	height: 300px;
-	background-color: #2a3137;
+	background-colower: #2a3137;
 	width: 100%;
 	position: absolute;
 	clear: both;
@@ -1468,7 +1481,7 @@ Hover Popups
 }
 
 #videoPlayer {
-	z-index: -4;
+	z-index: 5;
 }
 
 .videoTopBar .popup :not(p) {
@@ -1509,7 +1522,7 @@ Hover Popups
 .dropzone {
 	width: 80%;
 	background-color: #f2f2f2;
-	height: 150px;
+	height: 170px;
 	margin-top: 40px;
 	margin-left: auto;
 	margin-right: auto;
@@ -1522,17 +1535,65 @@ Hover Popups
 	height: 50px;
 	width: auto;
 }
+.dz-message: {
+	display: none !important;
+}
+
+#shadow  {
+	background-color: black;
+	opacity: .8;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	display: none;
+}
+	 
 
 
-
-@media (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 800px) {
    footer  {
         display: none;
     }
+    .projectInfo {
+    	display: none;
+    }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 599px) {
+
+	
+	
    .detailHeaderContainer {
-        display: none;
+        display: none !important;
     }
+	.leftNav {
+		width: 100%;
+	}
+
+	.boxLinks {
+		display: none !important;
+	}
+
+	footer {
+		display: none !important;
+	}
+	main {
+		margin-right: 2%;
+		margin-left: 2%;
+	}
+	.projectInfo {
+		display: none;
+	}
+
+#upload1, #upload2, #upload3, #upload4 {
+	width: 90%;
+}
+
+.dropzone {
+	display: none;
+}
+
 }
