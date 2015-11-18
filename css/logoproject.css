@@ -412,8 +412,8 @@ main .projectInfo strong img{
 }
 .fullReply {
 	height: 210px;
-	margin-bottom: 40px;
 }
+
 .fullReply strong {
 	float: right;
 	margin-top: -30px;
@@ -557,7 +557,7 @@ main .projectInfo strong img{
 	display: none;
 	position: absolute;
     z-index: 992;
-    margin-top: -202px;
+    margin-top: -162px;
     margin-left: 220px;
 }
 #strong a img {
@@ -629,6 +629,7 @@ footer a {
 }
 footer a:hover {
 	color: white;
+	font-size: 16px;
 }
 .about {
 	margin-left: 15.83%;
@@ -806,6 +807,9 @@ footer a:hover {
 	.judgeComment .comment img {
 		display: none;
 	}
+	.navbar ul li b {
+		display: none;
+	}
 	.navbar .fullDrop .dropdown {
 		opacity: 0;
 		z-index: -99;
@@ -844,13 +848,13 @@ footer a:hover {
 	.judgeComment .vote {
 		display: none;
 	}
-	.navbar ul li b {
-		display: none;
-	}
 	.navbar .fullDrop .dropdown {
 		opacity: 0;
 		z-index: -99;
 	} 
+	.navbar ul li {
+		margin-right: 19px;
+	}
 	.navbar .secondDrop {
 		opacity: 0;
 		z-index: -99;
@@ -864,12 +868,7 @@ footer a:hover {
 	footer .bottomblack {
 		display: block;
 	}
-	.navbar ul li a {
-		font-size: 12px;
-	}
-	.navbar ul li {
-		margin-right: 19px;
-	}
+
 	header .logo {
 		height: 45px;
 	}
@@ -878,6 +877,9 @@ footer a:hover {
 	}
 	.comments .comment img {
 		display: none;
+	}
+	.navbar ul li a {
+		font-size: 12px;
 	}
 	main .comments ul li {
 		height: 330px;
