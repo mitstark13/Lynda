@@ -328,12 +328,20 @@ Main Top Section
 *******************************************************/
 main {
 	margin:0px 5.83% 0px 5.83%;
-	background-color: white;	
+	background-color: none;	
 	position: relative;
 	margin-bottom: 20px;
 
 	
 
+}
+
+.topWhite {
+	width: 100%;
+	height: 173px;
+	background-color: white;
+	display: block;
+	position: relative;
 }
 
 h1 {
@@ -664,7 +672,10 @@ video {
 }	
 
 
-
+.welc {
+	margin-top: 1px;
+	display: inline-block;
+}
 
 
 #autoPlay  {
@@ -929,6 +940,7 @@ Video Details
 	border-left: 1px solid #c4c4c4;
 	border-bottom: 1px solid #c4c4c4;
 	padding-bottom: 10px;
+	width: 100%;
 }
 
 .detailHeader ul li a{
@@ -1110,7 +1122,7 @@ footer a:hover {
 }
 
 .about, .products, .support, .apps, .connect {
-	padding-top: 80px;
+	padding-top: 6%;
 	display: inline-block;
 }
 
@@ -1412,29 +1424,32 @@ Upload1
 
 .blackBox {
 	width: 95%;
-	max-height: 340px;
+	max-height: 370px;
 	background-color: #2a3137;
 	clear: both;
 	margin-top: 18px;
 	margin-left: auto;
 	margin-right: auto;
+	padding-bottom: 20px;
+	padding-right: 10px;
 	display: block;	
 }
 
 
 .blackBox img {
 	width: 200px;
-	margin-left: 5px;
-	margin-top: 80px;
-	margin-right: 10px;
+	margin-left: 15px;
+	margin-top: 60px;
+	margin-right: 20px;
 	display: inline-block;
 	float: left;
+
 
 }
 #upload4 .blackBox h3 {
 	color: white;
 	display: inline-block;
-	margin-top: 70px;
+	margin-top: 50px;
 	font-size: 2em;
 	line-height: 1.5em;
 }
@@ -1636,8 +1651,9 @@ Hover Popups
 	left: -20px;
 }
 
-.videoPlayer img:hover, button:hover,  {
-	-webkit-filter: brightness(0.75);}
+
+.videoPlayer img:hover, .videoPlayer button:hover  {
+	-webkit-filter: brightness(75%);
 }
 
 .videoTopBar span:hover {
@@ -1653,6 +1669,10 @@ Hover Popups
 	color: #fdba2b;
 }
 
+
+.leftNav li h5:hover {
+	font-weight: 600;
+}
 
 .dropzone {
 	width: 80%;
@@ -1689,12 +1709,17 @@ Hover Popups
 
 
 @media (min-width: 600px) and (max-width: 800px) {
-   footer  {
-        display: none;
-    }
+   
     .projectInfo {
     	display: none;
     }
+    .detailHeaderContainer {
+    	width: 100%;
+    }
+	.main {
+	background-color: none;
+}
+
 }
 
 @media (max-width: 599px) {
@@ -1712,13 +1737,20 @@ Hover Popups
 		display: none !important;
 	}
 
-	footer {
-		display: none !important;
-	}
+	
+
 	main {
 		margin-right: 2%;
 		margin-left: 2%;
+		background-color: none;
+		min-height: 1700px;
+		height: auto;
 	}
+	
+	.topWhite {
+		
+	}
+
 	.projectInfo {
 		display: none;
 	}
@@ -1730,5 +1762,31 @@ Hover Popups
 .dropzone {
 	display: none;
 }
+
+.detailHeaderContainer {
+	width: 100%;
+}
+
+.navbar nav li a {
+		font-size: 12px;
+	}
+	.navbar nav li {
+		margin: 30px 10px;
+	}
+	.projects li a small {
+		display: none;
+	}
+	header .logo {
+		height: 45px;
+	}
+	.footerGray, .about, .products, .support, .apps, .connect {
+		display: none !important;
+	}
+	footer .bottomblack {
+		display: block;
+	}
+	.footerGray {
+		position: relative;
+	}
 
 }

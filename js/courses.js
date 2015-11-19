@@ -13,7 +13,7 @@ $('.prjList a').click(function(e) {
 $('.crsList a').click(function(e) {
 	$(this).addClass('active');
 	$('.prjList a').removeClass('active')
-	$('.projList').removeClass('activeTab');
+	$('.projectList').removeClass('activeTab');
 	$('.courseList').addClass('activeTab');
 	e.preventDefault();
 }); 
@@ -43,22 +43,17 @@ $('.detailHeader li a.active').removeClass('active');
  });
 
 
-
-	
-
-
-
-
-$('.courseList ul li img,  .projectList ul li img').not( ".submenu img" ).click(function() {
+$('.courseList ul li a,   .projectList ul li img').not( ".submenu img" ).click(function(e) {
   var clicks = $(this).data('clicks');
   if (clicks) {
-     $(this).transition({ rotate: '0deg' },500,'ease');
+     $( '.arrow', this ).transition({ rotate: '0deg' },500,'ease');
      $(this).siblings('.submenu').hide('slow');
   } else {	
-     $(this).transition({ rotate: '90deg' },500,'ease');
+     $('.arrow', this).transition({ rotate: '90deg' },500,'ease');
      $(this).siblings('.submenu').show('slow');
   }
   $(this).data("clicks", !clicks);
+  e.preventDefault();
 });
 
 $('.expand').click(function(e) {
@@ -367,6 +362,52 @@ $('#play, #pause').click(function() {
 
 
 
+$('.intro').click(function() {
+    if(videoPlayer[0].paused) {
+    $('#videoPlayer').attr('src', "../../lyndadraplin.mp4");
+  video.load();
+  video.play();
+  $('#eye2').css('display', 'none');
+   $('#eye').css('display', 'inline-block')
+    $('#pause').css('display', 'inline-block');
+    $('#play').css('display', 'none');
+
+  }
+      else {
+        $('#videoPlayer').attr('src', "../../lyndadraplin.mp4");
+  video.load();
+      $('#eye2').css('display', 'none');
+   $('#eye').css('display', 'inline-block')
+        $('#play').css('display', 'inline-block');
+      $('#pause').css('display', 'none');
+    }
+});
+
+
+$('.how').click(function() {
+    if(videoPlayer[0].paused) {
+    $('#videoPlayer').attr('src', "../../lyndaillustrator.mp4");
+  video.load();
+  video.play();
+    $('#eye').css('display', 'none');
+   $('#eye2').css('display', 'inline-block')
+    $('#pause').css('display', 'inline-block');
+    $('#play').css('display', 'none');
+
+  }
+      else {
+        videoPlayer[0].pause();
+        $('#videoPlayer').attr('src', "../../lyndaillustrator.mp4");
+  video.load();
+      $('#eye').css('display', 'none');
+   $('#eye2').css('display', 'inline-block')
+        $('#play').css('display', 'inline-block');
+      $('#pause').css('display', 'none');
+    }
+});
+
+
+
 /*
 $(function(){
 $('#current').html($('#videoPlayer').find('video').get(0).load());                      
@@ -595,11 +636,10 @@ function handler1(e) {
 function handler2(e) {
     $('.videoPlayer').css("width", '67%');
     $('main').css('height', '');
-    $('.detailHeaderContainer').css('width', '100%');
     $('.leftNav').prependTo($('.mainContain'));
     $('.leftNav').css('width', '31%');
     $('.detailHeaderContainer').appendTo($('videPlayer'));
-    $('.detailHeaderContainer').css('width', 'auto');
+    $('.detailHeaderContainer').css('width', '100%');
     $('#expand img').attr('src', "img/expand.png" );
     $(this).one("click", handler1);
      e.preventDefault;
@@ -694,9 +734,10 @@ media queries
        
           $('.videoPlayer').css("width", '100%');
       $('main').css('height', '2000px');
+      $('main').css('background-color', 'none')
       $('.detailHeaderContainer').css('float', 'right');
       $('.detailHeaderContainer').css('width', '66%');
-      $('.detailHeaderContainer').css('display', 'inline-block');
+      $('.detailHeaderContainer').css('display', 'block');
        $('.detailHeaderContainer').appendTo($('.newNav'));
       // $('.leftNav').css('position', 'absolute');
       $('.leftNav').appendTo($('.newNav'));
@@ -709,7 +750,7 @@ media queries
     $('.leftNav').prependTo($('.mainContain'));
     $('.leftNav').css('width', '31%');
     $('.detailHeaderContainer').appendTo($('videPlayer'));
-    $('.detailHeaderContainer').css('width', 'auto'); 
+    $('.detailHeaderContainer').css('width', '100%'); 
       }
   });
 
