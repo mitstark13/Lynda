@@ -1,7 +1,4 @@
 
-
-
-
 $('.prjList a').click(function(e) {
 	$(this).addClass('active');
 	$('.crsList a').removeClass('active')
@@ -753,5 +750,5 @@ media queries
     $('.detailHeaderContainer').css('width', '100%'); 
       }
   });
-
+video.play();
    
