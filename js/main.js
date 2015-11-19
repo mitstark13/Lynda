@@ -18,6 +18,7 @@ $('.navbar .search img').click(function() {
 search.keypress(function() {
 	$('.searchDrop').css('display', 'block');
 	$('.searchDown').animate({'height': '215px'}, '.5s');
+	$('nav .searchDown').css('display', 'none');
 });
 $('.searchDrop').mouseleave(function() {
 	$('.searchDrop').css('display', 'none');

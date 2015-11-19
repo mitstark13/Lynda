@@ -1,21 +1,9 @@
 var $input = $('.searchCom input')
 var $drop = $('.comDrop')
 
-$input.keypress(function() {
-	if ($drop.css('display') === 'none'){
-		displayDropdown(); 
-		$('main').height(function (index, height) {
-		    return (height + $('.comments .comment').height() + 230);
-		});
-	};
-});
+$input.keypress(displayDropdown);
 $input.mouseleave(hideDropdown);
-$drop.mouseleave(function() {
-	hideDropdown();
-	$('main').height(function (index, height) {
-	    return (height + $('.comments .comment').height() - 230);
-	});
-});
+$drop.mouseleave(hideDropdown);
 $drop.mouseenter(displayDropdown);
 
 function displayDropdown () {

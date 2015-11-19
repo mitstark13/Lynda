@@ -51,17 +51,18 @@ $(document).on('click', '.replyModal', function() {
 	var reply = ($('.writeReply textarea').val());
 	var responseTemplate = getTemplate('response', { reply: reply });
 	index.after(responseTemplate);
-	
-	// create handlebars tempate in HTML of other appended HTML
-	var editBox = getTemplate('editTextarea');
-	$('.fullReply').after(editBox);
 	$('main').height(function (index, height) {
-	    return (height + $('.comments .comment').height() + 145);
-	});
+		    return (height + $('.comments .comment').height() + 125);
+		});
+	// create handlebars tempate in HTML of other appended HTML
+	
 
 	//Edit your reply
 	$('#strong').click(function(e) {
 		e.preventDefault();
+		var editBox = getTemplate('editTextarea');
+		$('.fullReply').after(editBox);
+		
 		$(this).parent().parent().parent().next('.editReply').css('display', 'block');
 		$('.fullReply .change').css('z-index', '999');
 		$('.change').click(function() {
@@ -88,8 +89,8 @@ editBtn.click(function() {
 $('.editProject img:first-of-type').click(function() {
 	editTop.css('display', 'none');
 	editBtn.css('opacity', '1');
-})
-$('.editProject img:last-of-type').click(function() {
+});
+$('.editProject button').click(function() {
 	editTop.css('display', 'none');
 	if ($('.editProject input').val() != "") {
 		$('.logoInfo h3').text($('.editProject input').val());

@@ -300,6 +300,11 @@ main a:hover {
     -webkit-transform: scale(1.02, 1.02);
     -ms-transform: scale(1.02, 1.02);
 }
+main .comDrop a:hover {
+	transform: none;
+    -webkit-transform: none;
+    -ms-transform: none;
+}
 main h1 {
 	font-size: 2.7em;
 	margin-top: 20px;
@@ -374,6 +379,7 @@ main button {
 	margin-top: 5px;
 	background-color: #2A3137;
 	border: none;
+	border-left: 1px solid black;
 }
 main button img {
 	height: 21.75px;
@@ -414,8 +420,10 @@ main input:focus {
 
 main .comDrop {
 	display: none;
+	position: absolute;
+	z-index: 999;
 	margin-left: 360px;
-	width: 57%;
+	width: 54.8%;
 	margin-top: -20px;
 	margin-bottom: 20px;
 }
@@ -546,7 +554,8 @@ footer a:hover {
 		width: 40%;
 	}
 	main .comDrop {
-		width: 40%;
+		width: 43%;
+		margin-left: 356px;
 	}
 	.navbar .fullDrop li a {
 		font-size: 13px;
@@ -564,7 +573,8 @@ footer a:hover {
 		width: 40%;
 	}
 	main .comDrop {
-		margin-left: 280px;
+		margin-left: 285px;
+		width: 42.5%;
 	}
 	main .comDown {
 		height: 270px;
@@ -639,7 +649,8 @@ footer a:hover {
 		height: 289px;
 	}
 	main .comDrop {
-		margin-left: 28%;
+		margin-left: 23%;
+		width: 44%;
 	}
 	.comDown li a {
 		width: 108px;
