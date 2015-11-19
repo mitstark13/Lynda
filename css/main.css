@@ -347,15 +347,8 @@ main {
 h1 {
 	font-size: 3em;
 	display: inline-block;
-	margin: 37px 0 39px  21px;
-	
+	margin: 37px 0 39px  21px;	
 }
-
-.boxLinks {
-	
-	
-}
-
 .boxLinks li a{
 	display: inline-block;
 	width: 160px;
@@ -369,12 +362,9 @@ h1 {
 	padding-top: 12px;
 	font-weight: 400;
 	font-size: 1.2em;
-
-
-
 }
 
-.boxLinks a:hover {
+.boxLinks ul li a:hover {
 	background-color: #dbdbdb;
 }
 
@@ -1383,6 +1373,7 @@ Upload1
 #upload3 textarea {
 	position: absolute;
 	top: 41px;
+	width: 286px;
 	right: 0;
 	font-size: 14px;
 	color: black;
@@ -1475,7 +1466,8 @@ Upload1
 	height: 140px;
 	border-top: 1px solid white;
 	display: inline-block;
-	margin-top: 14px;
+	margin-left: 40%;
+	margin-top: -2px;
 
 }
 
@@ -1484,11 +1476,12 @@ Upload1
 	font-size: 1.6em;
 	padding-top: 22px;
 	line-height: 1.4em;
+	width: 95%;
 }
 
 
 #upload4 {
-	display: none;
+	display: block;
 }
 
 #congratulations {
@@ -1738,6 +1731,10 @@ Hover Popups
     	font-size: 14px;
     }
     .fullDrop {
+    	z-index: -999;
+    	opacity: 0;
+    }
+    .secondDrop {
     	z-index: -999;
     	opacity: 0;
     }
