@@ -304,6 +304,13 @@ main span {
 main nav {
 	margin-bottom: 50px;
 }
+main nav p {
+	display: inline-block;
+}
+main nav span:hover p{
+	border-bottom: 1px solid black;
+	margin-bottom: -1px;
+}
 main .projectInfo {
 	position: relative;
 	height: 292px;
@@ -451,12 +458,12 @@ main .projectInfo strong img{
 .vote small {
 	z-index: 999;
 }
-.vote small:first-of-type:hover {
-	color: green;
+.vote .like:hover {
+	-webkit-filter: brightness(75%);
 	cursor: pointer;
 }
-.vote small:last-of-type:hover {
-	color: red;
+.vote .dislike:hover {
+	-webkit-filter: brightness(75%);
 	cursor: pointer;
 }
 .vote img {
@@ -509,6 +516,16 @@ main .projectInfo strong img{
 	border: 1px solid black;
 	font-size: 14px;
 }
+.editProject button {
+	position: absolute;
+	width: 90px;
+	height: 35px;
+	top: 225px;
+	right: 382px;
+	background-color: #F9BD3C;
+	border: 1px solid black;
+	font-size: 16px;
+}
 .newComment .comment button {
 	right: -32px;
 	margin-bottom: 45px;
@@ -527,15 +544,19 @@ main .projectInfo strong img{
 .editProject input {
 	display: inline-block;
 	width: 340px;
-	padding: 0;
+	padding: 5px;
 	border: 1px solid #ccc;
-	height: 28px;
+	height: 50px;
 	margin-top: 26px;
 	margin-bottom: 60px;
+	margin-left: -2px;
 }
 .editProject textarea {
 	width: 475px;
-	padding: 0;
+	height: 92px;
+	margin-top: -22px;
+	padding: 5px;
+	margin-left: -2px;
 	border: 1px solid #ccc;
 }
 .editProject img {
@@ -546,7 +567,7 @@ main .projectInfo strong img{
 	margin-left: 20px;
 }
 .editProject img:last-of-type {
-	height: 36px;
+	height: 20px;
 	margin-top: -5px;
 }
 .editProject img:hover {
@@ -578,7 +599,9 @@ main .projectInfo strong img{
 	display: none;
 }
 .judgeComment .johnPic {
-	margin-left: 20px;
+	position: fixed;
+	left: 169px;
+	top: 140px;
 }
 .judgeComment img {
 	display: inline-block;
@@ -674,8 +697,9 @@ footer a:hover {
 
 .reply {
 	display: none;
-	position: absolute;
-	top: 45%;
+	position: fixed;
+	z-index: 999;
+	top: 6%;
 	left: 10%;
 	height: 574px;
 	width: 80%;
@@ -701,12 +725,14 @@ footer a:hover {
 	width: 65px;
 }
 .judgeComment .comment small {
-	position: absolute;
-	left: 20px;
-	bottom: -38px;
+	position: fixed;
+	left: 263px;
+	top: 255px;
 }
 .judgeComment small.your {
-	bottom: 10px;
+	position: fixed;
+	top: 250px;
+	left: 167px;
 }
 .judgeComment .vote img {
 	margin: 2px 40%;
@@ -728,7 +754,10 @@ footer a:hover {
 	margin: 0px 0px;
 }
 .judgeComment .comment img:nth-child(2) {
-	margin-left: 20px;
+	margin-left: 56px;
+	position: fixed;
+	top: 147px;
+	left: 208px;
 }
 .comment p {
 	font-size: 16px;
