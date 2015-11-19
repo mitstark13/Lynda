@@ -421,13 +421,23 @@ PROJECTS AND COURSES LEFT NAVE
 	height: 22px;
 	margin: 16px 5px 16px 10px;
 }
+.searchSmall img:hover {
+	-webkit-transition-duration: 1s;
+	-ms-transform-duration: 1s;
+    transition-duration: 1s;
+	transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    cursor: pointer;
+}
 
 .searchSmall input {
-	width: 70%;
+	width: 16vw;
+	height: 30px;
 	padding: 5px;
 	float: right;	
-	margin-top: 10px;
-	margin-right: 20px;
+	margin-top: 15px;
+	margin-right: 6vw;
 	display: none;
 }
 
@@ -1707,9 +1717,29 @@ Hover Popups
 }
 	 
 
-
-@media (min-width: 600px) and (max-width: 800px) {
-   
+@media (max-width: 1150px) {
+	.fullDrop li a{
+		font-size: 13px;
+		margin-left: -7px;
+	}
+	.fullDrop ul {
+		margin: 0 auto;
+	}
+}
+@media (max-width: 800px) {
+    .navbar .search {
+    	display: none;
+    }
+    .navbar ul li a b {
+    	display: none;
+    }
+    .navbar ul li a {
+    	font-size: 14px;
+    }
+    .fullDrop {
+    	z-index: -999;
+    	opacity: 0;
+    }
     .projectInfo {
     	display: none;
     }
@@ -1722,10 +1752,8 @@ Hover Popups
 
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
 
-	
-	
    .detailHeaderContainer {
         display: none !important;
     }
@@ -1754,20 +1782,26 @@ Hover Popups
 	.projectInfo {
 		display: none;
 	}
+	.searchSmall input {
+		-webkit-transition-duration: 1s;
+		-ms-transform-duration: 1s;
+   		 transition-duration: 1s;
+		width: 70%;
+		margin-right: 40px;
+	}
+	#upload1, #upload2, #upload3, #upload4 {
+		width: 90%;
+	}
 
-#upload1, #upload2, #upload3, #upload4 {
-	width: 90%;
-}
+	.dropzone {
+		display: none;
+	}
 
-.dropzone {
-	display: none;
-}
+	.detailHeaderContainer {
+		width: 100%;
+	}
 
-.detailHeaderContainer {
-	width: 100%;
-}
-
-.navbar nav li a {
+	.navbar nav li a {
 		font-size: 12px;
 	}
 	.navbar nav li {
@@ -1777,7 +1811,7 @@ Hover Popups
 		display: none;
 	}
 	header .logo {
-		height: 45px;
+		height: 40px;
 	}
 	.footerGray, .about, .products, .support, .apps, .connect {
 		display: none !important;

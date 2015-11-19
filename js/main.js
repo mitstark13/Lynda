@@ -1,7 +1,9 @@
 //Search
 //Variables
 var search = $('.search input');
+coursesSearch = $('.searchSmall input');
 count = 2;
+ccount = 2;
 
 $('.navbar .search img').click(function() {
 	if (count % 2 === 0) {
@@ -15,6 +17,16 @@ $('.navbar .search img').click(function() {
 	}
 	count++;
 });
+$('.searchSmall img').click(function() {
+	if (ccount % 2 === 0) {
+		coursesSearch.animate({opacity: '1'});
+		coursesSearch.css('display', 'block');
+	} else {
+		coursesSearch.css('display', 'none');
+		coursesSearch.animate({opacity: '0'});
+	}
+	ccount++;
+})
 search.keypress(function() {
 	$('.searchDrop').css('display', 'block');
 	$('.searchDown').animate({'height': '215px'}, '.5s');

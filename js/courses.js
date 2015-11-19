@@ -364,7 +364,7 @@ $('#play, #pause').click(function() {
 
 $('.intro').click(function() {
     if(videoPlayer[0].paused) {
-    $('#videoPlayer').attr('src', "../../lyndadraplin.mp4");
+    $('#videoPlayer').attr('src', "vid/lyndadraplin.mp4");
   video.load();
   video.play();
   $('#eye2').css('display', 'none');
@@ -374,7 +374,7 @@ $('.intro').click(function() {
 
   }
       else {
-        $('#videoPlayer').attr('src', "../../lyndadraplin.mp4");
+        $('#videoPlayer').attr('src', "vid/lyndadraplin.mp4");
   video.load();
       $('#eye2').css('display', 'none');
    $('#eye').css('display', 'inline-block')
@@ -386,7 +386,7 @@ $('.intro').click(function() {
 
 $('.how').click(function() {
     if(videoPlayer[0].paused) {
-    $('#videoPlayer').attr('src', "../../lyndaillustrator.mp4");
+    $('#videoPlayer').attr('src', "vid/lyndaillustrator.mp4");
   video.load();
   video.play();
     $('#eye').css('display', 'none');
@@ -397,7 +397,7 @@ $('.how').click(function() {
   }
       else {
         videoPlayer[0].pause();
-        $('#videoPlayer').attr('src', "../../lyndaillustrator.mp4");
+        $('#videoPlayer').attr('src', "vid/lyndaillustrator.mp4");
   video.load();
       $('#eye').css('display', 'none');
    $('#eye2').css('display', 'inline-block')
@@ -702,7 +702,7 @@ $(function(){
 
 $('#popout').click(function (e) {
     e.preventDefault();
-    window.open('../../lyndadraplin.mp4', '_blank', 'location=yes,height=500,width=600,scrollbars=no,status=yes');
+    window.open('vid/lyndadraplin.mp4', '_blank', 'location=yes,height=500,width=600,scrollbars=no,status=yes');
     $('#pause').click;
 });
 
