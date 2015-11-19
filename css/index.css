@@ -740,6 +740,124 @@ footer a:hover {
 }
 
 /*Media Queries */
+
+@media (max-width: 1135px) {
+	.dropdown li a {
+		font-size: 12px;
+	}
+	.navbar .secondDrop div ul:last-of-type {
+		margin-left: -50px;
+	}
+	.learnMore {
+		height: 670px;
+	}
+	.learnMore ul li {
+		margin-bottom: 50px;
+	}
+	.learnMore ul li div h4 {
+		white-space: nowrap;
+	}
+	.watch div {
+	    display: inline-block;
+	    margin-left: 33%;
+	}
+	.watch div:first-of-type .quote {
+    	margin: -4px 0%;
+    	text-align: center;
+	}
+	.watch .lyndashot {
+		display: none;
+	}
+	.watch div {
+	    display: inline-block;
+	    margin-left: 33%;
+	    width: 390px;
+	}
+	.heads img{
+		display: none;
+	}
+	.watch div.heads {
+		position: absolute;
+		width: 1px;
+	}
+	.watch div.learn {
+		float: left;
+		margin-left: 33%;
+	}
+	aside ul li {
+		left: 12%;
+	}
+	.footergray {
+		height: 370px;
+	}
+}
+
+@media (max-width: 854px) {
+	nav ul li {
+		display: none;
+	}
+	nav ul.searchDown li {
+		display: block;
+	}
+	nav ul li.logIn {
+		display: block;
+	}
+	.footergray, .about, .products, .support, .apps, .connect {
+		display: none;
+	}
+	footer .bottomblack {
+		display: block;
+	}
+	.aboveFold p {
+		left: 43.6%;
+	}
+	.learnMore {
+		height: 900px;
+	}
+	.learnMore ul {
+		margin: 0 10%;
+	}
+	.learnMore ul li{
+		display: block;
+		float: none;
+		width: 90%;
+		margin: 20px 20px 0px;
+	}
+	.learnMore ul li:nth-child(even) {
+    	float: none;
+	}
+	.learnMore ul li:nth-child(odd) {
+    	float: none;
+	}
+	.progress {
+		display: none;
+	}
+	.projects {
+		height: 120px;
+	}
+	.watch div {
+	    display: inline-block;
+	    margin-left: 25%;
+	}
+	.watch .line {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.watch div.learn {
+		margin-left: 25%;
+	}
+	aside ul li {
+		margin-right: 10%;
+	}
+	.ready {
+		height: 130px;
+	}
+	.ready a {
+		left: 38%;
+		top: 60%;
+	}
+}
+
 @media (max-width: 610px) {
 	nav ul li.logIn {
 		position: absolute;
@@ -810,126 +928,6 @@ footer a:hover {
 		left: 30%;
 	}
 }
-
-@media (max-width: 854px) {
-	nav ul li {
-		display: none;
-	}
-	nav ul.searchDown li {
-		display: block;
-	}
-	nav ul li.logIn {
-		display: block;
-	}
-	.footergray, .about, .products, .support, .apps, .connect {
-		display: none;
-	}
-	footer .bottomblack {
-		display: block;
-	}
-	.aboveFold p {
-		left: 43.6%;
-	}
-	.learnMore {
-		height: 900px;
-	}
-	.learnMore ul {
-		margin: 0 10%;
-	}
-	.learnMore ul li{
-		display: block;
-		float: none;
-		width: 90%;
-		margin: 20px 20px 0px;
-	}
-	.learnMore ul li:nth-child(even) {
-    	float: none;
-	}
-	.learnMore ul li:nth-child(odd) {
-    	float: none;
-	}
-	.progress {
-		display: none;
-	}
-	.projects {
-		height: 120px;
-	}
-	.watch div {
-	    display: inline-block;
-	    margin-left: 25%;
-	}
-	.watch .line {
-		margin-top: 30px;
-		margin-bottom: 30px;
-	}
-	.watch div.learn {
-		margin-left: 25%;
-	}
-	aside ul li {
-		margin-right: 10%;
-	}
-	.ready {
-		height: 130px;
-	}
-	.ready a {
-		left: 38%;
-		top: 60%;
-	}
-}
-
-@media (max-width: 1135px) {
-	.dropdown li a {
-		font-size: 12px;
-	}
-	.navbar .secondDrop div ul:last-of-type {
-		margin-left: -50px;
-	}
-	.learnMore {
-		height: 670px;
-	}
-	.learnMore ul li {
-		margin-bottom: 50px;
-	}
-	.learnMore ul li div h4 {
-		white-space: nowrap;
-	}
-	.watch div {
-	    display: inline-block;
-	    margin-left: 33%;
-	}
-	.watch div:first-of-type .quote {
-    	margin: -4px 0%;
-    	text-align: center;
-	}
-	.watch .lyndashot {
-		display: none;
-	}
-	.watch div {
-	    display: inline-block;
-	    margin-left: 33%;
-	    width: 390px;
-	}
-	.heads img{
-		display: none;
-	}
-	.watch div.heads {
-		position: absolute;
-		width: 1px;
-	}
-	.watch div.learn {
-		float: left;
-		margin-left: 33%;
-	}
-	aside ul li {
-		left: 12%;
-	}
-	.footergray {
-		height: 370px;
-	}
-}
-
-
-
 
 
 
