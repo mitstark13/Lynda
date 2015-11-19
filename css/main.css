@@ -432,11 +432,12 @@ PROJECTS AND COURSES LEFT NAVE
 }
 
 .searchSmall input {
+	-webkit-appearance: none;
 	width: 16vw;
-	height: 30px;
+	height: 24px;
 	padding: 5px;
 	float: right;	
-	margin-top: 15px;
+	margin-top: 14px;
 	margin-right: 6vw;
 	display: none;
 }
