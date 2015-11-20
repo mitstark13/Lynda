@@ -1085,12 +1085,16 @@ article:not(.welcome) {
 FOOTER
 *******************************************************/
 
+footer {
+	position: relative;
+}
+
 .footerGray {
 	height: 300px;
 	background-color: #2a3137;
 	width: 100%;
 	position: absolute;
-	clear: both;
+	clear: both;	 
 }
 
 footer div {
@@ -1664,6 +1668,10 @@ Hover Popups
 	color: #dbdbdb;
 }
 
+.welc:hover {
+	color: #ffc537 !important;
+}
+
 .cancel:hover, .previous:hover {
 	background-color: #dbdbdb;
 }
@@ -1820,5 +1828,15 @@ Hover Popups
 	.footerGray {
 		position: relative;
 	}
+		#timeStamp, #expand, #fullscreen {
+		display: none;
 
+	}
+
+	.bookmark {
+		left: 2.9em;
+	}
+	.popout {
+		left: 24em;
+	}
 }

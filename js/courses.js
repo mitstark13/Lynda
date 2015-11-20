@@ -40,7 +40,7 @@ $('.detailHeader li a.active').removeClass('active');
  });
 
 
-$('.courseList ul li a,   .projectList ul li img').not( ".submenu img" ).click(function(e) {
+$('.courseList ul li a,   .projectList  ul li a').not( ".submenu img" ).click(function(e) {
   var clicks = $(this).data('clicks');
   if (clicks) {
      $( '.arrow', this ).transition({ rotate: '0deg' },500,'ease');
@@ -615,7 +615,7 @@ function handler1(e) {
     $('.detailHeaderContainer').css('float', 'right');
     $('.detailHeaderContainer').css('width', '66%');
     $('.detailHeaderContainer').css('display', 'inline-block');
-     $('.detailHeaderContainer').appendTo($('.newNav'));
+    $('.detailHeaderContainer').appendTo($('.newNav'));
     // $('.leftNav').css('position', 'absolute');
     $('.leftNav').appendTo($('.newNav'));
     $('.leftNav').css('width', '33%');
@@ -637,6 +637,7 @@ function handler2(e) {
     $('.leftNav').css('width', '31%');
     $('.detailHeaderContainer').appendTo($('videPlayer'));
     $('.detailHeaderContainer').css('width', '100%');
+    $('.detailHeaderContainer').css('height', 'auto');
     $('#expand img').attr('src', "img/expand.png" );
     $(this).one("click", handler1);
      e.preventDefault;
