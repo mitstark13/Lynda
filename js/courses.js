@@ -751,5 +751,4 @@ media queries
     $('.detailHeaderContainer').css('width', '100%'); 
       }
   });
-video.play();
    

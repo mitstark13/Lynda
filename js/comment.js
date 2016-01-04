@@ -54,7 +54,6 @@ $(document).on('click', '.replyModal', function() {
 	$('main').height(function (index, height) {
 		    return (height + $('.comments .comment').height() + 125);
 		});
-	// create handlebars tempate in HTML of other appended HTML
 	
 
 	//Edit your reply
